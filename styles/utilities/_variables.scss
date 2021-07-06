@@ -1,0 +1,114 @@
+// ----------------------------------------------------------------------
+	// Font Families
+// ----------------------------------------------------------------------
+$neueHaasGrotesk: NHaasGroteskDSPro-65Md;
+$helveticaNeue: HelveticaNeue, Helvetica;
+$ffClan: ff-clan-web-pro, HelveticaNeue, Helvetica, sans-serif;
+
+// ----------------------------------------------------------------------
+	// Font Sizes
+// ----------------------------------------------------------------------
+$size-1: 10px;
+$size-2: 12px;
+$size-3: 14px;
+$size-4: 16px;
+$size-5: 18px;
+$size-6: 20px;
+$size-7: 24px;
+$size-8: 28px;
+$size-9: 32px;
+$size-10: 42px;
+$size-11: 54px;
+$size-12: 65px;
+
+// ----------------------------------------------------------------------
+	// Margin Sizes
+// ----------------------------------------------------------------------
+$margin-1: 5px;
+$margin-2: 10px;
+$margin-3: 20px;
+$margin-4: 40px;
+
+// ----------------------------------------------------------------------
+	// Colors
+// ----------------------------------------------------------------------
+$product-0: #ffffff;
+$product-1: #000000;
+$product-2: #276ef1;
+$gray-1: #f7f7f7;
+$gray-2: #eeeeee;
+$gray-3: #e0e0e0;
+$gray-4: #cccccc;
+$gray-5: #767676;
+$colors-blue-b-9: #c1d8ff;
+$colors-transparent-90: rgba(0, 0, 0, 0.9);
+$colors-transparent-80: rgba(0, 0, 0, 0.8);
+$colors-transparent-70: rgba(0, 0, 0, 0.7);
+$colors-transparent-60: rgba(0, 0, 0, 0.6);
+$colors-transparent-50: rgba(0, 0, 0, 0.5);
+$colors-transparent-40: rgba(0, 0, 0, 0.4);
+$colors-transparent-30: rgba(0, 0, 0, 0.3);
+$colors-transparent-20: rgba(0, 0, 0, 0.2);
+$colors-transparent-10: rgba(0, 0, 0, 0.1);
+
+// ----------------------------------------------------------------------
+	// DARK PALETTE
+// ----------------------------------------------------------------------
+$BACKGROUND_COLOR: #06090f;
+$CARD_COLOR: #0d1117;
+$HOVER_COLOR: #30363d;
+$BORDER_COLOR: #30363d;
+$PRIMARY_TEXT: #c9d1d9;
+$SECONDARY_TEXT: #8b949e;
+$TERTIARY_TEXT: #58a6ff;
+
+$BUTTON_COLOR_1: #21262d;
+$BUTTON_COLOR_2: #1f6feb;
+$ICON_COLOR: #FFF;
+$NEGATIVE_COLOR: rgba(219, 97, 162,1);
+$NEGATIVE_BG_COLOR: rgba(219, 97, 162,.1);
+$POSITIVE_COLOR: rgba(86, 211, 100,1);
+$POSITIVE_BG_COLOR: rgba(86, 211, 100,.1);
+
+// ----------------------------------------------------------------------
+	// Theme - Light
+// ----------------------------------------------------------------------
+$bg-light: $product-0;
+$bg-1-light: $gray-1;
+$button-1-light: $gray-2;
+$button-2-light: $product-2;
+$button-disabled-light: $gray-3;
+$card-bg-1-light: $gray-1;
+$text-light: $product-1;
+$text-2-light: $gray-4;
+$text-3-light: $product-2;
+$text-disabled-light: rgba(0, 0, 0, 0.50);
+$hover-color-light: #EEE;
+$border-light: $gray-3;
+$negative-color-light: #FF00008a;
+$negative-bg-light: #ffcccc;
+$positive-color-light: #0f6245;
+$positive-bg-light: #cbf4c8;
+$tertiary-color-light: #2300ad;
+
+// ----------------------------------------------------------------------
+	// Theme - Dark
+// ----------------------------------------------------------------------
+$bg-dark: $BACKGROUND_COLOR;
+$bg-1-dark: $BACKGROUND_COLOR;
+$button-1-dark: $BUTTON_COLOR_1;
+$button-2-dark: $BUTTON_COLOR_2;
+$button-disabled-dark: none;
+$card-bg-dark: $CARD_COLOR;
+$card-bg-1-dark: $CARD_COLOR;
+$text-dark: $PRIMARY_TEXT;
+$text-2-dark: $SECONDARY_TEXT;
+$text-3-dark: $TERTIARY_TEXT;
+$text-disabled-dark: rgba(255, 255, 255, 0.50);
+$hover-color-dark: $HOVER_COLOR;
+$border-dark: $BORDER_COLOR;
+$negative-color-dark: $NEGATIVE_COLOR;
+$negative-bg-dark: $NEGATIVE_BG_COLOR;
+$positive-color-dark: $POSITIVE_COLOR;
+$positive-bg-dark: $POSITIVE_BG_COLOR;
+$tertiary-color-dark: #00FFFF;

@@ -1,0 +1,9 @@
+.layout {
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 max(50px, 15%);
+  }
+}

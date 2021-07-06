@@ -1,0 +1,101 @@
+//shortcuts
+$bg: 'bg';
+$bg-1: 'bg-1';
+$button-1: 'button-1';
+$button-2: 'button-2';
+$button-disabled: 'button-disabled';
+$card-bg: 'card-bg';
+$card-bg-1: 'card-bg-1';
+$text-prime: 'text-prime';
+$text: 'text';
+$text-2: 'text-2';
+$text-3: 'text-3';
+$text-disabled: 'text-disabled';
+$hover-color: 'hover-color';
+$negative-color: 'negative-color';
+$negative-bg: 'negative-bg';
+$positive-color: 'positive-color';
+$positive-bg: 'positive-bg';
+$border: 'border';
+$border-dark-only: 'border-dark-only';
+$weather-icon-color: 'weather-icon-color';
+$tool-menu-icon-color: 'tool-menu-icon-color';
+$gold-color: 'gold-color';
+$tertiary-color: 'tertiary-color';
+
+//themes
+$themes: (
+  light: (
+    bg: $bg-light,
+    bg-1: $bg-1-light,
+    button-1: $button-1-light,
+    button-2: $button-2-light,
+    button-disabled: $button-disabled-light,
+    card-bg: $bg-light,
+    card-bg-1: $card-bg-1-light,
+    text-prime: $product-1,
+    text: $text-light,
+    text-2: $text-2-light,
+    text-3: $text-3-light,
+    text-disabled: $text-disabled-light,
+    hover-color: $hover-color-light,
+    negative-color: $negative-color-light,
+    negative-bg: $negative-bg-light,
+    positive-color: $positive-color-light,
+    positive-bg: $positive-bg-light,
+    border: $border-light,
+    border-dark-only: rgba(255,255,255,0),
+    weather-icon-color: #929292,
+    tool-menu-icon-color: $text-light,
+    gold-color: #ffb407,
+    tertiary-color: $tertiary-color-light
+  ),
+  dark: (
+    bg: $bg-dark,
+    bg-1: $bg-1-dark,
+    button-1: $button-1-dark,
+    button-2: $button-2-dark,
+    button-disabled: $button-disabled-dark,
+    card-bg: $card-bg-dark,
+    card-bg-1: $card-bg-1-dark,
+    text-prime: $product-0,
+    text: $text-dark,
+    text-2: $text-2-dark,
+    text-3: $text-3-dark,
+    text-disabled: $text-disabled-dark,
+    hover-color: $hover-color-dark,
+    negative-color: $negative-color-dark,
+    negative-bg: $negative-bg-dark,
+    positive-color: $positive-color-dark,
+    positive-bg: $positive-bg-dark,
+    border: $border-dark,
+    border-dark-only: $border-dark,
+    weather-icon-color: $text-2-dark,
+    tool-menu-icon-color: rgb(29, 161, 242),
+    gold-color: gold,
+    tertiary-color: $tertiary-color-dark
+  ),
+);
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}
