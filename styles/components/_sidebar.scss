@@ -1,0 +1,63 @@
+.sidebar {
+  position: fixed;
+  right: 0;
+  overflow: scroll;
+  height: 100vh;
+  max-width: 150px;
+  margin-right: 10px;
+  display: grid;
+  grid-template: auto 1fr 1fr / 1fr;
+
+  &__cta,
+  &__nav,
+  &__social {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__nav,
+  &__social {
+    margin: 30px 10px 30px 5px;
+    color: gray;
+  }
+
+  &__cta {
+    align-self: center;
+    justify-self: end;
+    margin: 10px 0 0 0;
+
+
+    button {
+      cursor: pointer;
+      padding: 10px 12px;
+      background-color: rgba(0,0,0,0);
+      border: 2px solid rgb(3, 0, 190);
+      color: rgb(3, 0, 190);
+      font-weight: 900;
+      border-radius: 5px;
+    }
+  }
+
+  &__nav {
+    align-self: start;
+    text-align: end;
+
+    h2 {
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+
+  &__social {
+    align-self: end;
+    justify-self: end;
+
+    svg {
+      cursor: pointer;
+      width: 18px;
+    }
+  }
+}

@@ -6,6 +6,10 @@ import Sidebar from '../src/client/components/Sidebar';
 import Header from '../src/client/components/Header';
 import Section from '../src/client/components/Section';
 
+const sidebarData = {
+  navHeadings: ['About', 'Work', 'Photography', 'Contact'],
+  social: ['linkedin', 'github', 'instagram', 'twitter']
+}
 
 //! update <Head> and all needed info later
 
@@ -32,12 +36,10 @@ export default function Home() {
           <Section heading="Photography" />
           <Section heading="Contact" />
         </Layout>
-        <Sidebar>
-          <h2>About</h2>
-          <h2>Work</h2>
-          <h2>Photography</h2>
-          <h2>Contact</h2>
-        </Sidebar>
+        <Sidebar
+          navHeadings={sidebarData.navHeadings}
+          social={sidebarData.social}
+        />
       </main>
     </div>
   )
