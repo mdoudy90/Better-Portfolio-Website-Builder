@@ -1,0 +1,72 @@
+.project-card {
+  padding-top: 100px;
+  display: grid;
+  grid-template: 1fr / repeat(5, 1fr);
+
+  &__details,
+  &__details--inverse {
+    grid-row: 1;
+    z-index: 10;
+    display: grid;
+    grid-template: auto 1fr 40px 40px / 1fr;
+    align-items: center;
+  }
+
+  &__details {
+    grid-column: 1 / span 3;
+  }
+
+  &__details--inverse {
+    grid-column: 3 / span 3;
+    justify-items: end;
+  }
+
+
+  &__title {
+    font-size: 24px;
+    padding-bottom: 5px;
+
+  }
+
+  &__description {
+    background-color: rgba(0, 0, 0, 0.774);
+    color: rgb(197, 197, 197);
+    padding: 10px;
+
+  }
+
+  &__tools {
+    display: flex;
+    gap: 10px;
+
+    p {
+
+    }
+  }
+
+  &__links {
+    display: flex;
+
+  }
+
+  &__image,
+  &__image--inverse {
+    grid-row: 1;
+    > div {
+      position: relative !important;
+      height: 100% !important;
+      img {
+        height: inherit !important;
+        position: relative !important;
+      }
+    }
+  }
+
+  &__image {
+    grid-column: 3 / span 3;
+  }
+
+  &__image--inverse {
+    grid-column: 1 / span 3;
+  }
+}

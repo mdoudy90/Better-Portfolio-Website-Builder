@@ -1,6 +1,5 @@
 .section {
   border-top: 1px solid black;
-  border-left: 1px solid black;
   min-height: 100px;
 
   &__heading {
@@ -11,5 +10,9 @@
     // @include themed() {
     //   color: t($text-prime);
     // }
+  }
+
+  &__contents {
+    //
   }
 }

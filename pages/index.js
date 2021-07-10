@@ -5,11 +5,45 @@ import Layout from '../src/client/components/Layout';
 import Sidebar from '../src/client/components/Sidebar';
 import Header from '../src/client/components/Header';
 import Section from '../src/client/components/Section';
+import ProjectCard from '../src/client/components/ProjectCard';
 
 const sidebarData = {
   navHeadings: ['About', 'Work', 'Photography', 'Contact'],
   social: ['linkedin', 'github', 'instagram', 'twitter']
 }
+
+const MOCK_PROJECT_CARD_DATA = [
+  {
+    title: 'Helbiz Analytics',
+    description: 'An analytics platform that visualizes aggregated trip data using modern geospatial tools to make informed conclusions about rider usage and vehicle demand',
+    tools: ['React', 'Redux', 'GraphQL', 'Sass'],
+    links: {
+      'Github': 'www.github.com',
+      'Website': ''
+    },
+    image: '/images/helbiz-analytics-main.png'
+  },
+  {
+    title: 'Helbiz Move',
+    description: 'An analytics platform that visualizes aggregated trip data using modern Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro, numquam quae modi est illo rerum odio, ut voluptate facere mollitia perspiciatis eius sapiente ea voluptatem culpa, quidem eaque aliquam!',
+    tools: ['React', 'Redux', 'GraphQL', 'Sass'],
+    links: {
+      'Github': 'www.github.com',
+      'Website': ''
+    },
+    image: '/images/helbiz-analytics-main.png'
+  },
+  {
+    title: 'Helbiz Ads-Hub',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro, numquam quae modi est illo rerum odio, ut voluptate facere mollitia perspiciatis eius sapiente ea voluptatem culpa, quidem eaque aliquam!',
+    tools: ['React', 'Redux', 'GraphQL', 'Sass'],
+    links: {
+      'Github': 'www.github.com',
+      'Website': ''
+    },
+    image: '/images/helbiz-analytics-main.png'
+  },
+]
 
 //! update <Head> and all needed info later
 
@@ -32,7 +66,19 @@ export default function Home() {
             text="I'm an NYC-based software engineer that works at Helbiz."
           />
           <Section heading="About" />
-          <Section heading="Work" />
+          <Section heading="Work">
+            { MOCK_PROJECT_CARD_DATA.map((data, i) => (
+              <ProjectCard
+                key={data.title || i}
+                title={data.title}
+                description={data.description}
+                tools={data.tools}
+                links={data.links}
+                image={data.image}
+                showInverse={!!(i % 2)}
+              />
+            ))}
+          </Section>
           <Section heading="Photography" />
           <Section heading="Contact" />
         </Layout>
