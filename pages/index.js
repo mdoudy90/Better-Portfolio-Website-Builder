@@ -6,44 +6,7 @@ import Sidebar from '../src/client/components/Sidebar';
 import Header from '../src/client/components/Header';
 import Section from '../src/client/components/Section';
 import ProjectCard from '../src/client/components/ProjectCard';
-
-const sidebarData = {
-  navHeadings: ['About', 'Work', 'Photography', 'Contact'],
-  social: ['linkedin', 'github', 'instagram', 'twitter']
-}
-
-const MOCK_PROJECT_CARD_DATA = [
-  {
-    title: 'Helbiz Analytics',
-    description: 'An analytics platform that visualizes aggregated trip data using modern geospatial tools to make informed conclusions about rider usage and vehicle demand',
-    tools: ['React', 'Redux', 'GraphQL', 'Sass'],
-    links: {
-      'Github': 'www.github.com',
-      'Website': ''
-    },
-    image: '/images/helbiz-analytics-main.png'
-  },
-  {
-    title: 'Helbiz Move',
-    description: 'An analytics platform that visualizes aggregated trip data using modern Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro, numquam quae modi est illo rerum odio, ut voluptate facere mollitia perspiciatis eius sapiente ea voluptatem culpa, quidem eaque aliquam!',
-    tools: ['React', 'Redux', 'GraphQL', 'Sass'],
-    links: {
-      'Github': 'www.github.com',
-      'Website': ''
-    },
-    image: '/images/helbiz-analytics-main.png'
-  },
-  {
-    title: 'Helbiz Ads-Hub',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro, numquam quae modi est illo rerum odio, ut voluptate facere mollitia perspiciatis eius sapiente ea voluptatem culpa, quidem eaque aliquam!',
-    tools: ['React', 'Redux', 'GraphQL', 'Sass'],
-    links: {
-      'Github': 'www.github.com',
-      'Website': ''
-    },
-    image: '/images/helbiz-analytics-main.png'
-  },
-]
+import { sidebar, header, projectCards } from '../src/client/data/data.json';
 
 //! update <Head> and all needed info later
 
@@ -61,13 +24,13 @@ export default function Home() {
       <main className="main">
         <Layout>
           <Header
-            heading="Michael Doudy"
-            subHeading="Software Engineer"
-            text="I'm an NYC-based software engineer that works at Helbiz."
+            heading={header.heading}
+            subHeading={header.subHeading}
+            text={header.text}
           />
           <Section heading="About" />
           <Section heading="Work">
-            { MOCK_PROJECT_CARD_DATA.map((data, i) => (
+            { projectCards.map((data, i) => (
               <ProjectCard
                 key={data.title || i}
                 title={data.title}
@@ -83,8 +46,8 @@ export default function Home() {
           <Section heading="Contact" />
         </Layout>
         <Sidebar
-          navHeadings={sidebarData.navHeadings}
-          social={sidebarData.social}
+          navHeadings={sidebar.navHeadings}
+          social={sidebar.social}
         />
       </main>
     </div>

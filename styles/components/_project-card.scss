@@ -1,3 +1,5 @@
+$borderRadius: 3px;
+
 .project-card {
   padding-top: 100px;
   display: grid;
@@ -8,8 +10,9 @@
     grid-row: 1;
     z-index: 10;
     display: grid;
-    grid-template: auto 1fr 40px 40px / 1fr;
-    align-items: center;
+    grid-template: auto auto auto auto/1fr;
+    gap: 12px;
+    align-content: center;
   }
 
   &__details {
@@ -32,7 +35,7 @@
     background-color: rgba(0, 0, 0, 0.774);
     color: rgb(197, 197, 197);
     padding: 10px;
-
+    border-radius: $borderRadius;
   }
 
   &__tools {
@@ -46,15 +49,30 @@
 
   &__links {
     display: flex;
-
+    gap: 15px;
+    svg {
+      color: black;
+      height: 18px;
+      width: 18px;
+      cursor: pointer;
+    }
   }
 
   &__image,
   &__image--inverse {
     grid-row: 1;
+    border-radius: $borderRadius;
+    background-color: rgba(0, 29, 109, 0.3);
+    transition: all 0.5s ease-out;
+    &:hover {
+      background-color: rgba(0, 29, 109, 0);
+    }
+
     > div {
+      border-radius: $borderRadius;
       position: relative !important;
       height: 100% !important;
+      z-index: -1;
       img {
         height: inherit !important;
         position: relative !important;
