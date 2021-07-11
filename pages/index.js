@@ -3,10 +3,11 @@ import { useSelector } from 'react-redux';
 
 import Layout from '../src/client/components/Layout';
 import Sidebar from '../src/client/components/Sidebar';
+import About from '../src/client/components/About';
 import Header from '../src/client/components/Header';
 import Section from '../src/client/components/Section';
 import ProjectCard from '../src/client/components/ProjectCard';
-import { sidebar, header, projectCards } from '../src/client/data/data.json';
+import { sidebar, about, header, projectCards } from '../src/client/data/data.json';
 
 //! update <Head> and all needed info later
 
@@ -28,7 +29,9 @@ export default function Home() {
             subHeading={header.subHeading}
             text={header.text}
           />
-          <Section heading="About" />
+          <Section heading="About Me">
+            <About content={about.content} image={about.image} />
+          </Section>
           <Section heading="Work">
             { projectCards.map((data, i) => (
               <ProjectCard

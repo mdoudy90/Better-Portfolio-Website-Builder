@@ -1,7 +1,15 @@
 {
   "sidebar": {
-    "navHeadings": ["About", "Work", "Photography", "Contact"],
+    "navHeadings": ["About Me", "Work", "Photography", "Contact"],
     "social": ["linkedin", "github", "instagram", "twitter"]
+  },
+  "about": {
+    "content": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae. Cupiditate nisi doloremque corrupti esse, eligendi non deleniti dolores repellat quia, excepturi quod assumenda blanditiis facilis sapiente aut nostrum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae. Cupiditate nisi doloremque corrupti esse, eligendi non deleniti dolores repellat quia, excepturi quod assumenda blanditiis facilis sapiente aut nostrum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae. Cupiditate nisi doloremque corrupti esse, eligendi non deleniti dolores repellat quia, excepturi quod assumenda blanditiis facilis sapiente aut nostrum."
+    ],
+    "image": "/images/me.png"
   },
   "header": {
     "heading": "Michael Doudy",

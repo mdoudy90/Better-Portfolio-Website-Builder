@@ -1,0 +1,42 @@
+$borderRadius: 3px;
+
+.about {
+  padding-top: 50px;
+  display: grid;
+  grid-template: 1fr / 1fr 300px;
+  align-items: center;
+  gap: 50px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__image {
+    border-radius: $borderRadius;
+    height: 300px;
+    width: 300px;
+
+    > div {
+      transition: all 0.5s ease-out;
+      border-radius: $borderRadius;
+      position: relative !important;
+      height: 100% !important;
+      z-index: -1;
+      background-color: rgba(0, 68, 255, 0.35);
+
+      img {
+        mix-blend-mode: soft-light;
+        height: inherit !important;
+        position: relative !important;
+      }
+    }
+
+    &:hover {
+      > div {
+        background-color: rgba(0, 68, 255, 0);
+      }
+    }
+  }
+}

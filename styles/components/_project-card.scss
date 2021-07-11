@@ -8,11 +8,15 @@ $borderRadius: 3px;
   &__details,
   &__details--inverse {
     grid-row: 1;
-    z-index: 10;
     display: grid;
     grid-template: auto auto auto auto/1fr;
     gap: 12px;
     align-content: center;
+
+    > * {
+      z-index: 2;
+      width: fit-content;
+    }
   }
 
   &__details {
@@ -62,20 +66,26 @@ $borderRadius: 3px;
   &__image--inverse {
     grid-row: 1;
     border-radius: $borderRadius;
-    background-color: rgba(0, 29, 109, 0.3);
-    transition: all 0.5s ease-out;
-    &:hover {
-      background-color: rgba(0, 29, 109, 0);
-    }
+    z-index: 1;
 
     > div {
+      transition: all 0.5s ease-out;
       border-radius: $borderRadius;
       position: relative !important;
       height: 100% !important;
       z-index: -1;
+      background-color: rgba(0, 68, 255, 0.35);
+
       img {
+        mix-blend-mode: soft-light;
         height: inherit !important;
         position: relative !important;
+      }
+    }
+
+    &:hover {
+      > div {
+        background-color: rgba(0, 68, 255, 0);
       }
     }
   }
