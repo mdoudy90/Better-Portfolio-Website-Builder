@@ -1,21 +1,17 @@
 $borderRadius: 3px;
 
-.about {
+.gallery {
   display: grid;
-  grid-template: 1fr / 1fr 300px;
-  align-items: center;
-  gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  // grid-auto-rows: minmax(min-content, max-content);
+  // grid-template-rows: 100px;
+  // align-items: center;
+  gap: 20px;
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  &__image {
+  &__image,
+  &__imge--small {
     border-radius: $borderRadius;
-    height: 300px;
-    width: 300px;
+    aspect-ratio: 1;
 
     > div {
       transition: all 0.5s ease-out;

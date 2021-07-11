@@ -1,0 +1,27 @@
+.header {
+  height: max(102vh, 500px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+
+  &__preheading {
+
+  }
+
+  &__heading {
+    font-size: 50px;
+  }
+
+  &__subheading {
+    font-size: 30px;
+  }
+
+  &__text {
+
+  }
+
+  &__cta {
+
+  }
+}

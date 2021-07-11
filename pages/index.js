@@ -7,7 +7,8 @@ import About from '../src/client/components/About';
 import Header from '../src/client/components/Header';
 import Section from '../src/client/components/Section';
 import ProjectCard from '../src/client/components/ProjectCard';
-import { sidebar, about, header, projectCards } from '../src/client/data/data.json';
+import Gallery from '../src/client/components/Gallery';
+import { sidebar, about, header, projectCards, gallery } from '../src/client/data/data.json';
 
 //! update <Head> and all needed info later
 
@@ -45,7 +46,9 @@ export default function Home() {
               />
             ))}
           </Section>
-          <Section heading="Photography" />
+          <Section heading="Photography">
+            <Gallery images={gallery} />
+          </Section>
           <Section heading="Contact" />
         </Layout>
         <Sidebar
