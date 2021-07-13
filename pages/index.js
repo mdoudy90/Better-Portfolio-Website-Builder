@@ -8,7 +8,15 @@ import Header from '../src/client/components/Header';
 import Section from '../src/client/components/Section';
 import ProjectCard from '../src/client/components/ProjectCard';
 import Gallery from '../src/client/components/Gallery';
-import { sidebar, about, header, projectCards, gallery } from '../src/client/data/data.json';
+import Contact from '../src/client/components/Contact';
+import {
+  sidebar,
+  about,
+  header,
+  projectCards,
+  gallery,
+  contact
+} from '../src/client/data/data.json';
 
 //! update <Head> and all needed info later
 
@@ -26,9 +34,11 @@ export default function Home() {
       <main className="main">
         <Layout>
           <Header
+            preHeading={header.preHeading}
             heading={header.heading}
             subHeading={header.subHeading}
             text={header.text}
+            ctaText={header.ctaText}
           />
           <Section heading="About Me">
             <About content={about.content} image={about.image} />
@@ -49,7 +59,13 @@ export default function Home() {
           <Section heading="Photography">
             <Gallery images={gallery} />
           </Section>
-          <Section heading="Contact" />
+          <Section heading="Contact">
+            <Contact
+              text={contact.text}
+              ctaText={contact.ctaText}
+              email={contact.email}
+            />
+          </Section>
         </Layout>
         <Sidebar
           navHeadings={sidebar.navHeadings}

@@ -7,7 +7,9 @@ const Gallery = ({ images }) => (
         <Image
           alt=''
           src={image}
-          layout='fill'
+          layout='responsive'
+          width='300px'
+          height='300px'
           objectFit='cover'
           quality={100}
           priority={false}

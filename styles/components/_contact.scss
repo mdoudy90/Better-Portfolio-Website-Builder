@@ -1,0 +1,25 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  &__text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__cta-button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: inherit !important;
+    cursor: pointer;
+    padding: 12px 16px;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid rgb(3, 0, 190);
+    color: rgb(3, 0, 190);
+    font-weight: 500;
+    border-radius: 5px;
+  }
+}
