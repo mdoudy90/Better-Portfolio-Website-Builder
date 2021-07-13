@@ -10,7 +10,7 @@ const SOCIAL_MAP = {
   'twitter': <TwitterIcon />
 }
 
-const Sidebar = ({ navHeadings, social }) => {
+const Sidebar = ({ navHeadings, social, scrollTo }) => {
   return (
     <div className="sidebar">
       <div className="sidebar__cta">
@@ -18,7 +18,7 @@ const Sidebar = ({ navHeadings, social }) => {
       </div>
       <div className="sidebar__nav">
         { navHeadings.map((heading) => (
-          <h2>{ heading }</h2>
+          <h2 key={heading} scroll-dest={heading} onClick={scrollTo}>{ heading }</h2>
         ))}
       </div>
       <div className="sidebar__social">

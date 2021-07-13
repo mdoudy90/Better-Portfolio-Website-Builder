@@ -1,3 +1,4 @@
+import React, { useRef } from 'react'
 import Head from 'next/head';
 import { useSelector } from 'react-redux';
 
@@ -22,6 +23,15 @@ import {
 
 export default function Home() {
   const isDarkMode = useSelector((state) => state.settings.isDarkMode);
+  const sectionRefs= useRef({});
+
+  const scrollTo = (e) => {
+    if (!e.target.getAttribute('scroll-dest')) return;
+    const ref = sectionRefs.current[`${e.target.getAttribute('scroll-dest').toLowerCase()}Ref`];
+    if (ref) {
+      ref.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
 
   return (
     <div className={isDarkMode ? 'theme--dark' : 'theme--light'}>
@@ -39,11 +49,18 @@ export default function Home() {
             subHeading={header.subHeading}
             text={header.text}
             ctaText={header.ctaText}
+            scrollTo={scrollTo}
           />
-          <Section heading="About Me">
+          <Section
+            heading="About Me"
+            ref={(el) => { sectionRefs.current[`${'About Me'.toLowerCase()}Ref`] = el }}
+          >
             <About content={about.content} image={about.image} />
           </Section>
-          <Section heading="Work">
+          <Section
+            heading="Work"
+            ref={(el) => { sectionRefs.current[`${'Work'.toLowerCase()}Ref`] = el }}
+          >
             { projectCards.map((data, i) => (
               <ProjectCard
                 key={data.title || i}
@@ -56,10 +73,16 @@ export default function Home() {
               />
             ))}
           </Section>
-          <Section heading="Photography">
+          <Section
+            heading="Photography"
+            ref={(el) => { sectionRefs.current[`${'Photography'.toLowerCase()}Ref`] = el }}
+          >
             <Gallery images={gallery} />
           </Section>
-          <Section heading="Contact">
+          <Section
+            heading="Contact"
+            ref={(el) => { sectionRefs.current[`${'Contact'.toLowerCase()}Ref`] = el }}
+          >
             <Contact
               text={contact.text}
               ctaText={contact.ctaText}
@@ -70,6 +93,7 @@ export default function Home() {
         <Sidebar
           navHeadings={sidebar.navHeadings}
           social={sidebar.social}
+          scrollTo={scrollTo}
         />
       </main>
     </div>
