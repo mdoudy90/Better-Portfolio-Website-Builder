@@ -1,37 +1,40 @@
 // ----------------------------------------------------------------------
 	// Font Families
 // ----------------------------------------------------------------------
-$neueHaasGrotesk: NHaasGroteskDSPro-65Md;
-$helveticaNeue: HelveticaNeue, Helvetica;
-$ffClan: ff-clan-web-pro, HelveticaNeue, Helvetica, sans-serif;
+$font-1: Montserrat;
+$font-2: sans-serif;
 
 // ----------------------------------------------------------------------
 	// Font Sizes
 // ----------------------------------------------------------------------
-$size-1: 10px;
-$size-2: 12px;
-$size-3: 14px;
-$size-4: 16px;
-$size-5: 18px;
-$size-6: 20px;
-$size-7: 24px;
-$size-8: 28px;
-$size-9: 32px;
-$size-10: 42px;
-$size-11: 54px;
-$size-12: 65px;
+$font-size-1: 10px;
+$font-size-2: 12px;
+$font-size-3: 14px;
+$font-size-4: 16px;
+$font-size-5: 18px;
+$font-size-6: 20px;
+$font-size-7: 32px;
+$font-size-8: 65px;
 
 // ----------------------------------------------------------------------
-	// Margin Sizes
+	// THEME - 1
 // ----------------------------------------------------------------------
-$margin-1: 5px;
-$margin-2: 10px;
-$margin-3: 20px;
-$margin-4: 40px;
+$theme-1-color-1: #ccd6f6;
+$theme-1-color-2: #8892b0;
+$theme-1-color-3: #64ffda;
+$theme-1-color-4: #0b1a2f;
+$theme-1-color-5: #122341;
 
 // ----------------------------------------------------------------------
-	// Colors
+	// THEME - 2
 // ----------------------------------------------------------------------
+// $theme-2-color-1: #ccd6f6;
+// $theme-2-color-2: #8892b0;
+// $theme-2-color-3: #64ffda;
+// $theme-2-color-4: #0b1a2f;
+// $theme-2-color-5: #122341;
+
+
 $product-0: #ffffff;
 $product-1: #000000;
 $product-2: #276ef1;
@@ -41,15 +44,6 @@ $gray-3: #e0e0e0;
 $gray-4: #cccccc;
 $gray-5: #767676;
 $colors-blue-b-9: #c1d8ff;
-$colors-transparent-90: rgba(0, 0, 0, 0.9);
-$colors-transparent-80: rgba(0, 0, 0, 0.8);
-$colors-transparent-70: rgba(0, 0, 0, 0.7);
-$colors-transparent-60: rgba(0, 0, 0, 0.6);
-$colors-transparent-50: rgba(0, 0, 0, 0.5);
-$colors-transparent-40: rgba(0, 0, 0, 0.4);
-$colors-transparent-30: rgba(0, 0, 0, 0.3);
-$colors-transparent-20: rgba(0, 0, 0, 0.2);
-$colors-transparent-10: rgba(0, 0, 0, 0.1);
 
 // ----------------------------------------------------------------------
 	// DARK PALETTE
