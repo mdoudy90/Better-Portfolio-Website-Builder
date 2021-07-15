@@ -11,11 +11,11 @@
   }
 
   &__heading {
-    font-size: 50px;
+    font-size: $font-size-8;
   }
 
   &__subheading {
-    font-size: 30px;
+    font-size: $font-size-7;
   }
 
   &__text {
@@ -24,8 +24,8 @@
 
   &__cta {
     button {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
+      font-family: $font-2;
+      font-size: $font-size-5;
       text-decoration: inherit !important;
       cursor: pointer;
       padding: 10px 14px;

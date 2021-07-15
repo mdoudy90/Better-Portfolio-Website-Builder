@@ -6,13 +6,13 @@
   gap: 50px;
 
   &__text {
-    font-size: 18px;
+    font-size: $font-size-5;
     text-align: center;
   }
 
   &__cta-button {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-family: $font-2;
+    font-size: $font-size-5;
     text-decoration: inherit !important;
     cursor: pointer;
     padding: 12px 16px;

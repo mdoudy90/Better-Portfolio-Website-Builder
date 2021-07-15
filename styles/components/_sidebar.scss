@@ -45,7 +45,7 @@
 
     h2 {
       cursor: pointer;
-      font-size: 15px;
+      font-size: $font-size-3;
       font-weight: 300;
       margin: 0;
     }
@@ -57,7 +57,7 @@
 
     svg {
       cursor: pointer;
-      width: 18px;
+      width: $font-size-5;
     }
   }
 }
