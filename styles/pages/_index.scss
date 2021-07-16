@@ -9,6 +9,12 @@
   grid-template: 1fr / 150px 1fr 150px;
   justify-content: space-between;
 
+  // // Cool transition effect for themes
+  // transition: 2s ease-in-out !important;
+  // * {
+  //   transition: 2s ease-in-out !important;
+  // }
+
   @include themed() {
     color: t($color-1);
     background-color: t($color-4);

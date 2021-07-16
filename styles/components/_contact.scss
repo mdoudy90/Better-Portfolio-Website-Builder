@@ -8,6 +8,9 @@
   &__text {
     font-size: $font-size-5;
     text-align: center;
+    @include themed() {
+      color: t($color-2);
+    }
   }
 
   &__cta-button {

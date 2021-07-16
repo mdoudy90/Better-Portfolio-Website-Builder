@@ -7,19 +7,29 @@
   font-family: $font-1;
 
   &__preheading {
-
+    @include themed() {
+      color: t($color-3);
+    }
   }
 
   &__heading {
     font-size: $font-size-8;
+    @include themed() {
+      color: t($color-1);
+    }
   }
 
   &__subheading {
     font-size: $font-size-7;
+    @include themed() {
+      color: t($color-2);
+    }
   }
 
   &__text {
-
+    @include themed() {
+      color: t($color-2);
+    }
   }
 
   &__cta {

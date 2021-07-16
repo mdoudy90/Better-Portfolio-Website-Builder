@@ -31,14 +31,18 @@ $borderRadius: 3px;
   &__title {
     font-size: $font-size-7;
     padding-bottom: 5px;
-
+    @include themed() {
+      color: t($color-1);
+    }
   }
 
   &__description {
-    background-color: rgba(0, 0, 0, 0.774);
-    color: rgb(197, 197, 197);
     padding: 10px;
     border-radius: $borderRadius;
+    @include themed() {
+      background-color: t($color-5);
+      color: t($color-2);
+    }
   }
 
   &__tools {
@@ -46,7 +50,9 @@ $borderRadius: 3px;
     gap: 10px;
 
     p {
-
+      @include themed() {
+        color: t($color-2);
+      }
     }
   }
 
@@ -54,10 +60,16 @@ $borderRadius: 3px;
     display: flex;
     gap: 15px;
     svg {
-      color: black;
+      transition: $transition-2;
       height: 18px;
       width: 18px;
       cursor: pointer;
+      @include themed() {
+        color: t($color-1);
+        &:hover {
+          color: t($color-3);
+        }
+      }
     }
   }
 

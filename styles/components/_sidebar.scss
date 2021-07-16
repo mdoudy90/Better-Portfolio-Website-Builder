@@ -19,9 +19,6 @@
   &__nav,
   &__social {
     margin: 30px 10px 30px 5px;
-    @include themed() {
-      color: t($color-2);
-    }
   }
 
   &__cta {
@@ -48,10 +45,17 @@
     text-align: end;
 
     h2 {
+      transition: $transition-2;
       cursor: pointer;
       font-size: $font-size-3;
       font-weight: 300;
       margin: 0;
+      @include themed() {
+        color: t($color-1);
+        &:hover {
+          color: t($color-3);
+        }
+      }
     }
   }
 
@@ -60,8 +64,15 @@
     justify-self: end;
 
     svg {
+      transition: $transition-1;
       cursor: pointer;
       width: $font-size-5;
+      @include themed() {
+        color: t($color-1);
+        &:hover {
+          color: t($color-3);
+        }
+      }
     }
   }
 }

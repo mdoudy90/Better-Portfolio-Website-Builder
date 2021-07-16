@@ -10,6 +10,9 @@ $borderRadius: 3px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    @include themed() {
+      color: t($color-2);
+    }
   }
 
   &__image {
