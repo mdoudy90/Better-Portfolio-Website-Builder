@@ -9,10 +9,13 @@
     padding: 5px 0;
 
     &--line {
-      background-color: black;
       width: 100%;
       height: 1px;
       margin-bottom: -3px;
+      opacity: 0.25;
+      @include themed() {
+        background-color: t($color-2);
+      }
     }
   }
 

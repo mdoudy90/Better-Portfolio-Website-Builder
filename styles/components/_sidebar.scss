@@ -19,7 +19,9 @@
   &__nav,
   &__social {
     margin: 30px 10px 30px 5px;
-    color: gray;
+    @include themed() {
+      color: t($color-2);
+    }
   }
 
   &__cta {
@@ -32,10 +34,12 @@
       cursor: pointer;
       padding: 10px 12px;
       background-color: rgba(0,0,0,0);
-      border: 2px solid rgb(3, 0, 190);
-      color: rgb(3, 0, 190);
       font-weight: 900;
       border-radius: 5px;
+      @include themed() {
+        color: t($color-3);
+        border: 2px solid t($color-3);
+      }
     }
   }
 

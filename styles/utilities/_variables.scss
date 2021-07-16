@@ -5,6 +5,12 @@ $font-1: Montserrat;
 $font-2: sans-serif;
 
 // ----------------------------------------------------------------------
+	// Transitions
+// ----------------------------------------------------------------------
+$transition-1: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+$transition-2: all 0.7s ease-in-out;
+
+// ----------------------------------------------------------------------
 	// Font Sizes
 // ----------------------------------------------------------------------
 $font-size-1: 10px;
@@ -17,7 +23,7 @@ $font-size-7: 32px;
 $font-size-8: 65px;
 
 // ----------------------------------------------------------------------
-	// THEME - 1
+	// Theme - 1
 // ----------------------------------------------------------------------
 $theme-1-color-1: #ccd6f6;
 $theme-1-color-2: #8892b0;
@@ -26,83 +32,37 @@ $theme-1-color-4: #0b1a2f;
 $theme-1-color-5: #122341;
 
 // ----------------------------------------------------------------------
-	// THEME - 2
+	// Theme - 2
 // ----------------------------------------------------------------------
-// $theme-2-color-1: #ccd6f6;
-// $theme-2-color-2: #8892b0;
-// $theme-2-color-3: #64ffda;
-// $theme-2-color-4: #0b1a2f;
-// $theme-2-color-5: #122341;
-
-
-$product-0: #ffffff;
-$product-1: #000000;
-$product-2: #276ef1;
-$gray-1: #f7f7f7;
-$gray-2: #eeeeee;
-$gray-3: #e0e0e0;
-$gray-4: #cccccc;
-$gray-5: #767676;
-$colors-blue-b-9: #c1d8ff;
+$theme-2-color-1: #ccd6f6;
+$theme-2-color-2: #8892b0;
+$theme-2-color-3: #64ffda;
+$theme-2-color-4: #0b1a2f;
+$theme-2-color-5: #122341;
 
 // ----------------------------------------------------------------------
-	// DARK PALETTE
+	// Theme - 3
 // ----------------------------------------------------------------------
-$BACKGROUND_COLOR: #06090f;
-$CARD_COLOR: #0d1117;
-$HOVER_COLOR: #30363d;
-$BORDER_COLOR: #30363d;
-$PRIMARY_TEXT: #c9d1d9;
-$SECONDARY_TEXT: #8b949e;
-$TERTIARY_TEXT: #58a6ff;
-
-$BUTTON_COLOR_1: #21262d;
-$BUTTON_COLOR_2: #1f6feb;
-$ICON_COLOR: #FFF;
-$NEGATIVE_COLOR: rgba(219, 97, 162,1);
-$NEGATIVE_BG_COLOR: rgba(219, 97, 162,.1);
-$POSITIVE_COLOR: rgba(86, 211, 100,1);
-$POSITIVE_BG_COLOR: rgba(86, 211, 100,.1);
+$theme-3-color-1: #ccd6f6;
+$theme-3-color-2: #8892b0;
+$theme-3-color-3: #64ffda;
+$theme-3-color-4: #0b1a2f;
+$theme-3-color-5: #122341;
 
 // ----------------------------------------------------------------------
-	// Theme - Light
+	// Theme - 4
 // ----------------------------------------------------------------------
-$bg-light: $product-0;
-$bg-1-light: $gray-1;
-$button-1-light: $gray-2;
-$button-2-light: $product-2;
-$button-disabled-light: $gray-3;
-$card-bg-1-light: $gray-1;
-$text-light: $product-1;
-$text-2-light: $gray-4;
-$text-3-light: $product-2;
-$text-disabled-light: rgba(0, 0, 0, 0.50);
-$hover-color-light: #EEE;
-$border-light: $gray-3;
-$negative-color-light: #FF00008a;
-$negative-bg-light: #ffcccc;
-$positive-color-light: #0f6245;
-$positive-bg-light: #cbf4c8;
-$tertiary-color-light: #2300ad;
+$theme-4-color-1: #ccd6f6;
+$theme-4-color-2: #8892b0;
+$theme-4-color-3: #64ffda;
+$theme-4-color-4: #0b1a2f;
+$theme-4-color-5: #122341;
 
 // ----------------------------------------------------------------------
-	// Theme - Dark
+	// Theme - 5
 // ----------------------------------------------------------------------
-$bg-dark: $BACKGROUND_COLOR;
-$bg-1-dark: $BACKGROUND_COLOR;
-$button-1-dark: $BUTTON_COLOR_1;
-$button-2-dark: $BUTTON_COLOR_2;
-$button-disabled-dark: none;
-$card-bg-dark: $CARD_COLOR;
-$card-bg-1-dark: $CARD_COLOR;
-$text-dark: $PRIMARY_TEXT;
-$text-2-dark: $SECONDARY_TEXT;
-$text-3-dark: $TERTIARY_TEXT;
-$text-disabled-dark: rgba(255, 255, 255, 0.50);
-$hover-color-dark: $HOVER_COLOR;
-$border-dark: $BORDER_COLOR;
-$negative-color-dark: $NEGATIVE_COLOR;
-$negative-bg-dark: $NEGATIVE_BG_COLOR;
-$positive-color-dark: $POSITIVE_COLOR;
-$positive-bg-dark: $POSITIVE_BG_COLOR;
-$tertiary-color-dark: #00FFFF;
+$theme-5-color-1: #ccd6f6;
+$theme-5-color-2: #8892b0;
+$theme-5-color-3: #64ffda;
+$theme-5-color-4: #0b1a2f;
+$theme-5-color-5: #122341;

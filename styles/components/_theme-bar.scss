@@ -1,0 +1,29 @@
+.theme-bar {
+  position: fixed;
+  left: 0;
+  overflow: scroll;
+  height: 100vh;
+  width: 50px;
+  display: grid;
+  grid-template: auto 1fr / 1fr;
+
+  &__button {
+    padding: 15px;
+    svg {
+      transition: $transition-2;
+      cursor: pointer;
+      width: $font-size-5;
+      opacity: 0.25;
+
+      @include themed() {
+        color: t($color-2);
+        &:hover {
+          opacity: 1;
+          color: t($color-3);
+          transform: rotate(360deg);
+        }
+      }
+
+    }
+  }
+}

@@ -18,15 +18,17 @@ $borderRadius: 3px;
     width: 300px;
 
     > div {
-      transition: all 0.5s ease-out;
+      transition: $transition-1;
       border-radius: $borderRadius;
       position: relative !important;
       height: 100% !important;
-      z-index: -1;
-      background-color: rgba(0, 68, 255, 0.35);
+      z-index: 1;
+      @include themed() {
+        background-color: transparentize(t($color-3), 0.6);
+      }
 
       img {
-        mix-blend-mode: soft-light;
+        mix-blend-mode: luminosity;
         height: inherit !important;
         position: relative !important;
       }
@@ -34,7 +36,7 @@ $borderRadius: 3px;
 
     &:hover {
       > div {
-        background-color: rgba(0, 68, 255, 0);
+        background-color: initial;
       }
     }
   }

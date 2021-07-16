@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  isDarkMode: true,
+  theme: 1,
   isSideBarOpen: false
 };
 
@@ -9,8 +9,8 @@ export const settingsSlice = createSlice({
   name: 'settings',
   initialState,
   reducers: {
-    setIsDarkMode: (state, action) => {
-      state.isDarkMode = action.payload
+    toggleTheme: (state, action) => {
+      state.theme = (state.theme % 5) + 1 // range 1 - 5
     },
     setIsSideBarOpen: (state, action) => {
       state.isSideBarOpen = action.payload
@@ -19,7 +19,7 @@ export const settingsSlice = createSlice({
 });
 
 export const {
-  setIsDarkMode,
+  toggleTheme,
   setIsSideBarOpen
  } = settingsSlice.actions;
 
