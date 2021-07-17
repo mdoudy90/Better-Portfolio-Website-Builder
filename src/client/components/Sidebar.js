@@ -12,7 +12,6 @@ const SOCIAL_MAP = {
 
 const Sidebar = ({ navHeadings, social, scrollTo, sectionInView }) => (
   <div className="sidebar">
-    { console.log(sectionInView) }
     <div className="sidebar__cta">
       <button>Resume</button>
     </div>
