@@ -53,7 +53,7 @@ export const ProjectCard = ({
   );
 }
 
-export const ProjectCards = () => (
+export const ProjectCards = ({ showInverse = true }) => (
   <>
     { projectCards.map((data, i) => (
       <ProjectCard
@@ -63,7 +63,7 @@ export const ProjectCards = () => (
         tools={data.tools}
         links={data.links}
         image={data.image}
-        showInverse={!!(i % 2)}
+        showInverse={showInverse && !!(i % 2)}
       />
     ))}
   </>
