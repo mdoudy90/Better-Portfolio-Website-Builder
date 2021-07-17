@@ -57,6 +57,12 @@
         }
       }
     }
+
+    &--highlight {
+      @include themed() {
+        color: t($color-3) !important;
+      }
+    }
   }
 
   &__social {

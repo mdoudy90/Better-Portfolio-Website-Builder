@@ -10,24 +10,30 @@ const SOCIAL_MAP = {
   'twitter': <TwitterIcon />
 }
 
-const Sidebar = ({ navHeadings, social, scrollTo }) => {
-  return (
-    <div className="sidebar">
-      <div className="sidebar__cta">
-        <button>Resume</button>
-      </div>
-      <div className="sidebar__nav">
-        { navHeadings.map((heading) => (
-          <h2 key={heading} scroll-dest={heading} onClick={scrollTo}>{ heading }</h2>
-        ))}
-      </div>
-      <div className="sidebar__social">
-        { social.map((platform) => (
-          SOCIAL_MAP[platform]
-        ))}
-      </div>
+const Sidebar = ({ navHeadings, social, scrollTo, sectionInView }) => (
+  <div className="sidebar">
+    { console.log(sectionInView) }
+    <div className="sidebar__cta">
+      <button>Resume</button>
     </div>
-  )
-}
+    <div className="sidebar__nav">
+      { navHeadings.map((heading) => (
+        <h2
+          key={heading}
+          className={sectionInView === heading.toLowerCase() ? 'sidebar__nav--highlight' : ''}
+          scroll-dest={heading}
+          onClick={scrollTo}
+        >
+          { heading }
+        </h2>
+      ))}
+    </div>
+    <div className="sidebar__social">
+      { social.map((platform) => (
+        SOCIAL_MAP[platform]
+      ))}
+    </div>
+  </div>
+);
 
 export default Sidebar;

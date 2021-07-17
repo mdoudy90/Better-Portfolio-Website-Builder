@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Head from 'next/head';
 import { useSelector } from 'react-redux';
 
@@ -25,10 +25,31 @@ import {
 export default function Home() {
   const theme = useSelector((state) => state.settings.theme);
   const sectionRefs= useRef({});
+  const [sectionInView, setSectionInView] = useState(null);
+
+  useEffect (() => {
+    const refPositions = Object.entries(sectionRefs.current).map(([ref, el]) => [ref, el.offsetTop]);
+    const main = document.getElementById('main');
+
+    const handleScroll = () => {
+      const idx = refPositions.findIndex(([_, el], i) => (
+        main.scrollTop >= el && (
+          refPositions[i + 1] && refPositions[i + 1][1]
+            ? main.scrollTop < refPositions[i + 1][1]
+            : true
+        )
+      ));
+      setSectionInView(refPositions[idx] ? refPositions[idx][0] : null);
+    }
+
+    main.addEventListener("scroll", handleScroll);
+
+    return () => main.addEventListener("scroll", handleScroll);
+},[])
 
   const scrollTo = (e) => {
     if (!e.target.getAttribute('scroll-dest')) return;
-    const ref = sectionRefs.current[`${e.target.getAttribute('scroll-dest').toLowerCase()}Ref`];
+    const ref = sectionRefs.current[`${e.target.getAttribute('scroll-dest').toLowerCase()}`];
     if (ref) {
       ref.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
@@ -42,7 +63,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
-      <main className="main">
+      <main className="main" id="main">
         <Layout>
           <Header
             preHeading={header.preHeading}
@@ -54,13 +75,13 @@ export default function Home() {
           />
           <Section
             heading="About Me"
-            ref={(el) => { sectionRefs.current[`${'About Me'.toLowerCase()}Ref`] = el }}
+            ref={(el) => { sectionRefs.current['About Me'.toLowerCase()] = el }}
           >
             <About content={about.content} image={about.image} />
           </Section>
           <Section
             heading="Work"
-            ref={(el) => { sectionRefs.current[`${'Work'.toLowerCase()}Ref`] = el }}
+            ref={(el) => { sectionRefs.current['Work'.toLowerCase()] = el }}
           >
             { projectCards.map((data, i) => (
               <ProjectCard
@@ -76,13 +97,13 @@ export default function Home() {
           </Section>
           <Section
             heading="Photography"
-            ref={(el) => { sectionRefs.current[`${'Photography'.toLowerCase()}Ref`] = el }}
+            ref={(el) => { sectionRefs.current['Photography'.toLowerCase()] = el }}
           >
             <Gallery images={gallery} />
           </Section>
           <Section
             heading="Contact"
-            ref={(el) => { sectionRefs.current[`${'Contact'.toLowerCase()}Ref`] = el }}
+            ref={(el) => { sectionRefs.current['Contact'.toLowerCase()] = el }}
           >
             <Contact
               text={contact.text}
@@ -96,6 +117,7 @@ export default function Home() {
           navHeadings={sidebar.navHeadings}
           social={sidebar.social}
           scrollTo={scrollTo}
+          sectionInView={sectionInView}
         />
       </main>
     </div>
