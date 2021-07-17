@@ -1,7 +1,27 @@
 {
-  "sidebar": {
-    "navHeadings": ["About Me", "Work", "Photography", "Contact"],
-    "social": ["linkedin", "github", "instagram", "twitter"]
+  "sections": [
+    {
+      "type": "about",
+      "heading": "About Me"
+    },
+    {
+      "type": "projectCards",
+      "heading": "Work"
+    },
+    {
+      "type": "gallery",
+      "heading": "Photography"
+    },
+    {
+      "type": "contact",
+      "heading": "Contact"
+    }
+  ],
+  "social": {
+    "linkedin": "http://linkedin.com/in/mdoudy",
+    "github": "https://github.com/mdoudy90",
+    "instagram": "https://www.instagram.com/doudy2.0",
+    "twitter": "https://twitter.com/michaeldoudy"
   },
   "about": {
     "content": [

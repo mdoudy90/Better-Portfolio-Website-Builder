@@ -1,4 +1,8 @@
-const Header = ({ preHeading='', heading = '', subHeading = '', text = '', ctaText='', scrollTo }) => {
+import { header } from '../../../src/client/data/data.json';
+
+const { preHeading='', heading = '', subHeading = '', text = '', ctaText='' } = header;
+
+const Header = ({ scrollTo }) => {
   return (
     <div className="header">
       <p className="header__preheading">{ preHeading }</p>

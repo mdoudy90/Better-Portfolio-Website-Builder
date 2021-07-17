@@ -8,17 +8,17 @@ import Themebar from '../src/client/components/Themebar';
 import About from '../src/client/components/About';
 import Header from '../src/client/components/Header';
 import Section from '../src/client/components/Section';
-import ProjectCard from '../src/client/components/ProjectCard';
+import { ProjectCards } from '../src/client/components/ProjectCards';
 import Gallery from '../src/client/components/Gallery';
 import Contact from '../src/client/components/Contact';
-import {
-  sidebar,
-  about,
-  header,
-  projectCards,
-  gallery,
-  contact
-} from '../src/client/data/data.json';
+import { sections } from '../src/client/data/data.json';
+
+const COMPONENT_MAP = {
+  about: <About />,
+  projectCards: <ProjectCards />,
+  gallery: <Gallery />,
+  contact: <Contact />
+}
 
 //! update <Head> and all needed info later
 
@@ -65,60 +65,20 @@ export default function Home() {
 
       <main className="main" id="main">
         <Layout>
-          <Header
-            preHeading={header.preHeading}
-            heading={header.heading}
-            subHeading={header.subHeading}
-            text={header.text}
-            ctaText={header.ctaText}
-            scrollTo={scrollTo}
-          />
-          <Section
-            heading="About Me"
-            ref={(el) => { sectionRefs.current['About Me'.toLowerCase()] = el }}
-          >
-            <About content={about.content} image={about.image} />
-          </Section>
-          <Section
-            heading="Work"
-            ref={(el) => { sectionRefs.current['Work'.toLowerCase()] = el }}
-          >
-            { projectCards.map((data, i) => (
-              <ProjectCard
-                key={data.title || i}
-                title={data.title}
-                description={data.description}
-                tools={data.tools}
-                links={data.links}
-                image={data.image}
-                showInverse={!!(i % 2)}
-              />
-            ))}
-          </Section>
-          <Section
-            heading="Photography"
-            ref={(el) => { sectionRefs.current['Photography'.toLowerCase()] = el }}
-          >
-            <Gallery images={gallery} />
-          </Section>
-          <Section
-            heading="Contact"
-            ref={(el) => { sectionRefs.current['Contact'.toLowerCase()] = el }}
-          >
-            <Contact
-              text={contact.text}
-              ctaText={contact.ctaText}
-              email={contact.email}
-            />
-          </Section>
+          <Header scrollTo={scrollTo} />
+          { sections.map(({ type, heading }) => (
+              <Section
+                key={type}
+                heading={heading}
+                ref={(el) => { sectionRefs.current[heading.toLowerCase()] = el }}
+              >
+                {COMPONENT_MAP[type]}
+              </Section>
+            ))
+          }
         </Layout>
         <Themebar />
-        <Sidebar
-          navHeadings={sidebar.navHeadings}
-          social={sidebar.social}
-          scrollTo={scrollTo}
-          sectionInView={sectionInView}
-        />
+        <Sidebar scrollTo={scrollTo} sectionInView={sectionInView} />
       </main>
     </div>
   )

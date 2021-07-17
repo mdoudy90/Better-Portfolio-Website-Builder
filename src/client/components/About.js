@@ -1,6 +1,10 @@
 import Image from 'next/image'
 
-const About = ({ content, image }) => {
+import { about } from '../../../src/client/data/data.json';
+
+const { content, image } = about;
+
+const About = () => {
   return (
     <div className="about">
       <div className="about__content">

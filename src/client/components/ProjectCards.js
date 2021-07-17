@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import { projectCards } from '../../../src/client/data/data.json';
 import WebIcon from '../../../assets/icons/web.svg';
 import GithubIcon from '../../../assets/icons/github.svg';
 
@@ -8,7 +9,7 @@ const ICON_MAP = {
   'github': <GithubIcon />
 }
 
-const ProjectCard = ({
+export const ProjectCard = ({
   title,
   description,
   tools,
@@ -52,4 +53,18 @@ const ProjectCard = ({
   );
 }
 
-export default ProjectCard;
+export const ProjectCards = () => (
+  <>
+    { projectCards.map((data, i) => (
+      <ProjectCard
+        key={data.title || i}
+        title={data.title}
+        description={data.description}
+        tools={data.tools}
+        links={data.links}
+        image={data.image}
+        showInverse={!!(i % 2)}
+      />
+    ))}
+  </>
+)

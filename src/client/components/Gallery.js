@@ -1,8 +1,10 @@
 import Image from 'next/image'
 
-const Gallery = ({ images }) => (
+import { gallery } from '../../../src/client/data/data.json';
+
+const Gallery = () => (
   <div className='gallery'>
-    {images.map((image) => (
+    {gallery.map((image) => (
       <div className='gallery__image'>
         <Image
           alt=''

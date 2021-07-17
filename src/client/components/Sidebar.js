@@ -1,3 +1,4 @@
+import { sections, social } from '../../../src/client/data/data.json';
 import LinkedinIcon from '../../../assets/icons/linkedin.svg';
 import GithubIcon from '../../../assets/icons/github.svg';
 import InstagramIcon from '../../../assets/icons/instagram.svg';
@@ -10,13 +11,13 @@ const SOCIAL_MAP = {
   'twitter': <TwitterIcon />
 }
 
-const Sidebar = ({ navHeadings, social, scrollTo, sectionInView }) => (
+const Sidebar = ({ scrollTo, sectionInView }) => (
   <div className="sidebar">
     <div className="sidebar__cta">
       <button>Resume</button>
     </div>
     <div className="sidebar__nav">
-      { navHeadings.map((heading) => (
+      { sections.map(({ heading }) => (
         <h2
           key={heading}
           className={sectionInView === heading.toLowerCase() ? 'sidebar__nav--highlight' : ''}
@@ -28,9 +29,15 @@ const Sidebar = ({ navHeadings, social, scrollTo, sectionInView }) => (
       ))}
     </div>
     <div className="sidebar__social">
-      { social.map((platform) => (
-        SOCIAL_MAP[platform]
-      ))}
+      {Object.entries(social).map(([type, link]) => {
+        if (!link.length) return null;
+        if (!/^https?:\/\//.test(link)) link = `https://${link}`;
+        return (
+          <a key={type} href={link} rel='noreferrer' target='_blank'>
+            {SOCIAL_MAP[type]}
+          </a>
+        );
+      })}
     </div>
   </div>
 );
