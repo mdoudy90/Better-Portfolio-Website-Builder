@@ -38,4 +38,30 @@ $borderRadius: 3px;
       }
     }
   }
+
+  &__popover {
+    > div {
+      display: grid !important;
+      align-items: center;
+      justify-items: center;
+      width: 100vw;
+      height: 100vh;
+      grid-template: 1fr / 1fr;
+
+      div {
+        padding-top: 0 !important;
+      }
+    }
+
+    img {
+      grid-area: 1 / 1;
+      width: inherit !important;
+      height: inherit !important;
+      min-width: inherit !important;
+      min-height: inherit !important;
+      max-width: 90% !important;
+      max-height: 90vh !important;
+      height: auto !important;
+    }
+  }
 }
