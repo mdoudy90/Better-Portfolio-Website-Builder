@@ -32,7 +32,7 @@ const Gallery = () => {
 
   return (
     <div className='gallery'>
-      {gallery.map((image) => (
+      {gallery.map(({ image, placeholder }) => (
         <div className='gallery__image'>
           <Image
             alt=''
@@ -44,6 +44,8 @@ const Gallery = () => {
             objectFit='cover'
             quality={100}
             priority={false}
+            placeholder={placeholder ? 'blur' : 'empty'}
+            blurDataURL={placeholder || null}
           />
         </div>
       ))}

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { about } from '../../../src/client/lib/data.json';
 
-const { content, image } = about;
+const { content, image, placeholder } = about;
 
 const About = () => {
   return (
@@ -20,6 +20,8 @@ const About = () => {
           objectFit='cover'
           quality={100}
           priority={true}
+          placeholder={placeholder ? 'blur' : 'empty'}
+          blurDataURL={placeholder || null}
         />
       </div>
     </div>

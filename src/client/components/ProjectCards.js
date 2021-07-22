@@ -15,6 +15,7 @@ export const ProjectCard = ({
   tools,
   links,
   image,
+  placeholder,
   showInverse
 }) => {
   return (
@@ -47,6 +48,8 @@ export const ProjectCard = ({
           objectFit='cover'
           quality={100}
           priority={true}
+          placeholder={placeholder ? 'blur' : 'empty'}
+          blurDataURL={placeholder || null}
         />
       </div>
     </div>
@@ -63,6 +66,7 @@ export const ProjectCards = ({ showInverse = true }) => (
         tools={data.tools}
         links={data.links}
         image={data.image}
+        placeholder={data.placeholder}
         showInverse={showInverse && !!(i % 2)}
       />
     ))}

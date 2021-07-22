@@ -20,8 +20,6 @@ const COMPONENT_MAP = {
   contact: <Contact />
 }
 
-//! update <Head> and all needed info later
-
 export default function Home() {
   const theme = useSelector((state) => state.settings.theme);
   const sectionRefs= useRef({});

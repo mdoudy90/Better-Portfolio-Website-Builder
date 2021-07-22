@@ -41,7 +41,8 @@
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae. Cupiditate nisi doloremque corrupti esse, eligendi non deleniti dolores repellat quia, excepturi quod assumenda blanditiis facilis sapiente aut nostrum.",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae. Cupiditate nisi doloremque corrupti esse, eligendi non deleniti dolores repellat quia, excepturi quod assumenda blanditiis facilis sapiente aut nostrum."
     ],
-    "image": "/images/me.png"
+    "image": "/images/me.png",
+    "placeholder": "/images/me.png"
   },
   "header": {
     "preHeading": "Hello, my name is",
@@ -59,7 +60,8 @@
         "github": "www.github.com",
         "website": "https://www.google.com"
       },
-      "image": "/images/helbiz-analytics-main.png"
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
     },
     {
       "title": "Helbiz Move",
@@ -69,7 +71,8 @@
         "github": "www.github.com",
         "website": ""
       },
-      "image": "/images/helbiz-analytics-main.png"
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
     },
     {
       "title": "Helbiz Ads-Hub",
@@ -79,19 +82,43 @@
         "github": "www.github.com",
         "website": ""
       },
-      "image": "/images/helbiz-analytics-main.png"
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
     }
   ],
   "gallery": [
-    "/images/helbiz-analytics-main.png",
-    "/images/test-image.png",
-    "/images/helbiz-analytics-main.png",
-    "/images/helbiz-analytics-main.png",
-    "/images/helbiz-analytics-main.png",
-    "/images/helbiz-analytics-main.png",
-    "/images/helbiz-analytics-main.png",
-    "/images/helbiz-analytics-main.png",
-    "/images/helbiz-analytics-main.png"
+    {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    },
+    {
+      "image": "/images/test-image.png",
+      "placeholder": "/images/test-image.png"
+    },
+    {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    },
+    {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    },
+    {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    },
+    {
+      "image": "/images/test-image.png",
+      "placeholder": "/images/test-image.png"
+    },
+    {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    },
+    {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    }
   ],
   "contact": {
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro, numquam quae modi est illo rerum odio",
