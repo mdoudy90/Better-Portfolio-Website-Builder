@@ -1,4 +1,16 @@
 {
+  "meta": {
+    "title": "TEMP TITLE",
+    "description": "TEMP DESC",
+    "mobileIcon": "/logo192.png",
+    "favIcon": "/favicon.ico"
+  },
+  "seo": {
+    "title": "",
+    "description": "",
+    "canonical": "",
+    "twitterHandle": ""
+  },
   "sections": [
     {
       "type": "about",

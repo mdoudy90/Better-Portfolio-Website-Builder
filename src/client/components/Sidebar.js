@@ -1,4 +1,4 @@
-import { sections, social } from '../../../src/client/data/data.json';
+import { sections, social } from '../../../src/client/lib/data.json';
 import LinkedinIcon from '../../../assets/icons/linkedin.svg';
 import GithubIcon from '../../../assets/icons/github.svg';
 import InstagramIcon from '../../../assets/icons/instagram.svg';

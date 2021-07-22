@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import Portal from '../components/Portal';
 import useModalClose from '../hooks/useModalClose';
-import { gallery } from '../../../src/client/data/data.json';
+import { gallery } from '../../../src/client/lib/data.json';
 
 const GalleryPopover = ({ image }) => (
   <Portal>

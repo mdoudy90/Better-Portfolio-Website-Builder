@@ -1,4 +1,4 @@
-import { contact } from '../../../src/client/data/data.json';
+import { contact } from '../../../src/client/lib/data.json';
 
 const { text, ctaText, email } = contact;
 

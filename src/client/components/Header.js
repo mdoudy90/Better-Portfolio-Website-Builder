@@ -1,4 +1,4 @@
-import { header } from '../../../src/client/data/data.json';
+import { header } from '../../../src/client/lib/data.json';
 
 const { preHeading='', heading = '', subHeading = '', text = '', ctaText='' } = header;
 

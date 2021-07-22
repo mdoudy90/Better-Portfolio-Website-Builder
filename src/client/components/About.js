@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { about } from '../../../src/client/data/data.json';
+import { about } from '../../../src/client/lib/data.json';
 
 const { content, image } = about;
 

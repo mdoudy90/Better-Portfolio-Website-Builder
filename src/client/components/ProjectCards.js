@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { projectCards } from '../../../src/client/data/data.json';
+import { projectCards } from '../../../src/client/lib/data.json';
 import WebIcon from '../../../assets/icons/web.svg';
 import GithubIcon from '../../../assets/icons/github.svg';
 
