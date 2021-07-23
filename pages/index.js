@@ -62,6 +62,13 @@ export default function Home() {
         <meta name="theme-color" content="#000000" />
         <meta name="description" content={meta.description} />
         <link rel="apple-touch-icon" href={meta.mobileIcon} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.documentElement.lang = ${meta.language};
+            `,
+          }}
+        />
       </Head>
       <main className="main" id="main">
         <Layout>

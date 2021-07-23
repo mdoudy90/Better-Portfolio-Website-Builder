@@ -3,11 +3,8 @@
     "title": "TEMP TITLE",
     "description": "TEMP DESC",
     "mobileIcon": "/logo192.png",
-    "favIcon": "/favicon.ico"
-  },
-  "seo": {
-    "title": "",
-    "description": "",
+    "favIcon": "/favicon.ico",
+    "language": "en-us",
     "canonical": "",
     "twitterHandle": ""
   },

@@ -1,6 +1,6 @@
-import { seo } from './data.json';
+import { meta } from './data.json';
 
-const { title, description, canonical, twitterHandle } = seo;
+const { title, description, canonical, twitterHandle } = meta;
 
 export default {
   title,
