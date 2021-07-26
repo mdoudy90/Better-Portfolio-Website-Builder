@@ -10,7 +10,7 @@ export const settingsSlice = createSlice({
   initialState,
   reducers: {
     toggleTheme: (state, action) => {
-      state.theme = (state.theme % 5) + 1 // range 1 - 5
+      state.theme = (state.theme % 7) + 1 // range 1 - 7
     },
     setIsSideBarOpen: (state, action) => {
       state.isSideBarOpen = action.payload

@@ -1,6 +1,6 @@
-import { header } from '../../../src/client/lib/data.json';
+import data from '../../../src/client/lib/data.json';
 
-const { preHeading='', heading = '', subHeading = '', text = '', ctaText='' } = header;
+const { preHeading='', heading = '', subHeading = '', text = '', ctaText='' } = data.header;
 
 const Header = ({ scrollTo }) => {
   return (

@@ -3,7 +3,9 @@ import Image from 'next/image'
 
 import Portal from '../components/Portal';
 import useModalClose from '../hooks/useModalClose';
-import { gallery } from '../../../src/client/lib/data.json';
+import data from '../../../src/client/lib/data.json';
+
+const { gallery } = data;
 
 const GalleryPopover = ({ image }) => (
   <Portal>
@@ -32,8 +34,8 @@ const Gallery = () => {
 
   return (
     <div className='gallery'>
-      {gallery.map(({ image, placeholder }) => (
-        <div className='gallery__image'>
+      {gallery.map(({ image, placeholder }, i) => (
+        <div key={`gallery-image-${i}`} className='gallery__image'>
           <Image
             alt=''
             src={image}

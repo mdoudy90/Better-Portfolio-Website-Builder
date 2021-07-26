@@ -11,7 +11,9 @@ import Section from '../src/client/components/Section';
 import { ProjectCards } from '../src/client/components/ProjectCards';
 import Gallery from '../src/client/components/Gallery';
 import Contact from '../src/client/components/Contact';
-import { meta, sections } from '../src/client/lib/data.json';
+import data from '../src/client/lib/data.json';
+
+const { meta, sections } = data;
 
 const COMPONENT_MAP = {
   about: <About />,
@@ -65,7 +67,7 @@ export default function Home() {
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              document.documentElement.lang = ${meta.language};
+              document.documentElement.lang = '${meta.language}';
             `,
           }}
         />

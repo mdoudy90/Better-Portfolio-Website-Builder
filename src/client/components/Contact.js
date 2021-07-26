@@ -1,11 +1,16 @@
-import { contact } from '../../../src/client/lib/data.json';
+import data from '../../../src/client/lib/data.json';
 
-const { text, ctaText, email } = contact;
+const { text, ctaText, email } = data.contact;
 
 const Contact = () => (
   <div className='contact'>
     <p className='contact__text'>{ text }</p>
-    <a className='contact__cta-button' href={`mailto:${email}`}>{ ctaText }</a>
+    <a
+      className='contact__cta-button'
+      href={`mailto:${email}`}
+      target='_blank'
+      rel='noopener noreferrer'
+    >{ ctaText }</a>
   </div>
 );
 

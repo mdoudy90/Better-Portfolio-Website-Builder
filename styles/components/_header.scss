@@ -34,6 +34,7 @@
 
   &__cta {
     button {
+      transition: $transition-2;
       font-family: $font-2;
       font-size: $font-size-5;
       text-decoration: inherit !important;
@@ -45,6 +46,9 @@
       @include themed() {
         color: t($color-3);
         border: 2px solid t($color-3);
+        &:hover {
+          background-color: transparentize(t($color-3), 0.85);
+        }
       }
     }
   }

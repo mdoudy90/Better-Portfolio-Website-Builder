@@ -10,13 +10,19 @@
   justify-content: space-between;
 
   // // Cool transition effect for themes
-  // transition: 2s ease-in-out !important;
+  // transition: 1s ease-in-out !important;
   // * {
-  //   transition: 2s ease-in-out !important;
+  //   transition: 1s ease-in-out !important;
   // }
+
 
   @include themed() {
     color: t($color-1);
     background-color: t($color-4);
+
+    ::selection {
+      color: t($color-4);
+      background: t($color-3);
+    }
   }
 }

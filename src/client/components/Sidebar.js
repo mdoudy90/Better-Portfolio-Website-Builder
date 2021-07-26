@@ -1,8 +1,10 @@
-import { sections, social } from '../../../src/client/lib/data.json';
 import LinkedinIcon from '../../../assets/icons/linkedin.svg';
 import GithubIcon from '../../../assets/icons/github.svg';
 import InstagramIcon from '../../../assets/icons/instagram.svg';
 import TwitterIcon from '../../../assets/icons/twitter.svg';
+import data from '../../../src/client/lib/data.json';
+
+const { sections, social } = data;
 
 const SOCIAL_MAP = {
   'linkedin': <LinkedinIcon />,

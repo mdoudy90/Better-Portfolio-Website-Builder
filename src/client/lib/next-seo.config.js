@@ -1,6 +1,6 @@
-import { meta } from './data.json';
+import data from './data.json';
 
-const { title, description, canonical, twitterHandle } = meta;
+const { title, description, canonical, twitterHandle } = data.meta;
 
 export default {
   title,

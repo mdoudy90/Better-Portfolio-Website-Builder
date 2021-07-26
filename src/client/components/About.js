@@ -1,15 +1,15 @@
 import Image from 'next/image'
 
-import { about } from '../../../src/client/lib/data.json';
+import data from '../../../src/client/lib/data.json';
 
-const { content, image, placeholder } = about;
+const { content, image, placeholder } = data.about;
 
 const About = () => {
   return (
     <div className="about">
       <div className="about__content">
-        { content.map((text) => (
-          <p>{ text }</p>
+        { content.map((text, i) => (
+          <p key={`about-part-${i}`}>{ text }</p>
         ))}
       </div>
       <div className="about__image">

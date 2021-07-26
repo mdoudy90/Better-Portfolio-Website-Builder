@@ -1,8 +1,10 @@
 import Image from 'next/image'
 
-import { projectCards } from '../../../src/client/lib/data.json';
 import WebIcon from '../../../assets/icons/web.svg';
 import GithubIcon from '../../../assets/icons/github.svg';
+import data from '../../../src/client/lib/data.json';
+
+const { projectCards } = data;
 
 const ICON_MAP = {
   'website': <WebIcon />,

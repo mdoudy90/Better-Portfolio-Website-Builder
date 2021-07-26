@@ -28,6 +28,7 @@
 
 
     button {
+      transition: $transition-2;
       cursor: pointer;
       padding: 10px 12px;
       background-color: rgba(0,0,0,0);
@@ -36,6 +37,9 @@
       @include themed() {
         color: t($color-3);
         border: 2px solid t($color-3);
+        &:hover {
+          background-color: transparentize(t($color-3), 0.85);
+        }
       }
     }
   }
