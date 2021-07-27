@@ -32,6 +32,9 @@
     "instagram": "https://www.instagram.com/doudy2.0",
     "twitter": "https://twitter.com/michaeldoudy"
   },
+  "document": {
+    "resume": "/docs/dummy-pdf.pdf"
+  },
   "about": {
     "content": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae. Cupiditate nisi doloremque corrupti esse, eligendi non deleniti dolores repellat quia, excepturi quod assumenda blanditiis facilis sapiente aut nostrum.",

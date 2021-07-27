@@ -2,8 +2,7 @@
   - Gallery
   - Project Cards
 - Document page for display / download
-  - React-PDF - https://www.npmjs.com/package/react-pdf
-  - https://github.com/wojtekmaj/react-pdf/issues/136
+  - Options: send or download
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
