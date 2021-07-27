@@ -5,7 +5,7 @@ import data from "../lib/data.json";
 
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 
-const { resume } = data.document;
+const { path } = data.document;
 
 const PDFViewer = () => {
   const [numPages, setNumPages] = useState(null);
@@ -16,12 +16,14 @@ const PDFViewer = () => {
 
   return (
     <Document
-      file={resume}
+      className="pdf-viewer"
+      file={path}
       onLoadSuccess={onDocumentLoad}
       loading="Loading..."
     >
       { Array.from({ length: numPages }, (_, i) => (
         <Page
+          className="pdf-viewer__page"
           key={`page-${i + 1}`}
           pageNumber={i + 1}
           renderAnnotationLayer={false}

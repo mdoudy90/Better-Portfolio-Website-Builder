@@ -7,7 +7,7 @@ import InstagramIcon from '../../../assets/icons/instagram.svg';
 import TwitterIcon from '../../../assets/icons/twitter.svg';
 import data from '../../../src/client/lib/data.json';
 
-const { sections, social } = data;
+const { sections, social, document } = data;
 
 const SOCIAL_MAP = {
   'linkedin': <LinkedinIcon />,
@@ -23,24 +23,29 @@ const Sidebar = ({ scrollTo, sectionInView }) => {
     <div className="sidebar">
       <div className="sidebar__cta">
         { router.pathname === '/'
-            ? <Link href="/doc">
-                <button>Resume</button>
-              </Link>
-            : <Link href="/">
-                <button>Home</button>
-              </Link>}
+          ? <Link href="/doc">
+              <button>Resume</button>
+            </Link>
+          : <a download={document.fileName} href={document.path}>
+              <button>Download</button>
+            </a>}
       </div>
       <div className="sidebar__nav">
-        { router.pathname === '/' && sections.map(({ heading }) => (
-          <h2
-            key={heading}
-            className={sectionInView === heading.toLowerCase() ? 'sidebar__nav--highlight' : ''}
-            scroll-dest={heading}
-            onClick={scrollTo}
-          >
-            { heading }
-          </h2>
-        ))}
+        { router.pathname === '/'
+          ? sections.map(({ heading }) => (
+            <h2
+              key={heading}
+              className={sectionInView === heading.toLowerCase() ? 'sidebar__nav--highlight' : ''}
+              scroll-dest={heading}
+              onClick={scrollTo}
+            >
+              { heading }
+            </h2>
+          ))
+          : <Link href="/">
+              <h2>Home</h2>
+            </Link>
+        }
       </div>
       <div className="sidebar__social">
         {Object.entries(social).map(([type, link]) => {

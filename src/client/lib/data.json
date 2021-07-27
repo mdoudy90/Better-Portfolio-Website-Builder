@@ -33,7 +33,8 @@
     "twitter": "https://twitter.com/michaeldoudy"
   },
   "document": {
-    "resume": "/docs/dummy-pdf.pdf"
+    "fileName": "Dummy-PDF.pdf",
+    "path": "/docs/dummy-pdf.pdf"
   },
   "about": {
     "content": [

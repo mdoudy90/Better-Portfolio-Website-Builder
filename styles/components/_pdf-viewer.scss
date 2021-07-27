@@ -1,0 +1,11 @@
+.pdf-viewer {
+  display: flex;
+  justify-content: center;
+
+  &__page {
+    canvas {
+      width: min(100vw - 300px, 700px) !important;
+      height: 100% !important;
+    }
+  }
+}
