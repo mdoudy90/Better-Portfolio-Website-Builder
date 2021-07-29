@@ -22,6 +22,7 @@ const ThemeBar = () => {
       <div className="theme-bar__button">
         <ThemeSelector onClick={() => dispatch(toggleTheme())} />
       </div>
+      <div className="theme-bar__line" />
     </div>
   )
 }

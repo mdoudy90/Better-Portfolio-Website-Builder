@@ -9,6 +9,7 @@
 
   &__button {
     padding: 15px;
+    justify-self: center;
     svg {
       transition: $transition-2;
       cursor: pointer;
@@ -24,6 +25,15 @@
         }
       }
 
+    }
+  }
+
+  &__line {
+    height: 100%;
+    width: 2px;
+    justify-self: center;
+    @include themed() {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0), t($color-3));
     }
   }
 }
