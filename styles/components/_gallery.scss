@@ -53,6 +53,10 @@ $borderRadius: 3px;
     }
 
     img {
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+
       grid-area: 1 / 1;
       min-width: inherit !important;
       min-height: inherit !important;
