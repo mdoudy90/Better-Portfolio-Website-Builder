@@ -1,18 +1,40 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Image from 'next/image'
 
 import Portal from '../components/Portal';
 import useModalClose from '../hooks/useModalClose';
 import data from '../../../src/client/lib/data.json';
+import ArrowLeft from '../../../assets/icons/arrow-left.svg';
+import ArrowRight from '../../../assets/icons/arrow-right.svg';
 
 const { gallery } = data;
 
-const GalleryPopover = ({ image }) => (
+const GalleryPopover = ({ selectedIndex, handleClose }) => {
+  const [imageIndex, setImageIndex] = useState(selectedIndex);
+  const popoverRef = useRef(null);
+
+  useModalClose(popoverRef, () => {
+    handleClose();
+  }, [imageIndex]);
+
+  const toggleIndex = (amt) => {
+    const nextIndex = imageIndex + amt;
+    if (nextIndex > -1 && nextIndex < gallery.length) {
+      setImageIndex(nextIndex)
+    }
+    //? SET LEFT / RIGHT KEY EVENT LISTENERS?
+  }
+
+  return (
   <Portal>
-    <div className='gallery__popover'>
+    <div className='gallery__popover' ref={popoverRef}>
+      <ArrowLeft
+        className={`gallery__arrow ${imageIndex - 1 === -1 ? 'gallery__arrow--disabled' : ''}`}
+        onClick={() => { toggleIndex(-1) }}
+      />
       <Image
         alt=''
-        src={image}
+        src={gallery[imageIndex].image}
         layout='responsive'
         width='300px'
         height='300px'
@@ -20,17 +42,16 @@ const GalleryPopover = ({ image }) => (
         quality={100}
         priority={false}
       />
+      <ArrowRight
+        className={`gallery__arrow gallery__arrow--right ${imageIndex + 1 === gallery.length ? 'gallery__arrow--disabled' : ''}`}
+        onClick={() => { toggleIndex(1) }}
+      />
     </div>
   </Portal>
-);
+)};
 
 const Gallery = () => {
-  const [imageInView, setImageInView] = useState(null);
-  // const popoverRef = useRef(null);
-  //! figure out how to pass down ref for closing modal
-  useModalClose({ current: null }, () => {
-    if (imageInView) setImageInView(null);
-  }, [imageInView]);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
     <div className='gallery'>
@@ -39,7 +60,7 @@ const Gallery = () => {
           <Image
             alt=''
             src={image}
-            onClick={() => setImageInView(image)}
+            onClick={() => setSelectedIndex(i)}
             layout='responsive'
             width='300px'
             height='300px'
@@ -51,7 +72,11 @@ const Gallery = () => {
           />
         </div>
       ))}
-      { imageInView && <GalleryPopover image={imageInView} /> }
+      { selectedIndex !== -1 &&
+        <GalleryPopover
+          selectedIndex={selectedIndex}
+          handleClose={() => setSelectedIndex(-1)}
+        /> }
     </div>
   )
 };

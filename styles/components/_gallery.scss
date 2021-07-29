@@ -3,13 +3,11 @@ $borderRadius: 3px;
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  // grid-auto-rows: minmax(min-content, max-content);
-  // grid-template-rows: 100px;
-  // align-items: center;
   gap: 20px;
 
   &__image,
   &__imge--small {
+    cursor: pointer;
     border-radius: $borderRadius;
     aspect-ratio: 1;
 
@@ -40,6 +38,7 @@ $borderRadius: 3px;
   }
 
   &__popover {
+    display: flex;
     > div {
       display: grid !important;
       align-items: center;
@@ -55,13 +54,34 @@ $borderRadius: 3px;
 
     img {
       grid-area: 1 / 1;
-      width: inherit !important;
-      height: inherit !important;
       min-width: inherit !important;
       min-height: inherit !important;
-      max-width: 90% !important;
+      max-width: 90vh !important;
       max-height: 90vh !important;
       height: auto !important;
+      width: auto !important;
+    }
+  }
+
+  &__arrow {
+    z-index: 15;
+    transition: $transition-1;
+    position: absolute;
+    align-self: center;
+    cursor: pointer;
+    padding: 3px;
+    margin: 0 20px;
+    @include themed() {
+      color: t($color-1);
+      &:hover {
+        color: t($color-3);
+      }
+    }
+    &--right {
+      right: 0;
+    }
+    &--disabled {
+      display: none;
     }
   }
 }
