@@ -15,7 +15,7 @@ const GalleryPopover = ({ selectedIndex, handleClose }) => {
 
   useModalClose(popoverRef, () => {
     handleClose();
-  }, [imageIndex]);
+  }, [imageIndex], true);
 
   const toggleIndex = (amt) => {
     const nextIndex = imageIndex + amt;

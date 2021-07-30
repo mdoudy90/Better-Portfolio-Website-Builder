@@ -1,6 +1,10 @@
-import Image from 'next/image'
+import React, { useState, useRef } from 'react';
+import Image from 'next/image';
 
+import Portal from '../components/Portal';
+import useModalClose from '../hooks/useModalClose';
 import WebIcon from '../../../assets/icons/web.svg';
+import CloseIcon from '../../../assets/icons/close.svg';
 import GithubIcon from '../../../assets/icons/github.svg';
 import data from '../../../src/client/lib/data.json';
 
@@ -11,7 +15,57 @@ const ICON_MAP = {
   'github': <GithubIcon />
 }
 
+const ProjectPopover = ({ handleClose, data }) => {
+  const [indexInView, setIndexInView] = useState(0);
+  const popoverRef = useRef(null);
+
+  useModalClose(popoverRef, () => {
+    handleClose();
+  }, []);
+
+  return (
+    <Portal>
+      <div className="project-popover" ref={popoverRef}>
+        <CloseIcon className="project-popover__close-icon" onClick={handleClose} />
+        <div className="project-popover__overview">
+          <h3 className="project-popover__heading">{data.title}</h3>
+          <p className="project-popover__description">{data.description}</p>
+        </div>
+        <div className="project-popover__highlights">
+          { data.highlights.map(({ heading, details, media }, i) => (
+            <div className={`project-popover__highlight ${indexInView === i ? 'project-popover__highlight--selected' : ''}`} key={i}>
+              <h4 className="project-popover__title" onClick={() => setIndexInView(i)}>
+                {heading}
+              </h4>
+              { indexInView === i && (
+                <div className="project-popover__highlight-details">
+                  { details.map((point, i) => (
+                    <p className={`project-popover__highlight-text ${!media ? 'project-popover__highlight-text--long' : ''}`} key={i}>{point}</p>
+                  ))}
+                  { media &&
+                    <div className="project-popover__highlight-media">
+                      <Image
+                        alt=''
+                        src={media}
+                        layout='fill'
+                        objectFit='cover'
+                        quality={100}
+                        priority={true}
+                      />
+                    </div>
+                  }
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </Portal>
+  )
+}
+
 export const ProjectCard = ({
+  handleClick,
   title,
   description,
   tools,
@@ -21,7 +75,7 @@ export const ProjectCard = ({
   showInverse
 }) => {
   return (
-    <div className='project-card'>
+    <div className='project-card' onClick={handleClick}>
       <div className={`project-card__details${showInverse ? '--inverse' : ''}`}>
         <h3 className='project-card__title'>{title}</h3>
         <p className='project-card__description'>{description}</p>
@@ -58,19 +112,30 @@ export const ProjectCard = ({
   );
 }
 
-export const ProjectCards = ({ showInverse = true }) => (
-  <>
-    { projectCards.map((data, i) => (
-      <ProjectCard
-        key={data.title || i}
-        title={data.title}
-        description={data.description}
-        tools={data.tools}
-        links={data.links}
-        image={data.image}
-        placeholder={data.placeholder}
-        showInverse={showInverse && !!(i % 2)}
-      />
-    ))}
-  </>
-)
+export const ProjectCards = ({ showInverse = true }) => {
+  const [selectedIndex, setSelectedIndex] = useState(-1);
+
+  return (
+    <>
+      { projectCards.map((data, i) => (
+        <ProjectCard
+          key={data.title || i}
+          handleClick={() => { data.highlights ? setSelectedIndex(i) : null }}
+          title={data.title}
+          description={data.description}
+          tools={data.tools}
+          links={data.links}
+          image={data.image}
+          placeholder={data.placeholder}
+          showInverse={showInverse && !!(i % 2)}
+        />
+      ))}
+      { selectedIndex !== -1 &&
+        <ProjectPopover
+          handleClose={() => setSelectedIndex(-1)}
+          data={projectCards[selectedIndex]}
+        />
+      }
+    </>
+  )
+}

@@ -1,14 +1,14 @@
 import { useEffect } from 'react';
 
-const useOutsideClick = (ref, callback) => {
+const useOutsideClick = (ref, callback, isNextImage) => {
   const handleClick = (e) => {
-    if (ref.current && ref.current.children && ref.current.children[1] === e.target) {
+    if (isNextImage && ref.current && ref.current.children && ref.current.children[1] === e.target) {
       callback();
     }
-    // //! OLD WAY
-    // if (ref.current && !ref.current.contains(e.target)) {
-    //   callback();
-    // }
+
+    if (!isNextImage && e.target.className.includes('portal-wrapper')) {
+      callback();
+    }
   };
 
   useEffect(() => {

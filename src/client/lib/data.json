@@ -62,7 +62,39 @@
         "website": "https://www.google.com"
       },
       "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
+      "placeholder": "/images/helbiz-analytics-main.png",
+      "highlights": [
+        {
+          "heading": "Point 1",
+          "details": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          ],
+          "media": "/images/helbiz-analytics-main.png"
+        },
+        {
+          "heading": "Point 2",
+          "details": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          ],
+          "media": "/images/helbiz-analytics-main.png"
+        },
+        {
+          "heading": "Point 3",
+          "details": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          ]
+        },
+        {
+          "heading": "Point 4",
+          "details": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          ],
+          "media": "/images/helbiz-analytics-main.png"
+        }
+      ]
     },
     {
       "title": "Helbiz Move",
