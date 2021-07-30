@@ -120,6 +120,10 @@ $borderRadius: 3px;
   @include themed() {
     background-color: t($color-4);
     border: 1px solid t($color-3);
+    ::selection {
+      color: t($color-4);
+      background: t($color-3);
+    }
   }
   padding: 50px;
   border-radius: 2px;
