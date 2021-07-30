@@ -115,3 +115,76 @@ $borderRadius: 3px;
     grid-column: 1 / span 3;
   }
 }
+
+.project-popover {
+  @include themed() {
+    background-color: t($color-4);
+    border: 1px solid t($color-3);
+  }
+  padding: 20px;
+  border-radius: 2px;
+  display: grid;
+  gap: 20px;
+
+  &__overview {
+    display: grid;
+    grid-template: auto 1fr / 1fr;
+  }
+
+  &__heading {
+    font-size: $font-size-7;
+    padding-bottom: 5px;
+    @include themed() {
+      color: t($color-1);
+    }
+  }
+
+  &__highlights {
+    display: grid;
+    gap: 20px;
+  }
+
+  &__highlight {
+    // padding: 2px 0 2px 15px;
+    padding-left: 15px;
+
+    @include themed() {
+      border-left: 1px solid t($color-2);
+      &--selected {
+        border-left: 1px solid t($color-3);
+
+        .project-popover__title {
+          color: t($color-3);
+
+        }
+      }
+    }
+  }
+
+  &__title {
+    cursor: pointer;
+    transition: $transition-1;
+    @include themed() {
+      color: t($color-2);
+    }
+  }
+
+  &__highlight-details {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+  }
+
+  &__highlight-text {
+    padding-top: 10px;
+    border-radius: $borderRadius;
+    line-height: 1.3;
+    @include themed() {
+      color: t($color-1);
+    }
+  }
+
+  &__highlight-media {
+    grid-area: 1 / 2 / span 2;
+    border: 1px solid red;
+  }
+}
