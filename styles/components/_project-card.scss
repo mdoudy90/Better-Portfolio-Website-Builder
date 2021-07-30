@@ -177,7 +177,7 @@ $borderRadius: 3px;
     padding-left: 15px;
 
     @include themed() {
-      border-left: 1px solid t($color-2);
+      border-left: 2px solid transparentize(t($color-2), 0.8);
       &--selected {
         border-left: 2px solid t($color-3);
 
