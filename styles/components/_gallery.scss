@@ -94,8 +94,8 @@ $borderRadius: 3px;
   &__pagination {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    height: 50px;
+    align-items: center;
+    margin: -50px 0;
   }
 
   &__pagination-bubble {

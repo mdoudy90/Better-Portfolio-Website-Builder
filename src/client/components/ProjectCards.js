@@ -114,10 +114,11 @@ export const ProjectCard = ({
 
 export const ProjectCards = ({ showInverse = true }) => {
   const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [amountShown, setAmountShown] = useState(3);
 
   return (
     <>
-      { projectCards.map((data, i) => (
+      { projectCards.slice(0, amountShown).map((data, i) => (
         <ProjectCard
           key={data.title || i}
           handleClick={() => { data.highlights ? setSelectedIndex(i) : null }}
@@ -135,6 +136,11 @@ export const ProjectCards = ({ showInverse = true }) => {
           handleClose={() => setSelectedIndex(-1)}
           data={projectCards[selectedIndex]}
         />
+      }
+      { amountShown < projectCards.length &&
+        <div className="project-cards__toggle-amount">
+          <button onClick={() => setAmountShown(amountShown + 3)}>Show More</button>
+        </div>
       }
     </>
   )

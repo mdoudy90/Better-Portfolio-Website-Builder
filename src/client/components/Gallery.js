@@ -63,7 +63,7 @@ const Gallery = () => {
   }
 
   return (
-    <div className='gallery'>
+    <>
       <div className='gallery__images'>
         { gallery.slice(IMAGES_PER_GROUP * groupIndex, (IMAGES_PER_GROUP * (groupIndex + 1))).map(({ image, placeholder }, i) => (
           <div key={`gallery-image-${i}`} className='gallery__image'>
@@ -100,7 +100,7 @@ const Gallery = () => {
           handleClose={() => setSelectedIndex(-1)}
           onPopoverToggle={onPopoverToggle}
         /> }
-    </div>
+    </>
   )
 };
 
