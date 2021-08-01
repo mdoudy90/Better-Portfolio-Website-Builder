@@ -8,8 +8,9 @@ import ArrowLeft from '../../../assets/icons/arrow-left.svg';
 import ArrowRight from '../../../assets/icons/arrow-right.svg';
 
 const { gallery } = data;
+const IMAGES_PER_GROUP = 9;
 
-const GalleryPopover = ({ selectedIndex, handleClose }) => {
+const GalleryPopover = ({ selectedIndex, handleClose, onPopoverToggle }) => {
   const [imageIndex, setImageIndex] = useState(selectedIndex);
   const popoverRef = useRef(null);
 
@@ -20,9 +21,9 @@ const GalleryPopover = ({ selectedIndex, handleClose }) => {
   const toggleIndex = (amt) => {
     const nextIndex = imageIndex + amt;
     if (nextIndex > -1 && nextIndex < gallery.length) {
-      setImageIndex(nextIndex)
+      setImageIndex(nextIndex);
+      onPopoverToggle(nextIndex);
     }
-    //? SET LEFT / RIGHT KEY EVENT LISTENERS?
   }
 
   return (
@@ -52,30 +53,52 @@ const GalleryPopover = ({ selectedIndex, handleClose }) => {
 
 const Gallery = () => {
   const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [groupIndex, setGroupIndex] = useState(0);
+
+  const onPopoverToggle = (nextIndex) => {
+    const nextGroupIndex = Math.floor(nextIndex / IMAGES_PER_GROUP);
+    if (nextGroupIndex !== groupIndex) {
+      setGroupIndex(nextGroupIndex);
+    }
+  }
 
   return (
     <div className='gallery'>
-      {gallery.map(({ image, placeholder }, i) => (
-        <div key={`gallery-image-${i}`} className='gallery__image'>
-          <Image
-            alt=''
-            src={image}
-            onClick={() => setSelectedIndex(i)}
-            layout='responsive'
-            width='300px'
-            height='300px'
-            objectFit='cover'
-            quality={100}
-            priority={false}
-            placeholder={placeholder ? 'blur' : 'empty'}
-            blurDataURL={placeholder || null}
-          />
+      <div className='gallery__images'>
+        { gallery.slice(IMAGES_PER_GROUP * groupIndex, (IMAGES_PER_GROUP * (groupIndex + 1))).map(({ image, placeholder }, i) => (
+          <div key={`gallery-image-${i}`} className='gallery__image'>
+            <Image
+              alt=''
+              src={image}
+              onClick={() => setSelectedIndex(i + (IMAGES_PER_GROUP * groupIndex))}
+              layout='responsive'
+              width='300px'
+              height='300px'
+              objectFit='cover'
+              quality={100}
+              priority={false}
+              placeholder={placeholder ? 'blur' : 'empty'}
+              blurDataURL={placeholder || null}
+            />
+          </div>
+        ))}
+      </div>
+      { gallery.length > IMAGES_PER_GROUP && (
+        <div className='gallery__pagination'>
+          { Array(Math.floor(gallery.length / IMAGES_PER_GROUP) + 1).fill().map((_, i) => (
+            <div
+              key={i}
+              className={`gallery__pagination-bubble ${i === groupIndex ? 'gallery__pagination-bubble--selected' : ''}`}
+              onClick={() => setGroupIndex(i)}
+            />
+          ))}
         </div>
-      ))}
+      )}
       { selectedIndex !== -1 &&
         <GalleryPopover
           selectedIndex={selectedIndex}
           handleClose={() => setSelectedIndex(-1)}
+          onPopoverToggle={onPopoverToggle}
         /> }
     </div>
   )

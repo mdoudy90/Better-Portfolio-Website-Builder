@@ -77,7 +77,7 @@
           "details": [
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
           ],
-          "media": "/images/helbiz-analytics-main.png"
+          "media": "/images/dummy.gif"
         },
         {
           "heading": "Point 3",
@@ -125,32 +125,40 @@
       "placeholder": "/images/helbiz-analytics-main.png"
     },
     {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    },
+    {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    },
+    {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    },
+    {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    },
+    {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    },
+    {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    },
+    {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    },
+    {
+      "image": "/images/helbiz-analytics-main.png",
+      "placeholder": "/images/helbiz-analytics-main.png"
+    },
+    {
       "image": "/images/test-image.png",
       "placeholder": "/images/test-image.png"
-    },
-    {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "image": "/images/test-image.png",
-      "placeholder": "/images/test-image.png"
-    },
-    {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
     }
   ],
   "contact": {

@@ -1,9 +1,11 @@
 $borderRadius: 3px;
 
 .gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  &__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
 
   &__image,
   &__imge--small {
@@ -86,6 +88,33 @@ $borderRadius: 3px;
     }
     &--disabled {
       display: none;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50px;
+  }
+
+  &__pagination-bubble {
+    transition: $transition-1;
+    cursor: pointer;
+    margin: 5px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    @include themed() {
+      background-color: transparentize(t($color-2), 0.5);
+
+      &--selected {
+        background-color: t($color-3);
+        transform: scale(1.2);
+      }
+    }
+    &:hover {
+      transform: scale(1.2);
     }
   }
 }
