@@ -72,10 +72,11 @@ export const ProjectCard = ({
   links,
   image,
   placeholder,
-  showInverse
+  showInverse,
+  clickable
 }) => {
   return (
-    <div className='project-card' onClick={handleClick}>
+    <div className='project-card'>
       <div className={`project-card__details${showInverse ? '--inverse' : ''}`}>
         <h3 className='project-card__title'>{title}</h3>
         <p className='project-card__description'>{description}</p>
@@ -96,7 +97,10 @@ export const ProjectCard = ({
           })}
         </div>
       </div>
-      <div className={`project-card__image${showInverse ? '--inverse' : ''}`}>
+      <div
+        className={`project-card__image${showInverse ? '--inverse' : ''} ${clickable ? 'project-card__image--clickable' : ''}`}
+        onClick={clickable ? handleClick : null}
+      >
         <Image
           alt=''
           src={image}
@@ -121,7 +125,7 @@ export const ProjectCards = ({ showInverse = true }) => {
       { projectCards.slice(0, amountShown).map((data, i) => (
         <ProjectCard
           key={data.title || i}
-          handleClick={() => { data.highlights ? setSelectedIndex(i) : null }}
+          handleClick={() => setSelectedIndex(i)}
           title={data.title}
           description={data.description}
           tools={data.tools}
@@ -129,6 +133,7 @@ export const ProjectCards = ({ showInverse = true }) => {
           image={data.image}
           placeholder={data.placeholder}
           showInverse={showInverse && !!(i % 2)}
+          clickable={!!data.highlights}
         />
       ))}
       { selectedIndex !== -1 &&

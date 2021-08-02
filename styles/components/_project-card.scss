@@ -79,6 +79,10 @@ $borderRadius: 3px;
     border-radius: $borderRadius;
     z-index: 1;
 
+    &--clickable {
+      cursor: pointer;
+    }
+
     > div {
       transition: $transition-1;
       border-radius: $borderRadius;
@@ -197,7 +201,6 @@ $borderRadius: 3px;
   }
 
   &__highlight {
-    // padding: 2px 0 2px 15px;
     padding-left: 15px;
 
     @include themed() {
