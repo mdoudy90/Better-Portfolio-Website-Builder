@@ -5,6 +5,7 @@
   gap: 30px;
   justify-content: center;
   font-family: $font-1;
+  line-height: 1.4;
 
   &__preheading {
     @include themed() {
@@ -13,7 +14,7 @@
   }
 
   &__heading {
-    font-size: $font-size-8;
+    font-size: $font-size-9;
     @include themed() {
       color: t($color-1);
     }
@@ -50,6 +51,26 @@
           background-color: transparentize(t($color-3), 0.85);
         }
       }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-2) and (max-width: $breakpoint-3) {
+  .header {
+    &__heading {
+      font-size: $font-size-8;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-2) {
+  .header {
+    &__heading {
+      font-size: $font-size-7;
+    }
+
+    &__subheading {
+      font-size: $font-size-6;
     }
   }
 }

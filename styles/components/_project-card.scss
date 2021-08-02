@@ -91,7 +91,7 @@ $borderRadius: 3px;
 
       img {
         mix-blend-mode: multiply;
-        filter: grayscale(100%) contrast(.95) brightness(1.2);
+        filter: grayscale(100%) contrast(.95) brightness(2.2) !important;
         height: inherit !important;
         position: relative !important;
       }
@@ -102,7 +102,7 @@ $borderRadius: 3px;
         background-color: initial;
       }
       img {
-        filter: initial;
+        filter: initial !important;
       }
     }
   }
@@ -248,6 +248,23 @@ $borderRadius: 3px;
         height: inherit !important;
         position: relative !important;
       }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-1) {
+  .project-popover {
+    overflow-x: scroll;
+    height: 100vh;
+    width: inherit;
+
+    &__highlight-details {
+      grid-template: auto / 1fr;
+    }
+
+    &__highlight-media {
+      grid-area: inherit !important;
+      padding-top: 10px;
     }
   }
 }

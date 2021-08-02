@@ -2,7 +2,7 @@ $borderRadius: 3px;
 
 .about {
   display: grid;
-  grid-template: 1fr / 1fr 300px;
+  grid-template: 1fr / 1fr auto;
   align-items: center;
   gap: 50px;
 
@@ -32,7 +32,7 @@ $borderRadius: 3px;
 
       img {
         mix-blend-mode: multiply;
-        filter: grayscale(100%) contrast(.95) brightness(1.2);
+        filter: grayscale(100%) contrast(.95) brightness(1.2) !important;
         height: inherit !important;
         position: relative !important;
       }
@@ -43,8 +43,33 @@ $borderRadius: 3px;
         background-color: initial;
       }
       img {
-        filter: initial;
+        filter: initial !important;
       }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-2) and (max-width: $breakpoint-3) {
+  .about {
+    &__image {
+      height: 200px;
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-2) {
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: $breakpoint-1) {
+  .about {
+    &__image {
+      height: 100%;
+      width: 100%;
     }
   }
 }

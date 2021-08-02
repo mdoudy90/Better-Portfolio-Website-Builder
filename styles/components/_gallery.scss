@@ -11,7 +11,7 @@ $borderRadius: 3px;
   &__imge--small {
     cursor: pointer;
     border-radius: $borderRadius;
-    aspect-ratio: 1;
+    // aspect-ratio: 1;
 
     > div {
       transition: $transition-1;
@@ -25,7 +25,7 @@ $borderRadius: 3px;
 
       img {
         mix-blend-mode: multiply;
-        filter: grayscale(100%) contrast(.95) brightness(1.2);
+        filter: grayscale(100%) contrast(.95) brightness(2.2) !important;
       }
     }
 
@@ -34,7 +34,7 @@ $borderRadius: 3px;
         background-color: initial;
       }
       img {
-        filter: initial;
+        filter: initial !important;
       }
     }
   }
@@ -118,3 +118,32 @@ $borderRadius: 3px;
     }
   }
 }
+
+@media (max-width: $breakpoint-2) {
+  .gallery {
+    &__images {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-1) {
+  .gallery {
+    &__images {
+      gap: 10px;
+    }
+
+    &__popover {
+      > div {
+        width: 90vw;
+        height: 90vh;
+        margin: 5vh 5vw !important;
+      }
+    }
+
+    &__arrow {
+      margin: 0 0.5vw;
+    }
+  }
+}
+

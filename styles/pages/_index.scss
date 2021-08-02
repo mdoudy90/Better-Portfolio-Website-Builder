@@ -26,3 +26,16 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-1) and (max-width: $breakpoint-2) {
+  .main {
+    grid-template: 1fr / 100px 1fr 100px;
+  }
+}
+
+
+@media (max-width: $breakpoint-1) {
+  .main {
+    grid-template: 1fr / 50px 1fr 50px;
+  }
+}
