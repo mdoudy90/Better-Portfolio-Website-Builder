@@ -89,6 +89,7 @@
 
 .mobile-sidebar {
   height: 100vh;
+  z-index: 99;
   display: grid;
   grid-template: auto 1fr 1fr / 1fr;
   position: fixed;
