@@ -86,3 +86,65 @@
     }
   }
 }
+
+.mobile-sidebar {
+  height: 100vh;
+  display: grid;
+  grid-template: auto 1fr 1fr / 1fr;
+  position: fixed;
+  right: 0;
+
+  &__menu-toggle-button,
+  &__social svg {
+    cursor: pointer;
+    transition: $transition-1;
+    opacity: 0.5;
+    @include themed() {
+      color: t($color-2);
+      &:hover {
+        color: t($color-3);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__menu-toggle-button {
+    margin: 15px;
+    width: $font-size-6;
+    height: $font-size-6;
+  }
+
+  &__social {
+    grid-row: 3;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 15px;
+
+    svg {
+      width: $font-size-5;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-2) {
+  .sidebar {
+    max-width: inherit;
+    grid-template: auto 1fr / 1fr;
+
+    &__cta {
+      margin: 20px 10px 0 0;
+      button {
+        font-size: $font-size-4;
+      }
+    }
+
+    &__nav {
+      h2 {
+        font-size: $font-size-7;
+        font-weight: 500;
+      }
+    }
+  }
+}

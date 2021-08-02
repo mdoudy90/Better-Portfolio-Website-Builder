@@ -14,7 +14,7 @@
       transition: $transition-2;
       cursor: pointer;
       width: $font-size-5;
-      opacity: 0.25;
+      opacity: 0.5;
 
       @include themed() {
         color: t($color-2);

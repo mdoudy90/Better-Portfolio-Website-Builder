@@ -12,7 +12,7 @@ export const settingsSlice = createSlice({
     toggleTheme: (state, action) => {
       state.theme = (state.theme % 7) + 1 // range 1 - 7
     },
-    setIsSideBarOpen: (state, action) => {
+    setIsSideBarOpen: (state, action) => { // MAY NOT NEED
       state.isSideBarOpen = action.payload
     }
   },

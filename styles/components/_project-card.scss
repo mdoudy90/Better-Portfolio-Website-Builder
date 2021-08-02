@@ -162,7 +162,7 @@ $borderRadius: 3px;
 
   &__close-icon {
     transition: $transition-2;
-    margin: -25px -25px 0 0;
+    margin: -35px -35px 0 0;
     cursor: pointer;
     justify-self: end;
     @include themed() {
