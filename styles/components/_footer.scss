@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  a {
+    font-size: $font-size-1;
+    letter-spacing: .08em;
+    font-weight: 500;
+    text-decoration: inherit;
+    cursor: pointer;
+    @include themed() {
+      color: t($color-3);
+    }
+  }
+}

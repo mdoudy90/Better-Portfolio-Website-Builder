@@ -7,6 +7,7 @@ import Sidebar from '../src/client/components/Sidebar';
 import Themebar from '../src/client/components/Themebar';
 import About from '../src/client/components/About';
 import Header from '../src/client/components/Header';
+import Footer from '../src/client/components/Footer';
 import Section from '../src/client/components/Section';
 import { ProjectCards } from '../src/client/components/ProjectCards';
 import Gallery from '../src/client/components/Gallery';
@@ -85,6 +86,7 @@ export default function Home() {
               </Section>
             ))
           }
+          <Footer />
         </Layout>
         <Themebar />
         <Sidebar scrollTo={scrollTo} sectionInView={sectionInView} />

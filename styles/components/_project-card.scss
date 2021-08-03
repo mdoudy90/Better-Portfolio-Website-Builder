@@ -2,7 +2,7 @@ $borderRadius: 3px;
 
 .project-card {
   display: grid;
-  grid-template: 1fr / repeat(5, 1fr);
+  grid-template: 1fr / repeat(9, 1fr);
 
   &__details,
   &__details--inverse {
@@ -19,11 +19,11 @@ $borderRadius: 3px;
   }
 
   &__details {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 5;
   }
 
   &__details--inverse {
-    grid-column: 3 / span 3;
+    grid-column: 5 / span 5;
     justify-items: end;
 
     .project-card__title {
@@ -132,27 +132,27 @@ $borderRadius: 3px;
   }
 
   &__image {
-    grid-column: 3 / span 3;
+    grid-column: 5 / span 5;
   }
 
   &__image--inverse {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 5;
   }
 }
 
 @media (max-width: $breakpoint-2) {
   .project-card {
-    grid-template: auto 1fr / repeat(5, 1fr);
+    grid-template: auto 1fr / repeat(9, 1fr);
     &__details,
     &__details--inverse {
       grid-row: 2;
-      grid-column: 1 / span 5;
+      grid-column: 1 / span 9;
     }
 
     &__image,
     &__image--inverse {
       grid-row: 1;
-      grid-column: 1 / span 5;
+      grid-column: 1 / span 9;
     }
 
     &__title {
