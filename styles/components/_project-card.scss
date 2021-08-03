@@ -36,7 +36,7 @@ $borderRadius: 3px;
     display: flex;
     align-items: center;
     gap: 15px;
-    font-size: $font-size-7;
+    font-size: $font-size-6;
     padding-bottom: 5px;
     @include themed() {
       color: t($color-1);
@@ -198,8 +198,11 @@ $borderRadius: 3px;
   border-radius: 2px;
   display: grid;
   width: 75vw;
+  overflow-x: scroll;
+  max-height: 100vh;
   align-self: center;
   justify-self: center;
+  box-sizing: border-box;
 
   &__close-icon {
     transition: $transition-2;
@@ -239,6 +242,7 @@ $borderRadius: 3px;
   &__highlights {
     display: grid;
     gap: 20px;
+    padding-bottom: 20px;
   }
 
   &__highlight {
@@ -300,6 +304,7 @@ $borderRadius: 3px;
   .project-popover {
     overflow-x: scroll;
     height: 100vh;
+    max-height: inherit;
     width: inherit;
 
     &__highlight-details {
