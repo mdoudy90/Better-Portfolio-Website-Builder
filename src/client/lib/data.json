@@ -36,6 +36,13 @@
     "fileName": "Michael-Doudy-Resume.pdf",
     "path": "/docs/resume.pdf"
   },
+  "header": {
+    "preHeading": "Hello, my name is",
+    "heading": "Michael Doudy",
+    "subHeading": "Software Engineer Software Engineer Software Engineer",
+    "text": "I'm an NYC-based software engineer that works at Helbiz. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae.",
+    "ctaText": "Get In Touch"
+  },
   "about": {
     "content": [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae. Cupiditate nisi doloremque corrupti esse, eligendi non deleniti dolores repellat quia, excepturi quod assumenda blanditiis facilis sapiente aut nostrum.",
@@ -44,13 +51,6 @@
     ],
     "image": "/images/me.png",
     "placeholder": "/images/me.png"
-  },
-  "header": {
-    "preHeading": "Hello, my name is",
-    "heading": "Michael Doudy",
-    "subHeading": "Software Engineer Software Engineer Software Engineer",
-    "text": "I'm an NYC-based software engineer that works at Helbiz. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae.",
-    "ctaText": "Get In Touch"
   },
   "projectCards": [
     {
@@ -165,5 +165,5 @@
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro, numquam quae modi est illo rerum odio",
     "ctaText": "Say Hello",
     "email": "michael.doudy@gmail.com"
- }
+  }
 }

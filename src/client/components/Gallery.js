@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
 
 import Portal from '../components/Portal';
 import useModalClose from '../hooks/useModalClose';

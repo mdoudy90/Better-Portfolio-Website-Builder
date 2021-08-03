@@ -40,7 +40,7 @@ const ProjectPopover = ({ handleClose, data }) => {
               </h4>
               { indexInView === i && (
                 <div className="project-popover__highlight-details">
-                  { details.map((point, i) => (
+                  { details && details.length && details.map((point, i) => (
                     <p className={`project-popover__highlight-text ${!media ? 'project-popover__highlight-text--long' : ''}`} key={i}>{point}</p>
                   ))}
                   { media &&
@@ -63,7 +63,7 @@ const ProjectPopover = ({ handleClose, data }) => {
       </div>
     </Portal>
   )
-}
+};
 
 export const ProjectCard = ({
   handleClick,
@@ -83,39 +83,42 @@ export const ProjectCard = ({
           { clickable && <OpenIcon onClick={handleClick} /> }
           <h3>{title}</h3>
         </div>
-        <p className='project-card__description'>{description}</p>
-        <div className='project-card__tools'>
-          {tools.map((tool) => (
-            <p key={tool}>{tool}</p>
-          ))}
-        </div>
-        <div className='project-card__links'>
-          {Object.entries(links).map(([type, link]) => {
-            if (!link.length) return null;
-            if (!/^https?:\/\//.test(link)) link = `https://${link}`;
-            return (
-              <a key={type} href={link} rel='noreferrer' target='_blank'>
-                {ICON_MAP[type]}
-              </a>
-            );
-          })}
-        </div>
+        { description && <p className='project-card__description'>{description}</p>}
+        { tools && (
+          <div className='project-card__tools'>
+            {tools.map((tool) => (
+              <p key={tool}>{tool}</p>
+            ))}
+          </div>)}
+        { links && (
+          <div className='project-card__links'>
+            {Object.entries(links).map(([type, link]) => {
+              if (!link.length) return null;
+              if (!/^https?:\/\//.test(link)) link = `https://${link}`;
+              return (
+                <a key={type} href={link} rel='noreferrer' target='_blank'>
+                  {ICON_MAP[type]}
+                </a>
+              );
+            })}
+          </div>)}
       </div>
-      <div
-        className={`project-card__image${showInverse ? '--inverse' : ''} ${clickable ? 'project-card__image--clickable' : ''}`}
-        onClick={clickable ? handleClick : null}
-      >
-        <Image
-          alt=''
-          src={image}
-          layout='fill'
-          objectFit='cover'
-          quality={100}
-          priority={true}
-          placeholder={placeholder ? 'blur' : 'empty'}
-          blurDataURL={placeholder || null}
-        />
-      </div>
+      { image && (
+        <div
+          className={`project-card__image${showInverse ? '--inverse' : ''} ${clickable ? 'project-card__image--clickable' : ''}`}
+          onClick={clickable ? handleClick : null}
+        >
+          <Image
+            alt=''
+            src={image}
+            layout='fill'
+            objectFit='cover'
+            quality={100}
+            priority={true}
+            placeholder={placeholder ? 'blur' : 'empty'}
+            blurDataURL={placeholder || null}
+          />
+        </div>)}
     </div>
   );
 }
@@ -137,7 +140,7 @@ export const ProjectCards = ({ showInverse = true }) => {
           image={data.image}
           placeholder={data.placeholder}
           showInverse={showInverse && !!(i % 2)}
-          clickable={!!data.highlights}
+          clickable={data.highlights && !!data.highlights.length}
         />
       ))}
       { selectedIndex !== -1 &&
@@ -153,4 +156,4 @@ export const ProjectCards = ({ showInverse = true }) => {
       }
     </>
   )
-}
+};
