@@ -33,13 +33,17 @@ export default function Home() {
     const main = document.getElementById('main');
 
     const handleScroll = () => {
-      const idx = refPositions.findIndex(([_, el], i) => (
-        main.scrollTop >= el && (
+      const { scrollTop, scrollHeight, clientHeight } = main;
+      let idx = refPositions.findIndex(([_, el], i) => (
+        scrollTop >= el && (
           refPositions[i + 1] && refPositions[i + 1][1]
-            ? main.scrollTop < refPositions[i + 1][1]
+            ? scrollTop < refPositions[i + 1][1]
             : true
         )
       ));
+      if (clientHeight + scrollTop === scrollHeight) {
+        idx = refPositions.length - 1;
+      }
       setSectionInView(refPositions[idx] ? refPositions[idx][0] : null);
     }
 
