@@ -28,19 +28,10 @@
 
 
     button {
-      transition: $transition-2;
-      cursor: pointer;
+      @include button-default-style;
       padding: 10px 12px;
-      background-color: rgba(0,0,0,0);
       font-weight: 900;
-      border-radius: 5px;
-      @include themed() {
-        color: t($color-3);
-        border: 2px solid t($color-3);
-        &:hover {
-          background-color: transparentize(t($color-3), 0.85);
-        }
-      }
+      font-size: $font-size-3;
     }
   }
 

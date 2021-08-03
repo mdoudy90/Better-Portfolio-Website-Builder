@@ -14,22 +14,6 @@
   }
 
   &__cta-button {
-    transition: $transition-2;
-    font-family: $font-2;
-    font-size: $font-size-5;
-    text-decoration: inherit !important;
-    cursor: pointer;
-    padding: 12px 16px;
-    margin: 25px 0;
-    background-color: rgba(0,0,0,0);
-    font-weight: 500;
-    border-radius: 5px;
-    @include themed() {
-      color: t($color-3);
-      border: 2px solid t($color-3);
-      &:hover {
-        background-color: transparentize(t($color-3), 0.85);
-      }
-    }
+    @include button-default-style;
   }
 }

@@ -170,18 +170,13 @@ $borderRadius: 3px;
     margin: -50px 0;
 
     button {
-      transition: $transition-2;
-      cursor: pointer;
-      padding: 10px 12px;
-      background-color: rgba(0,0,0,0);
-      border-radius: 5px;
+      @include button-default-style;
       @include themed() {
-        color: t($color-3);
         border: 1px solid t($color-3);
-        &:hover {
-          background-color: transparentize(t($color-3), 0.85);
-        }
       }
+      font-weight: normal;
+      font-size: $font-size-3;
+      padding: 10px 12px;
     }
   }
 }

@@ -1,3 +1,22 @@
+@mixin button-default-style() {
+  font-family: $font-2;
+  font-size: $font-size-5;
+  font-weight: 500;
+  transition: $transition-2;
+  text-decoration: inherit !important;
+  cursor: pointer;
+  padding: 12px 16px;
+  background-color: rgba(0,0,0,0);
+  border-radius: 5px;
+  @include themed() {
+    color: t($color-3);
+    border: 2px solid t($color-3);
+    &:hover {
+      background-color: transparentize(t($color-3), 0.85);
+    }
+  }
+}
+
 @mixin text-style(
   $font-family: $neueHaasGrotesk,
   $font-size: $size-4,
