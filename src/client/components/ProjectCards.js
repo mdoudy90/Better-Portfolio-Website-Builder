@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Portal from '../components/Portal';
 import useModalClose from '../hooks/useModalClose';
 import WebIcon from '../../../assets/icons/web.svg';
+import OpenIcon from '../../../assets/icons/open.svg';
 import CloseIcon from '../../../assets/icons/close.svg';
 import GithubIcon from '../../../assets/icons/github.svg';
 import data from '../../../src/client/lib/data.json';
@@ -78,7 +79,10 @@ export const ProjectCard = ({
   return (
     <div className='project-card'>
       <div className={`project-card__details${showInverse ? '--inverse' : ''}`}>
-        <h3 className='project-card__title'>{title}</h3>
+        <div className='project-card__title'>
+          { clickable && <OpenIcon onClick={handleClick} /> }
+          <h3>{title}</h3>
+        </div>
         <p className='project-card__description'>{description}</p>
         <div className='project-card__tools'>
           {tools.map((tool) => (
