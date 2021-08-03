@@ -120,6 +120,27 @@ $borderRadius: 3px;
   }
 }
 
+@media (max-width: $breakpoint-2) {
+  .project-card {
+    grid-template: auto 1fr / repeat(5, 1fr);
+    &__details,
+    &__details--inverse {
+      grid-row: 2;
+      grid-column: 1 / span 5;
+    }
+
+    &__image,
+    &__image--inverse {
+      grid-row: 1;
+      grid-column: 1 / span 5;
+    }
+
+    &__title {
+      padding: 10px 0 0 0;
+    }
+  }
+}
+
 .project-cards {
   &__toggle-amount {
     display: flex;

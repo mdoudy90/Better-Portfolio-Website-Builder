@@ -3,12 +3,15 @@ import Image from 'next/image'
 
 import Portal from '../components/Portal';
 import useModalClose from '../hooks/useModalClose';
+import useWindowDimensions from '../hooks/useWindowDimensions';
 import data from '../../../src/client/lib/data.json';
 import ArrowLeft from '../../../assets/icons/arrow-left.svg';
 import ArrowRight from '../../../assets/icons/arrow-right.svg';
 
 const { gallery } = data;
-const IMAGES_PER_GROUP = 9;
+const IMAGES_PER_GROUP_STANDARD = 9;
+const IMAGES_PER_GROUP_MOBILE = 6;
+const MOBILE_BREAKPOINT = 768;
 
 const GalleryPopover = ({ selectedIndex, handleClose, onPopoverToggle }) => {
   const [imageIndex, setImageIndex] = useState(selectedIndex);
@@ -54,9 +57,14 @@ const GalleryPopover = ({ selectedIndex, handleClose, onPopoverToggle }) => {
 const Gallery = () => {
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [groupIndex, setGroupIndex] = useState(0);
+  const { width } = useWindowDimensions();
+
+  const imagesPerGroup = width <= MOBILE_BREAKPOINT
+    ? IMAGES_PER_GROUP_MOBILE
+    : IMAGES_PER_GROUP_STANDARD;
 
   const onPopoverToggle = (nextIndex) => {
-    const nextGroupIndex = Math.floor(nextIndex / IMAGES_PER_GROUP);
+    const nextGroupIndex = Math.floor(nextIndex / imagesPerGroup);
     if (nextGroupIndex !== groupIndex) {
       setGroupIndex(nextGroupIndex);
     }
@@ -65,12 +73,12 @@ const Gallery = () => {
   return (
     <>
       <div className='gallery__images'>
-        { gallery.slice(IMAGES_PER_GROUP * groupIndex, (IMAGES_PER_GROUP * (groupIndex + 1))).map(({ image, placeholder }, i) => (
+        { gallery.slice(imagesPerGroup * groupIndex, (imagesPerGroup * (groupIndex + 1))).map(({ image, placeholder }, i) => (
           <div key={`gallery-image-${i}`} className='gallery__image'>
             <Image
               alt=''
               src={image}
-              onClick={() => setSelectedIndex(i + (IMAGES_PER_GROUP * groupIndex))}
+              onClick={() => setSelectedIndex(i + (imagesPerGroup * groupIndex))}
               layout='responsive'
               width='300px'
               height='300px'
@@ -83,9 +91,9 @@ const Gallery = () => {
           </div>
         ))}
       </div>
-      { gallery.length > IMAGES_PER_GROUP && (
+      { gallery.length > imagesPerGroup && (
         <div className='gallery__pagination'>
-          { Array(Math.floor(gallery.length / IMAGES_PER_GROUP) + 1).fill().map((_, i) => (
+          { Array(Math.floor(gallery.length / imagesPerGroup) + 1).fill().map((_, i) => (
             <div
               key={i}
               className={`gallery__pagination-bubble ${i === groupIndex ? 'gallery__pagination-bubble--selected' : ''}`}

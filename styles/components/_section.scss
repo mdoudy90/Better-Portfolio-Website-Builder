@@ -26,3 +26,12 @@
     gap: 100px;
   }
 }
+
+@media (max-width: $breakpoint-1) {
+  .section {
+    &__contents {
+      padding: 50px 0;
+      gap: 50px;
+    }
+  }
+}

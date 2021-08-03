@@ -9,3 +9,24 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-1) and (max-width: $breakpoint-2) {
+  .pdf-viewer {
+    &__page {
+      canvas {
+        width: min(100vw - 200px, 750px) !important;
+      }
+    }
+  }
+}
+
+
+@media (max-width: $breakpoint-1) {
+ .pdf-viewer {
+    &__page {
+      canvas {
+        width: min(100vw - 100px, 750px) !important;
+      }
+    }
+  }
+}
