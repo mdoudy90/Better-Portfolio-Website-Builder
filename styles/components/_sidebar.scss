@@ -71,6 +71,7 @@
       @include themed() {
         color: t($color-1);
         &:hover {
+          transform: scale(1.1);
           color: t($color-3);
         }
       }
@@ -94,6 +95,7 @@
     @include themed() {
       color: t($color-2);
       &:hover {
+        transform: scale(1.1);
         color: t($color-3);
         opacity: 1;
       }
