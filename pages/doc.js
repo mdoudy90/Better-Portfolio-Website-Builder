@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 import Layout from '../src/client/components/Layout';
 import Sidebar from '../src/client/components/Sidebar';
-import Themebar from '../src/client/components/Themebar';
+import ThemeBar from '../src/client/components/ThemeBar';
 
 const PDFViewer = dynamic(() => import("../src/client/components/PDFViewer.js"), {
   ssr: false
@@ -18,7 +18,7 @@ export default function Doc() {
         <Layout>
           <PDFViewer />
         </Layout>
-        <Themebar />
+        <ThemeBar />
         <Sidebar />
       </main>
     </div>
