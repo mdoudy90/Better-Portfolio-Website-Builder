@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 import Layout from '../src/client/components/Layout';
 import Sidebar from '../src/client/components/Sidebar';
-import Themebar from '../src/client/components/Themebar';
+// import Themebar from '../src/client/components/Themebar';
 import About from '../src/client/components/About';
 import Header from '../src/client/components/Header';
 import Footer from '../src/client/components/Footer';
@@ -92,7 +92,7 @@ export default function Home() {
           }
           <Footer />
         </Layout>
-        <Themebar />
+        {/* <Themebar /> */}
         <Sidebar scrollTo={scrollTo} sectionInView={sectionInView} />
       </main>
     </div>
