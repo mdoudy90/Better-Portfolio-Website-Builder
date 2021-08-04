@@ -13,4 +13,19 @@
       color: t($color-3);
     }
   }
+
+  &__github-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    gap: 3px;
+    svg {
+      width: $font-size-1;;
+      height: $font-size-1;;
+    }
+    p:nth-of-type(1) {
+      margin-right: 5px;
+    }
+  }
 }

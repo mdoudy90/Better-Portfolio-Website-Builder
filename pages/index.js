@@ -23,7 +23,7 @@ const COMPONENT_MAP = {
   contact: <Contact />
 }
 
-export default function Home() {
+function Index({ stars, forks }) {
   const theme = useSelector((state) => state.settings.theme);
   const sectionRefs= useRef({});
   const [sectionInView, setSectionInView] = useState(null);
@@ -90,7 +90,7 @@ export default function Home() {
               </Section>
             ))
           }
-          <Footer />
+          <Footer stars={stars} forks={forks} />
         </Layout>
         <ThemeBar />
         <Sidebar scrollTo={scrollTo} sectionInView={sectionInView} />
@@ -98,3 +98,17 @@ export default function Home() {
     </div>
   )
 };
+
+export async function getStaticProps() {
+  const res = await fetch('https://api.github.com/repos/mdoudy90/website-v2');
+  const json = await res.json();
+
+  return {
+    props: {
+      stars: json.stargazers_count || 0,
+      forks: json.forks_count || 0
+    },
+  }
+}
+
+export default Index;
