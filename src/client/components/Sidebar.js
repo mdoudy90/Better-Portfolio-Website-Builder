@@ -20,23 +20,28 @@ const SOCIAL_MAP = {
   'twitter': <TwitterIcon />
 }
 
-export const DefaultSidebar = ({ scrollTo, sectionInView, hideSocial, onClickStart }) => {
+export const DefaultSidebar = ({ scrollTo, sectionInView, isMobile, onClickStart }) => {
   const router = useRouter();
 
   return (
-    <div className="sidebar">
-      <div className="sidebar__cta">
-        { router.pathname === '/'
-          ? <Link href="/doc">
-              <button>Resume</button>
-            </Link>
-          : <a download={document.fileName} href={document.path}>
-              <button>Download</button>
-            </a>}
+    <div className='sidebar'>
+      <div className='sidebar__cta'>
+        {router.pathname === '/'
+        ? isMobile
+            ? <a href={document.path} rel='noreferrer' target='_blank'>
+                <button>Resume</button>
+              </a>
+            : <Link href='/doc'>
+                <button>Resume</button>
+              </Link>
+        : <a download={document.fileName} href={document.path}>
+            <button>Download</button>
+          </a>
+        }
       </div>
-      <div className="sidebar__nav">
-        { router.pathname === '/'
-          ? sections.map(({ heading }) => (
+      <div className='sidebar__nav'>
+        {router.pathname === '/' ? (
+          sections.map(({ heading }) => (
             <h2
               key={heading}
               className={sectionInView === heading.toLowerCase() ? 'sidebar__nav--highlight' : ''}
@@ -44,30 +49,31 @@ export const DefaultSidebar = ({ scrollTo, sectionInView, hideSocial, onClickSta
               onClick={(e) => {
                 if (onClickStart) onClickStart();
                 scrollTo(e);
-              }}
-            >
-              { heading }
+              }}>
+              {heading}
             </h2>
           ))
-          : <Link href="/">
-              <h2>Home</h2>
-            </Link>
-        }
+        ) : (
+          <Link href='/'>
+            <h2>Home</h2>
+          </Link>
+        )}
       </div>
-      { !hideSocial && (
-        <div className="sidebar__social">
+      {!isMobile && (
+        <div className='sidebar__social'>
           {Object.entries(social).map(([type, link]) => {
             if (!link.length) return null;
             if (!/^https?:\/\//.test(link)) link = `https://${link}`;
             return (
-              <a key={type} href={link} rel='noreferrer' target='_blank'>
+              <a key={type} href={link} aria-label={`My ${type}`} rel='noreferrer' target='_blank'>
                 {SOCIAL_MAP[type]}
               </a>
             );
           })}
-        </div> )}
+        </div>
+      )}
     </div>
-  )
+  );
 };
 
 export const MobileSidebar = ({ scrollTo, sectionInView }) => {
@@ -81,7 +87,7 @@ export const MobileSidebar = ({ scrollTo, sectionInView }) => {
           if (!link.length) return null;
           if (!/^https?:\/\//.test(link)) link = `https://${link}`;
           return (
-            <a key={type} href={link} rel='noreferrer' target='_blank'>
+            <a key={type} href={link} aria-label={`My ${type}`} rel='noreferrer' target='_blank'>
               {SOCIAL_MAP[type]}
             </a>
           );
@@ -92,7 +98,7 @@ export const MobileSidebar = ({ scrollTo, sectionInView }) => {
           <DefaultSidebar
             scrollTo={scrollTo}
             sectionInView={sectionInView}
-            hideSocial={true}
+            isMobile={true}
             onClickStart={() => setIsOpen(false)}
           />
         </Portal>

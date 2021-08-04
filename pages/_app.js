@@ -5,7 +5,7 @@ import { store } from '../src/client/redux/store';
 import SEO from '../src/client/lib/next-seo.config';
 import '../styles/main.scss';
 
-function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <DefaultSeo {...SEO} />
@@ -13,6 +13,4 @@ function App({ Component, pageProps }) {
       <div id="portal-root" />
     </Provider>
   )
-}
-
-export default App;
+};

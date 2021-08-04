@@ -17,46 +17,27 @@
   }
 }
 
-@mixin text-style(
-  $font-family: $neueHaasGrotesk,
-  $font-size: $size-4,
-  $font-weight: normal,
-  $font-stretch: normal,
-  $font-style: normal,
-  $line-height: normal,
-  $letter-spacing: normal
-) {
-  font-family: $font-family;
-  font-size: $font-size;
-  font-weight: $font-weight;
-  font-stretch: $font-stretch;
-  font-style: $font-style;
-  line-height: $line-height;
-  letter-spacing: $letter-spacing;
-}
+// @mixin text-style(
+//   $font-family: $neueHaasGrotesk,
+//   $font-size: $size-4,
+//   $font-weight: normal,
+//   $font-stretch: normal,
+//   $font-style: normal,
+//   $line-height: normal,
+//   $letter-spacing: normal
+// ) {
+//   font-family: $font-family;
+//   font-size: $font-size;
+//   font-weight: $font-weight;
+//   font-stretch: $font-stretch;
+//   font-style: $font-style;
+//   line-height: $line-height;
+//   letter-spacing: $letter-spacing;
+// }
 
-@mixin center-content($flex-direction: row) {
-  flex-direction: $flex-direction;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-@mixin background-cover() {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-@mixin transform($transforms) {
-	-webkit-transform: $transforms;
-	-moz-transform: $transforms;
-	-ms-transform: $transforms;
-	transform: $transforms;
-}
-
-@mixin rotate ($deg) { 
-	@include transform(rotate(#{$deg}deg));
-}
+// @mixin transform($transforms) {
+// 	-webkit-transform: $transforms;
+// 	-moz-transform: $transforms;
+// 	-ms-transform: $transforms;
+// 	transform: $transforms;
+// }

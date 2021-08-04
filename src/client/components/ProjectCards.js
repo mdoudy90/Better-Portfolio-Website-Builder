@@ -96,7 +96,7 @@ export const ProjectCard = ({
               if (!link.length) return null;
               if (!/^https?:\/\//.test(link)) link = `https://${link}`;
               return (
-                <a key={type} href={link} rel='noreferrer' target='_blank'>
+                <a key={type} href={link} aria-label={`Project ${type} link`} rel='noreferrer' target='_blank'>
                   {ICON_MAP[type]}
                 </a>
               );
