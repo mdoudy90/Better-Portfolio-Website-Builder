@@ -1,6 +1,14 @@
 import data from './data.json';
 
-const { title, description, canonical, twitterHandle } = data.meta;
+const {
+  title,
+  description,
+  language,
+  canonical,
+  url,
+  twitterHandle,
+  mobileIcon
+} = data.meta;
 
 export default {
   title,
@@ -8,16 +16,16 @@ export default {
   canonical,
   openGraph: {
     type: 'website',
-    locale: 'en_US',
-    url: 'https://www.url.ie/',
-    site_name: 'SiteName',
-    images: [
-      { url: 'site/logo192.png' }
-    ]
+    locale: language,
+    url: url,
+    site_name: title,
+    images: mobileIcon
+      ? [{ url: `${url}${mobileIcon}` }]
+      : []
   },
   twitter: {
     handle: twitterHandle,
-    site: '@site',
+    site: twitterHandle,
     cardType: 'summary_large_image',
   },
 };

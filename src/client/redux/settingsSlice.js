@@ -1,26 +1,21 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  theme: 1,
-  isSideBarOpen: false
+  theme: 1
 };
 
 export const settingsSlice = createSlice({
   name: 'settings',
   initialState,
   reducers: {
-    toggleTheme: (state, action) => {
-      state.theme = (state.theme % 7) + 1 // range 1 - 7
-    },
-    setIsSideBarOpen: (state, action) => { // MAY NOT NEED
-      state.isSideBarOpen = action.payload
+    toggleTheme: (state) => {
+      state.theme = (state.theme % 2) + 1 // range 1 - 2, could be more ;)
     }
   },
 });
 
 export const {
-  toggleTheme,
-  setIsSideBarOpen
+  toggleTheme
  } = settingsSlice.actions;
 
 export default settingsSlice.reducer;

@@ -1,169 +1,99 @@
 {
   "meta": {
-    "title": "TEMP TITLE",
-    "description": "TEMP DESC",
-    "mobileIcon": "/logo192.png",
+    "title": "META TITLE",
+    "description": "META DESC",
+    "mobileIcon": "/mobile-icon.png",
     "favIcon": "/favicon.ico",
     "language": "en-US",
-    "canonical": "",
-    "twitterHandle": ""
+    "canonical": "CANONICAL URL",
+    "url": "URL",
+    "twitterHandle": "TWITTER HANDLE"
   },
   "social": {
-    "linkedin": "http://linkedin.com/in/mdoudy",
-    "github": "https://github.com/mdoudy90",
-    "instagram": "https://www.instagram.com/doudy2.0",
-    "twitter": "https://twitter.com/michaeldoudy"
+    "linkedin": "LINKEDIN URL",
+    "github": "GITHUB URL",
+    "instagram": "INSTAGRAM URL",
+    "twitter": "TWITTER URL"
   },
   "document": {
-    "fileName": "Michael-Doudy-Resume.pdf",
-    "path": "/docs/resume.pdf"
+    "fileName": "MY-RESUME.pdf",
+    "path": "/docs/temp.pdf"
   },
   "header": {
     "preHeading": "Hello, my name is",
-    "heading": "Michael Doudy",
-    "subHeading": "Software Engineer Software Engineer Software Engineer",
-    "text": "I'm an NYC-based software engineer that works at Helbiz. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae.",
+    "heading": "FIRST LAST",
+    "subHeading": "JOB TITLE",
+    "text": "SHORT INTRO",
     "ctaText": "Get In Touch"
   },
   "sections": [
     {
       "type": "about",
-      "heading": "About Me"
+      "heading": "ABOUT ME"
     },
     {
       "type": "projectCards",
-      "heading": "Work"
+      "heading": "PROJECTS"
     },
     {
       "type": "gallery",
-      "heading": "Photography"
+      "heading": "MY GALLERY"
     },
     {
       "type": "contact",
-      "heading": "Contact"
+      "heading": "CONTACT"
     }
   ],
   "about": {
     "content": [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae. Cupiditate nisi doloremque corrupti esse, eligendi non deleniti dolores repellat quia, excepturi quod assumenda blanditiis facilis sapiente aut nostrum.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae. Cupiditate nisi doloremque corrupti esse, eligendi non deleniti dolores repellat quia, excepturi quod assumenda blanditiis facilis sapiente aut nostrum.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ullam vitae. Cupiditate nisi doloremque corrupti esse, eligendi non deleniti dolores repellat quia, excepturi quod assumenda blanditiis facilis sapiente aut nostrum."
+      "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+      "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
     ],
-    "image": "/images/me.png",
-    "placeholder": "/images/me.png"
+    "image": "/images/about/TEMP-ME.png",
+    "placeholder": "/images/about/TEMP-ME-PLACEHOLDER.png"
   },
   "projectCards": [
     {
-      "title": "Helbiz Analytics",
-      "description": "An analytics platform that visualizes aggregated trip data using modern geospatial tools to make informed conclusions about rider usage and vehicle demand",
-      "tools": ["React", "Redux", "GraphQL", "Sass"],
+      "title": "PROJECT 1",
+      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+      "tools": ["TOOL 1", "TOOL 2"],
       "links": {
-        "github": "www.github.com",
-        "website": "https://www.google.com"
+        "github": "GITHUB URL",
+        "website": "WEBSITE URL"
       },
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png",
+      "image": "/images/projectCards/TEMP-PROJECT-1-BANNER.png",
+      "placeholder": "/images/projectCards/TEMP-PROJECT-1-BANNER-PLACEHOLDER.png",
       "highlights": [
         {
-          "heading": "Point 1",
+          "heading": "POINT 1",
           "details": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+            "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
           ],
-          "media": "/images/helbiz-analytics-main.png"
+          "media": "/images/projectCards/TEMP-PROJECT-1-POINT-1.gif"
         },
         {
-          "heading": "Point 2",
+          "heading": "POINT 2",
           "details": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
-          ],
-          "media": "/images/dummy.gif"
-        },
-        {
-          "heading": "Point 3",
-          "details": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
           ]
-        },
-        {
-          "heading": "Point 4",
-          "details": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
-          ],
-          "media": "/images/helbiz-analytics-main.png"
         }
       ]
     },
     {
-      "title": "Helbiz Move",
-      "description": "An analytics platform that visualizes aggregated trip data using modern Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro, numquam quae modi est illo rerum odio, ut voluptate facere mollitia perspiciatis eius sapiente ea voluptatem culpa, quidem eaque aliquam!",
-      "tools": ["React", "Redux", "GraphQL", "Sass"],
-      "links": {
-        "github": "www.github.com",
-        "website": ""
-      },
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "title": "Helbiz Ads-Hub",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro, numquam quae modi est illo rerum odio, ut voluptate facere mollitia perspiciatis eius sapiente ea voluptatem culpa, quidem eaque aliquam!",
-      "tools": ["React", "Redux", "GraphQL", "Sass"],
-      "links": {
-        "github": "www.github.com",
-        "website": ""
-      },
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
+      "title": "PROJECT 2",
+      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
     }
   ],
   "gallery": [
     {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "image": "/images/helbiz-analytics-main.png",
-      "placeholder": "/images/helbiz-analytics-main.png"
-    },
-    {
-      "image": "/images/test-image.png",
-      "placeholder": "/images/test-image.png"
+      "image": "/images/gallery/TEMP-GALLERY-IMAGE.png",
+      "placeholder": "/images/gallery/TEMP-GALLERY-IMAGE-PLACEHOLDER.png"
     }
   ],
   "contact": {
-    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro, numquam quae modi est illo rerum odio",
-    "ctaText": "Say Hello",
-    "email": "michael.doudy@gmail.com"
+    "text": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+    "ctaText": "Send Email",
+    "email": "EMAIL@EMAIL.COM"
   }
 }
