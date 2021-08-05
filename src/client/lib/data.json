@@ -56,8 +56,8 @@
       "title": "Helbiz Analytics",
       "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
       "tools": ["React", "Redux", "Sass", "GraphQL", "DeckGL"],
-      "image": "/images/projectCards/TEMP-PROJECT-1-BANNER.png",
-      "placeholder": "/images/projectCards/TEMP-PROJECT-1-BANNER-PLACEHOLDER.png",
+      "image": "/images/projectCards/helbizAnalytics/Helbiz-Analytics-Banner.png",
+      "placeholder": "/images/projectCards/helbizAnalytics/Helbiz-Analytics-Banner-Placeholder.png",
       "highlights": [
         {
           "heading": "POINT 1",
@@ -78,7 +78,9 @@
     {
       "title": "Helbiz Move",
       "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-      "tools": ["TOOL 1", "TOOL 2"],
+      "tools": ["React", "Next.js", "deck.gl", "Redux Toolkit", "Sass"],
+      "image": "/images/projectCards/helbizMove/Helbiz-Move-Banner.png",
+      "placeholder": "/images/projectCards/helbizMove/Helbiz-Move-Banner-Placeholder.png",
       "links": {
         "github": "GITHUB URL",
         "website": "WEBSITE URL"
@@ -92,15 +94,17 @@
     {
       "title": "Helbiz.com",
       "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-      "tools": ["TOOL 1", "TOOL 2"],
+      "tools": ["Vue.js", "Nuxt.js", "Tailwind"],
+      "image": "/images/projectCards/helbizcom/Helbizcom-Banner.png",
+      "placeholder": "/images/projectCards/helbizcom/Helbizcom-Banner-Placeholder.png",
       "links": {
-        "website": "WEBSITE URL"
+        "website": "https://helbiz.com/analytics"
       }
     },
     {
       "title": "Website V2",
       "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-      "tools": ["TOOL 1", "TOOL 2"],
+      "tools": ["React", "Next.js", "Redux Toolkit", "Sass"],
       "links": {
         "github": "GITHUB URL",
         "website": "WEBSITE URL"
