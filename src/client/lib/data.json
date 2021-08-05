@@ -1,66 +1,61 @@
 {
   "meta": {
-    "title": "META TITLE",
-    "description": "META DESC",
+    "title": "Michael Doudy",
+    "description": "Michael Doudy - Software Engineer",
     "mobileIcon": "/mobile-icon.png",
     "favIcon": "/favicon.ico",
     "language": "en-US",
-    "canonical": "CANONICAL URL",
-    "url": "URL",
-    "twitterHandle": "TWITTER HANDLE"
+    "canonical": "https://mdoudy.com",
+    "url": "https://mdoudy.com",
+    "twitterHandle": "@MichaelDoudy"
   },
   "social": {
-    "linkedin": "LINKEDIN URL",
-    "github": "GITHUB URL",
-    "instagram": "INSTAGRAM URL",
-    "twitter": "TWITTER URL"
+    "linkedin": "http://linkedin.com/in/mdoudy",
+    "github": "https://github.com/mdoudy90",
+    "instagram": "https://www.instagram.com/doudy2.0",
+    "twitter": "https://twitter.com/michaeldoudy"
   },
   "document": {
-    "fileName": "MY-RESUME.pdf",
-    "path": "/docs/temp.pdf"
+    "fileName": "Michael-Doudy-Resume.pdf",
+    "path": "/docs/Michael-Doudy-Resume.pdf"
   },
   "header": {
     "preHeading": "Hello, my name is",
-    "heading": "FIRST LAST",
-    "subHeading": "JOB TITLE",
-    "text": "SHORT INTRO",
+    "heading": "Michael Doudy",
+    "subHeading": "Software Engineer",
+    "text": "I'm an NYC-based software engineer that works at Helbiz.",
     "ctaText": "Get In Touch"
   },
   "sections": [
     {
       "type": "about",
-      "heading": "ABOUT ME"
+      "heading": "About Me"
     },
     {
       "type": "projectCards",
-      "heading": "PROJECTS"
+      "heading": "Work"
     },
     {
       "type": "gallery",
-      "heading": "MY GALLERY"
+      "heading": "Photography"
     },
     {
       "type": "contact",
-      "heading": "CONTACT"
+      "heading": "Contact"
     }
   ],
   "about": {
     "content": [
-      "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-      "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
+      "I am a full stack developer obsessed with bringing ideas to life! My specializations are in JavaScript, React, Node, MongoDB, GraphQL, Sass and am constantly adding new tools to my mental database. I currently work in the micromobility industry with analytics and ad platforms. In a prior life, I’ve had business experience in VR/AR, the indie game dev world, startup ecosystems, and consumer insights."
     ],
     "image": "/images/about/TEMP-ME.png",
     "placeholder": "/images/about/TEMP-ME-PLACEHOLDER.png"
   },
   "projectCards": [
     {
-      "title": "PROJECT 1",
+      "title": "Helbiz Analytics",
       "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
       "tools": ["TOOL 1", "TOOL 2"],
-      "links": {
-        "github": "GITHUB URL",
-        "website": "WEBSITE URL"
-      },
       "image": "/images/projectCards/TEMP-PROJECT-1-BANNER.png",
       "placeholder": "/images/projectCards/TEMP-PROJECT-1-BANNER-PLACEHOLDER.png",
       "highlights": [
@@ -81,8 +76,53 @@
       ]
     },
     {
-      "title": "PROJECT 2",
-      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
+      "title": "Helbiz Move",
+      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+      "tools": ["TOOL 1", "TOOL 2"],
+      "links": {
+        "github": "GITHUB URL",
+        "website": "WEBSITE URL"
+      }
+    },
+    {
+      "title": "Helbiz Ads-Hub",
+      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+      "tools": ["TOOL 1", "TOOL 2"]
+    },
+    {
+      "title": "Helbiz.com",
+      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+      "tools": ["TOOL 1", "TOOL 2"],
+      "links": {
+        "website": "WEBSITE URL"
+      }
+    },
+    {
+      "title": "Website V2",
+      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+      "tools": ["TOOL 1", "TOOL 2"],
+      "links": {
+        "github": "GITHUB URL",
+        "website": "WEBSITE URL"
+      }
+    },
+    {
+      "title": "Crypto Paper Trader",
+      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+      "tools": ["TOOL 1", "TOOL 2"],
+      "links": {
+        "github": "GITHUB URL",
+        "website": "WEBSITE URL"
+      }
+    },
+    {
+      "title": "Find My Friends",
+      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+      "tools": ["TOOL 1", "TOOL 2"],
+      "links": {
+        "github": "GITHUB URL",
+        "website": "WEBSITE URL"
+      }
     }
   ],
   "gallery": [
@@ -93,7 +133,7 @@
   ],
   "contact": {
     "text": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-    "ctaText": "Send Email",
-    "email": "EMAIL@EMAIL.COM"
+    "ctaText": "Say Hello",
+    "email": "michael.doudy@gmail.com"
   }
 }
