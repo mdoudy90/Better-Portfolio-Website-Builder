@@ -55,7 +55,7 @@
     {
       "title": "Helbiz Analytics",
       "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-      "tools": ["TOOL 1", "TOOL 2"],
+      "tools": ["React", "Redux", "Sass", "GraphQL", "DeckGL"],
       "image": "/images/projectCards/TEMP-PROJECT-1-BANNER.png",
       "placeholder": "/images/projectCards/TEMP-PROJECT-1-BANNER-PLACEHOLDER.png",
       "highlights": [
