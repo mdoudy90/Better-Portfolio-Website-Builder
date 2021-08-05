@@ -11,19 +11,23 @@ const Portal = ({ children }) => {
   const [mounted, setMounted] = useState(false);
   const theme = useSelector((state) => state.settings.theme);
 
-  const el = document.createElement('div');
-  el.className = `portal-wrapper theme--${theme}`;
+  const portalWrapper = document.createElement('div');
+  portalWrapper.className = `portal-wrapper theme--${theme}`;
+
+  const bgShader = document.createElement('div');
+  bgShader.className = `bg-shader`;
+  portalWrapper.appendChild(bgShader);
 
   useEffect(() => {
     ref.current = document.querySelector(SELECTOR_ID);
-    ref.current.appendChild(el);
+    ref.current.appendChild(portalWrapper);
 
     setMounted(true);
 
-    return () => ref.current.removeChild(el);
-  }, [el]);
+    return () => ref.current.removeChild(portalWrapper);
+  }, [portalWrapper]);
 
-  return mounted ? createPortal(children, el) : null;
+  return mounted ? createPortal(children, portalWrapper) : null;
 }
 
 export default Portal;

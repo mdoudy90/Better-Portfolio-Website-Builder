@@ -6,7 +6,7 @@ const useOutsideClick = (ref, callback, isNextImage) => {
       callback();
     }
 
-    if (!isNextImage && e.target.className.includes('portal-wrapper')) {
+    if (!isNextImage && e.target.className.includes('bg-shader')) {
       callback();
     }
   };

@@ -1,10 +1,22 @@
 .portal-wrapper {
   z-index: 99999;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   display: grid;
+}
+
+.bg-shader {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  @include themed() {
+    background-color: transparentize(t($color-4), 0.15);
+    filter: grayscale(.6);
+  }
 }
