@@ -33,6 +33,10 @@
     },
     {
       "type": "projectCards",
+      "heading": "WORK"
+    },
+    {
+      "type": "projectCards",
       "heading": "PROJECTS"
     },
     {
@@ -52,39 +56,55 @@
     "image": "/images/about/TEMP-ME.png",
     "placeholder": "/images/about/TEMP-ME-PLACEHOLDER.png"
   },
-  "projectCards": [
-    {
-      "title": "PROJECT 1",
-      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-      "tools": ["TOOL 1", "TOOL 2"],
-      "links": {
-        "github": "GITHUB URL",
-        "website": "WEBSITE URL"
-      },
-      "image": "/images/projectCards/TEMP-PROJECT-1-BANNER.png",
-      "placeholder": "/images/projectCards/TEMP-PROJECT-1-BANNER-PLACEHOLDER.png",
-      "highlights": [
-        {
-          "heading": "POINT 1",
-          "details": [
-            "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-            "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
-          ],
-          "media": "/images/projectCards/TEMP-PROJECT-1-POINT-1.gif"
+  "projectCards": {
+    "WORK": [
+      {
+        "title": "WORK PROJECT 1",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+        "tools": ["TOOL 1", "TOOL 2"],
+        "links": {
+          "github": "GITHUB URL",
+          "website": "WEBSITE URL"
         },
-        {
-          "heading": "POINT 2",
-          "details": [
-            "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
-          ]
-        }
-      ]
-    },
-    {
-      "title": "PROJECT 2",
-      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
-    }
-  ],
+        "image": "/images/projectCards/TEMP-WORK-PROJECT-1-BANNER.png",
+        "placeholder": "/images/projectCards/TEMP-WORK-PROJECT-1-BANNER-PLACEHOLDER.png",
+        "highlights": [
+          {
+            "heading": "POINT 1",
+            "details": [
+              "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+              "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
+            ],
+            "media": "/images/projectCards/TEMP-WORK-PROJECT-1-POINT-1.gif"
+          },
+          {
+            "heading": "POINT 2",
+            "details": [
+              "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "WORK PROJECT 2",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
+      },
+      {
+        "title": "WORK PROJECT 2",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
+      },
+      {
+        "title": "WORK PROJECT 2",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
+      }
+    ],
+    "PROJECTS": [
+      {
+        "title": "PROJECT 1",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
+      }
+    ]
+  },
   "gallery": [
     {
       "image": "/images/gallery/TEMP-GALLERY-IMAGE.png",

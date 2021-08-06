@@ -16,13 +16,6 @@ import data from '../src/client/lib/data.json';
 
 const { meta, sections } = data;
 
-const COMPONENT_MAP = {
-  about: <About />,
-  projectCards: <ProjectCards />,
-  gallery: <Gallery />,
-  contact: <Contact />
-}
-
 function Index({ stars, forks }) {
   const theme = useSelector((state) => state.settings.theme);
   const sectionRefs= useRef({});
@@ -50,7 +43,7 @@ function Index({ stars, forks }) {
     main.addEventListener("scroll", handleScroll);
 
     return () => main.addEventListener("scroll", handleScroll);
-},[])
+  },[])
 
   const scrollTo = (e) => {
     if (!e.target.getAttribute('scroll-dest')) return;
@@ -58,6 +51,16 @@ function Index({ stars, forks }) {
     if (ref) {
       ref.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
+  }
+
+  const _buildSectionComponent = (type, heading) => {
+    const sectionMap = {
+      about: <About heading={heading} />,
+      projectCards: <ProjectCards heading={heading} />,
+      gallery: <Gallery heading={heading} />,
+      contact: <Contact heading={heading} />
+    }
+    return sectionMap[type];
   }
 
   return (
@@ -82,11 +85,11 @@ function Index({ stars, forks }) {
           <Header scrollTo={scrollTo} />
           { sections.map(({ type, heading }) => (
               <Section
-                key={type}
+                key={heading}
                 heading={heading}
                 ref={(el) => { sectionRefs.current[heading.toLowerCase()] = el }}
               >
-                {COMPONENT_MAP[type]}
+                {_buildSectionComponent(type, heading)}
               </Section>
             ))
           }

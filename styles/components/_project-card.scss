@@ -181,6 +181,14 @@ $borderRadius: 3px;
   }
 }
 
+@media (max-width: $breakpoint-1) {
+  .project-cards {
+    &__toggle-amount {
+      margin: 0 !important;
+    }
+  }
+}
+
 .project-popover {
   @include themed() {
     background-color: t($color-4);
