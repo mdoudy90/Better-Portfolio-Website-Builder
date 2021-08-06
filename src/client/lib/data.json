@@ -36,6 +36,10 @@
       "heading": "Work"
     },
     {
+      "type": "projectCards",
+      "heading": "Projects"
+    },
+    {
       "type": "gallery",
       "heading": "Photography"
     },
@@ -51,84 +55,88 @@
     "image": "/images/about/TEMP-ME.png",
     "placeholder": "/images/about/TEMP-ME-PLACEHOLDER.png"
   },
-  "projectCards": [
-    {
-      "title": "Helbiz Analytics",
-      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-      "tools": ["React", "Redux", "Sass", "GraphQL", "DeckGL"],
-      "image": "/images/projectCards/helbizAnalytics/Helbiz-Analytics-Banner.png",
-      "placeholder": "/images/projectCards/helbizAnalytics/Helbiz-Analytics-Banner-Placeholder.png",
-      "highlights": [
-        {
-          "heading": "POINT 1",
-          "details": [
-            "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-            "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
-          ],
-          "media": "/images/projectCards/TEMP-PROJECT-1-POINT-1.gif"
-        },
-        {
-          "heading": "POINT 2",
-          "details": [
-            "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
-          ]
+  "projectCards": {
+    "Work": [
+      {
+        "title": "Helbiz Analytics",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+        "tools": ["React", "Redux", "Sass", "GraphQL", "DeckGL"],
+        "image": "/images/projectCards/helbizAnalytics/Helbiz-Analytics-Banner.png",
+        "placeholder": "/images/projectCards/helbizAnalytics/Helbiz-Analytics-Banner-Placeholder.png",
+        "highlights": [
+          {
+            "heading": "POINT 1",
+            "details": [
+              "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+              "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
+            ],
+            "media": "/images/projectCards/TEMP-WORK-PROJECT-1-POINT-1.gif"
+          },
+          {
+            "heading": "POINT 2",
+            "details": [
+              "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Helbiz Move",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+        "tools": ["React", "Next.js", "deck.gl", "Redux Toolkit", "Sass"],
+        "image": "/images/projectCards/helbizMove/Helbiz-Move-Banner.png",
+        "placeholder": "/images/projectCards/helbizMove/Helbiz-Move-Banner-Placeholder.png",
+        "links": {
+          "github": "GITHUB URL",
+          "website": "WEBSITE URL"
         }
-      ]
-    },
-    {
-      "title": "Helbiz Move",
-      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-      "tools": ["React", "Next.js", "deck.gl", "Redux Toolkit", "Sass"],
-      "image": "/images/projectCards/helbizMove/Helbiz-Move-Banner.png",
-      "placeholder": "/images/projectCards/helbizMove/Helbiz-Move-Banner-Placeholder.png",
-      "links": {
-        "github": "GITHUB URL",
-        "website": "WEBSITE URL"
+      },
+      {
+        "title": "Helbiz Ads-Hub",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+        "tools": ["TOOL 1", "TOOL 2"]
+      },
+      {
+        "title": "Helbiz.com",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+        "tools": ["Vue.js", "Nuxt.js", "Tailwind"],
+        "image": "/images/projectCards/helbizcom/Helbizcom-Banner.png",
+        "placeholder": "/images/projectCards/helbizcom/Helbizcom-Banner-Placeholder.png",
+        "links": {
+          "website": "https://helbiz.com/analytics"
+        }
       }
-    },
-    {
-      "title": "Helbiz Ads-Hub",
-      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-      "tools": ["TOOL 1", "TOOL 2"]
-    },
-    {
-      "title": "Helbiz.com",
-      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-      "tools": ["Vue.js", "Nuxt.js", "Tailwind"],
-      "image": "/images/projectCards/helbizcom/Helbizcom-Banner.png",
-      "placeholder": "/images/projectCards/helbizcom/Helbizcom-Banner-Placeholder.png",
-      "links": {
-        "website": "https://helbiz.com/analytics"
+    ],
+    "Projects": [
+      {
+        "title": "Website V2",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+        "tools": ["React", "Next.js", "Redux Toolkit", "Sass"],
+        "links": {
+          "github": "GITHUB URL",
+          "website": "WEBSITE URL"
+        }
+      },
+      {
+        "title": "Crypto Paper Trader",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+        "tools": ["TOOL 1", "TOOL 2"],
+        "links": {
+          "github": "GITHUB URL",
+          "website": "WEBSITE URL"
+        }
+      },
+      {
+        "title": "Find My Friends",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+        "tools": ["TOOL 1", "TOOL 2"],
+        "links": {
+          "github": "GITHUB URL",
+          "website": "WEBSITE URL"
+        }
       }
-    },
-    {
-      "title": "Website V2",
-      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-      "tools": ["React", "Next.js", "Redux Toolkit", "Sass"],
-      "links": {
-        "github": "GITHUB URL",
-        "website": "WEBSITE URL"
-      }
-    },
-    {
-      "title": "Crypto Paper Trader",
-      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-      "tools": ["TOOL 1", "TOOL 2"],
-      "links": {
-        "github": "GITHUB URL",
-        "website": "WEBSITE URL"
-      }
-    },
-    {
-      "title": "Find My Friends",
-      "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-      "tools": ["TOOL 1", "TOOL 2"],
-      "links": {
-        "github": "GITHUB URL",
-        "website": "WEBSITE URL"
-      }
-    }
-  ],
+    ]
+  },
   "gallery": [
     {
       "image": "/images/gallery/TEMP-GALLERY-IMAGE.png",

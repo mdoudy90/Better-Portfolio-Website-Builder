@@ -123,13 +123,14 @@ export const ProjectCard = ({
   );
 }
 
-export const ProjectCards = ({ showInverse = true }) => {
+export const ProjectCards = ({ showInverse = true, heading }) => {
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [amountShown, setAmountShown] = useState(3);
+  const _projectCards = projectCards[heading];
 
   return (
     <>
-      { projectCards.slice(0, amountShown).map((data, i) => (
+      { _projectCards.slice(0, amountShown).map((data, i) => (
         <ProjectCard
           key={data.title || i}
           handleClick={() => setSelectedIndex(i)}
@@ -146,10 +147,10 @@ export const ProjectCards = ({ showInverse = true }) => {
       { selectedIndex !== -1 &&
         <ProjectPopover
           handleClose={() => setSelectedIndex(-1)}
-          data={projectCards[selectedIndex]}
+          data={_projectCards[selectedIndex]}
         />
       }
-      { amountShown < projectCards.length &&
+      { amountShown < _projectCards.length &&
         <div className="project-cards__toggle-amount">
           <button onClick={() => setAmountShown(amountShown + 3)}>Show More</button>
         </div>
