@@ -139,8 +139,84 @@
   },
   "gallery": [
     {
-      "image": "/images/gallery/TEMP-GALLERY-IMAGE.png",
-      "placeholder": "/images/gallery/TEMP-GALLERY-IMAGE-PLACEHOLDER.png"
+      "image": "/images/gallery/atlanta-bw.jpg",
+      "placeholder": "/images/gallery/atlanta-bw-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/aurora-bw.jpg",
+      "placeholder": "/images/gallery/aurora-bw-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/banana-warrior.jpg",
+      "placeholder": "/images/gallery/banana-warrior-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/berliner-dom.jpeg",
+      "placeholder": "/images/gallery/berliner-dom-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/citrus-warrior.jpg",
+      "placeholder": "/images/gallery/citrus-warrior-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/everlasting-glass.jpeg",
+      "placeholder": "/images/gallery/everlasting-glass-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/hallstatt.jpeg",
+      "placeholder": "/images/gallery/hallstatt-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/heavy-industry.jpeg",
+      "placeholder": "/images/gallery/heavy-industry-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/koln.jpeg",
+      "placeholder": "/images/gallery/koln-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/le-sabre.jpeg",
+      "placeholder": "/images/gallery/le-sabre-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/one-hundred-fifty.jpeg",
+      "placeholder": "/images/gallery/one-hundred-fifty-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/russian-fall.jpg",
+      "placeholder": "/images/gallery/russian-fall-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/rusty-links.jpeg",
+      "placeholder": "/images/gallery/rusty-links-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/spb-rocky-sunset.jpg",
+      "placeholder": "/images/gallery/spb-rocky-sunset-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/stillness.jpeg",
+      "placeholder": "/images/gallery/stillness-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/stormy-waters.jpg",
+      "placeholder": "/images/gallery/stormy-waters-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/sunset-silhouette.jpg",
+      "placeholder": "/images/gallery/sunset-silhouette-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/tsarskiyo-silo.jpg",
+      "placeholder": "/images/gallery/tsarskiyo-silo-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/vk-office.jpg",
+      "placeholder": "/images/gallery/vk-office-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/wien.jpeg",
+      "placeholder": "/images/gallery/wien-placeholder.jpeg"
     }
   ],
   "contact": {
