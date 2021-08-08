@@ -139,6 +139,10 @@
   },
   "gallery": [
     {
+      "image": "/images/gallery/stillness.jpeg",
+      "placeholder": "/images/gallery/stillness-placeholder.jpeg"
+    },
+    {
       "image": "/images/gallery/atlanta-bw.jpeg",
       "placeholder": "/images/gallery/atlanta-bw-placeholder.jpeg"
     },
@@ -147,56 +151,56 @@
       "placeholder": "/images/gallery/aurora-bw-placeholder.jpeg"
     },
     {
-      "image": "/images/gallery/banana-warrior.jpeg",
-      "placeholder": "/images/gallery/banana-warrior-placeholder.jpeg"
-    },
-    {
-      "image": "/images/gallery/berliner-dom.jpeg",
-      "placeholder": "/images/gallery/berliner-dom-placeholder.jpeg"
-    },
-    {
-      "image": "/images/gallery/citrus-warrior.jpeg",
-      "placeholder": "/images/gallery/citrus-warrior-placeholder.jpeg"
-    },
-    {
-      "image": "/images/gallery/everlasting-glass.jpeg",
-      "placeholder": "/images/gallery/everlasting-glass-placeholder.jpeg"
-    },
-    {
-      "image": "/images/gallery/hallstatt.jpeg",
-      "placeholder": "/images/gallery/hallstatt-placeholder.jpeg"
-    },
-    {
-      "image": "/images/gallery/heavy-industry.jpeg",
-      "placeholder": "/images/gallery/heavy-industry-placeholder.jpeg"
-    },
-    {
-      "image": "/images/gallery/koln.jpeg",
-      "placeholder": "/images/gallery/koln-placeholder.jpeg"
-    },
-    {
-      "image": "/images/gallery/le-sabre.jpeg",
-      "placeholder": "/images/gallery/le-sabre-placeholder.jpeg"
+      "image": "/images/gallery/rusty-links.jpeg",
+      "placeholder": "/images/gallery/rusty-links-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/one-hundred-fifty.jpeg",
       "placeholder": "/images/gallery/one-hundred-fifty-placeholder.jpeg"
     },
     {
+      "image": "/images/gallery/everlasting-glass.jpeg",
+      "placeholder": "/images/gallery/everlasting-glass-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/le-sabre.jpeg",
+      "placeholder": "/images/gallery/le-sabre-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/heavy-industry.jpeg",
+      "placeholder": "/images/gallery/heavy-industry-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/tsarskiyo-silo.jpeg",
+      "placeholder": "/images/gallery/tsarskiyo-silo-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/banana-warrior.jpeg",
+      "placeholder": "/images/gallery/banana-warrior-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/citrus-warrior.jpeg",
+      "placeholder": "/images/gallery/citrus-warrior-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/berliner-dom.jpeg",
+      "placeholder": "/images/gallery/berliner-dom-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/hallstatt.jpeg",
+      "placeholder": "/images/gallery/hallstatt-placeholder.jpeg"
+    },
+    {
+      "image": "/images/gallery/koln.jpeg",
+      "placeholder": "/images/gallery/koln-placeholder.jpeg"
+    },
+    {
       "image": "/images/gallery/russian-fall.jpeg",
       "placeholder": "/images/gallery/russian-fall-placeholder.jpeg"
     },
     {
-      "image": "/images/gallery/rusty-links.jpeg",
-      "placeholder": "/images/gallery/rusty-links-placeholder.jpeg"
-    },
-    {
       "image": "/images/gallery/spb-rocky-sunset.jpeg",
       "placeholder": "/images/gallery/spb-rocky-sunset-placeholder.jpeg"
-    },
-    {
-      "image": "/images/gallery/stillness.jpeg",
-      "placeholder": "/images/gallery/stillness-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/stormy-waters.jpeg",
@@ -205,10 +209,6 @@
     {
       "image": "/images/gallery/sunset-silhouette.jpeg",
       "placeholder": "/images/gallery/sunset-silhouette-placeholder.jpeg"
-    },
-    {
-      "image": "/images/gallery/tsarskiyo-silo.jpeg",
-      "placeholder": "/images/gallery/tsarskiyo-silo-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/vk-office.jpeg",
