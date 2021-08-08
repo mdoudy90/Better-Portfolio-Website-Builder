@@ -32,7 +32,7 @@ $borderRadius: 3px;
 
       img {
         mix-blend-mode: multiply;
-        filter: grayscale(100%) contrast(.95) brightness(1.2) !important;
+        filter: grayscale(100%) contrast(.95) brightness(1.2);
         height: inherit !important;
         position: relative !important;
       }
@@ -43,7 +43,7 @@ $borderRadius: 3px;
         background-color: initial;
       }
       img {
-        filter: initial !important;
+        filter: initial;
       }
     }
   }
