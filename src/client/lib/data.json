@@ -152,82 +152,102 @@
   "gallery": [
     {
       "image": "/images/gallery/stillness.jpeg",
+      "thumbnail": "/images/gallery/stillness-thumbnail.jpeg",
       "placeholder": "/images/gallery/stillness-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/atlanta-bw.jpeg",
+      "thumbnail": "/images/gallery/atlanta-bw-thumbnail.jpeg",
       "placeholder": "/images/gallery/atlanta-bw-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/aurora-bw.jpeg",
+      "thumbnail": "/images/gallery/aurora-bw-thumbnail.jpeg",
       "placeholder": "/images/gallery/aurora-bw-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/rusty-links.jpeg",
+      "thumbnail": "/images/gallery/rusty-links-thumbnail.jpeg",
       "placeholder": "/images/gallery/rusty-links-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/one-hundred-fifty.jpeg",
+      "thumbnail": "/images/gallery/one-hundred-fifty-thumbnail.jpeg",
       "placeholder": "/images/gallery/one-hundred-fifty-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/everlasting-glass.jpeg",
+      "thumbnail": "/images/gallery/everlasting-glass-thumbnail.jpeg",
       "placeholder": "/images/gallery/everlasting-glass-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/le-sabre.jpeg",
+      "thumbnail": "/images/gallery/le-sabre-thumbnail.jpeg",
       "placeholder": "/images/gallery/le-sabre-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/heavy-industry.jpeg",
+      "thumbnail": "/images/gallery/heavy-industry-thumbnail.jpeg",
       "placeholder": "/images/gallery/heavy-industry-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/tsarskiyo-silo.jpeg",
+      "thumbnail": "/images/gallery/tsarskiyo-silo-thumbnail.jpeg",
       "placeholder": "/images/gallery/tsarskiyo-silo-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/banana-warrior.jpeg",
+      "thumbnail": "/images/gallery/banana-warrior-thumbnail.jpeg",
       "placeholder": "/images/gallery/banana-warrior-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/citrus-warrior.jpeg",
+      "thumbnail": "/images/gallery/citrus-warrior-thumbnail.jpeg",
       "placeholder": "/images/gallery/citrus-warrior-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/berliner-dom.jpeg",
+      "thumbnail": "/images/gallery/berliner-dom-thumbnail.jpeg",
       "placeholder": "/images/gallery/berliner-dom-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/hallstatt.jpeg",
+      "thumbnail": "/images/gallery/hallstatt-thumbnail.jpeg",
       "placeholder": "/images/gallery/hallstatt-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/koln.jpeg",
+      "thumbnail": "/images/gallery/koln-thumbnail.jpeg",
       "placeholder": "/images/gallery/koln-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/russian-fall.jpeg",
+      "thumbnail": "/images/gallery/russian-fall-thumbnail.jpeg",
       "placeholder": "/images/gallery/russian-fall-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/spb-rocky-sunset.jpeg",
+      "thumbnail": "/images/gallery/spb-rocky-sunset-thumbnail.jpeg",
       "placeholder": "/images/gallery/spb-rocky-sunset-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/stormy-waters.jpeg",
+      "thumbnail": "/images/gallery/stormy-waters-thumbnail.jpeg",
       "placeholder": "/images/gallery/stormy-waters-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/sunset-silhouette.jpeg",
+      "thumbnail": "/images/gallery/sunset-silhouette-thumbnail.jpeg",
       "placeholder": "/images/gallery/sunset-silhouette-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/vk-office.jpeg",
+      "thumbnail": "/images/gallery/vk-office-thumbnail.jpeg",
       "placeholder": "/images/gallery/vk-office-placeholder.jpeg"
     },
     {
       "image": "/images/gallery/wien.jpeg",
+      "thumbnail": "/images/gallery/wien-thumbnail.jpeg",
       "placeholder": "/images/gallery/wien-placeholder.jpeg"
     }
   ],

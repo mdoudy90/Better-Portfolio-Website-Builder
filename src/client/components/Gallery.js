@@ -74,11 +74,11 @@ const Gallery = () => {
   return (
     <>
       <div className='gallery__images'>
-        { gallery.slice(imagesPerGroup * groupIndex, (imagesPerGroup * (groupIndex + 1))).map(({ image, placeholder }, i) => (
+        { gallery.slice(imagesPerGroup * groupIndex, (imagesPerGroup * (groupIndex + 1))).map(({ image, thumbnail, placeholder }, i) => (
           <FilteredImage
             key={`gallery-image-${i}`}
             className='gallery__image'
-            image={image}
+            image={thumbnail || image}
             placeholder={placeholder}
             layout='responsive'
             onClick={() => setSelectedIndex(i + (imagesPerGroup * groupIndex))}
