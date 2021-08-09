@@ -110,15 +110,6 @@ $borderRadius: 3px;
         position: relative !important;
       }
     }
-
-    &:hover {
-      > div {
-        background-color: initial;
-      }
-      img {
-        filter: initial;
-      }
-    }
   }
 
   &__image {

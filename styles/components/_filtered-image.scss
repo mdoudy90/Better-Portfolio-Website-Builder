@@ -13,21 +13,25 @@
 
     img {
       mix-blend-mode: multiply;
-    }
-  }
-
-  &:hover {
-    > div {
-      background-color: initial;
-    }
-    img {
-      filter: initial !important;
+      width: inherit !important;
     }
   }
 
   &--loaded {
-    img {
-      filter: grayscale(100%) contrast(.95) brightness(1.35) !important;
+    > div {
+      img {
+        filter: grayscale(100%) contrast(.95) brightness(1.35) !important;
+        width: 0 !important;
+      }
+    }
+
+    &:hover {
+      > div {
+        background-color: initial;
+      }
+      img {
+        filter: initial !important;
+      }
     }
   }
 }
