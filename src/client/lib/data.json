@@ -92,6 +92,16 @@
         }
       },
       {
+        "title": "Kitchen",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+        "tools": ["React", "Next.js", "Redux Toolkit", "Sass"],
+        "image": "/images/projectCards/helbizKitchen/Helbiz-Kitchen-Banner.png",
+        "placeholder": "/images/projectCards/helbizKitchen/Helbiz-Kitchen-Banner-Placeholder.png",
+        "links": {
+          "website": "https://helbiz.com/analytics"
+        }
+      },
+      {
         "title": "Ads-Hub",
         "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
         "tools": ["TOOL 1", "TOOL 2"],
