@@ -15,7 +15,7 @@ const FilteredImage = ({
       <Image
         alt=''
         src={image}
-        onClick={onClick}
+        onClick={hasLoaded ? onClick : null}
         priority={priority}
         layout={layout}
         width={layout !== 'fill' ? '300px' : null}
