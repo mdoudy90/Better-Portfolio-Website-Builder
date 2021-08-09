@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import FilteredImage from '../components/FilteredImage';
 import data from '../../../src/client/lib/data.json';
 
 const { content, image, placeholder } = data.about;
@@ -12,18 +13,12 @@ const About = () => (
       ))}
     </div>
     {image && (
-      <div className='about__image'>
-        <Image
-          alt=''
-          src={image}
-          layout='fill'
-          objectFit='cover'
-          quality={100}
-          priority={true}
-          placeholder={placeholder ? 'blur' : 'empty'}
-          blurDataURL={placeholder || null}
-        />
-      </div>
+      <FilteredImage
+        className='about__image'
+        image={image}
+        priority={true}
+        placeholder={placeholder}
+      />
     )}
   </div>
 );

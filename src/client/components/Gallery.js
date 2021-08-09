@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import Image from 'next/image';
 
+import FilteredImage from '../components/FilteredImage';
 import Portal from '../components/Portal';
 import useModalClose from '../hooks/useModalClose';
 import useWindowDimensions from '../hooks/useWindowDimensions';
@@ -74,21 +75,14 @@ const Gallery = () => {
     <>
       <div className='gallery__images'>
         { gallery.slice(imagesPerGroup * groupIndex, (imagesPerGroup * (groupIndex + 1))).map(({ image, placeholder }, i) => (
-          <div key={`gallery-image-${i}`} className='gallery__image'>
-            <Image
-              alt=''
-              src={image}
-              onClick={() => setSelectedIndex(i + (imagesPerGroup * groupIndex))}
-              layout='responsive'
-              width='300px'
-              height='300px'
-              objectFit='cover'
-              quality={100}
-              priority={false}
-              placeholder={placeholder ? 'blur' : 'empty'}
-              blurDataURL={placeholder || null}
-            />
-          </div>
+          <FilteredImage
+            key={`gallery-image-${i}`}
+            className='gallery__image'
+            image={image}
+            placeholder={placeholder}
+            layout='responsive'
+            onClick={() => setSelectedIndex(i + (imagesPerGroup * groupIndex))}
+          />
         ))}
       </div>
       { gallery.length > imagesPerGroup && (

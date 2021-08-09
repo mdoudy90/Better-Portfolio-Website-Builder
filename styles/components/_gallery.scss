@@ -7,35 +7,8 @@ $borderRadius: 3px;
     gap: 20px;
   }
 
-  &__image,
-  &__imge--small {
+  &__image {
     cursor: pointer;
-    border-radius: $borderRadius;
-
-    > div {
-      transition: $transition-1;
-      border-radius: $borderRadius;
-      position: relative !important;
-      height: 100% !important;
-      z-index: 1;
-      @include themed() {
-        background-color: t($color-3);
-      }
-
-      img {
-        mix-blend-mode: multiply;
-        filter: grayscale(100%) contrast(.95) brightness(1.5);
-      }
-    }
-
-    &:hover {
-      > div {
-        background-color: initial;
-      }
-      img {
-        filter: initial;
-      }
-    }
   }
 
   &__popover {

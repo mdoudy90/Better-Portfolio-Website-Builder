@@ -1,0 +1,33 @@
+.filtered-image {
+  border-radius: $borderRadius;
+
+  > div {
+    transition: $transition-1;
+    border-radius: $borderRadius;
+    position: relative !important;
+    height: 100% !important;
+    z-index: 1;
+    @include themed() {
+      background-color: t($color-3);
+    }
+
+    img {
+      mix-blend-mode: multiply;
+    }
+  }
+
+  &:hover {
+    > div {
+      background-color: initial;
+    }
+    img {
+      filter: initial !important;
+    }
+  }
+
+  &--loaded {
+    img {
+      filter: grayscale(100%) contrast(.95) brightness(1.35) !important;
+    }
+  }
+}

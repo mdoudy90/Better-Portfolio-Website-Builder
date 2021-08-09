@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 
 import Portal from '../components/Portal';
+import FilteredImage from '../components/FilteredImage';
 import useModalClose from '../hooks/useModalClose';
 import WebIcon from '../../../assets/icons/web.svg';
 import OpenIcon from '../../../assets/icons/open.svg';
@@ -104,21 +105,13 @@ export const ProjectCard = ({
           </div>)}
       </div>
       { image && (
-        <div
+        <FilteredImage
           className={`project-card__image${showInverse ? '--inverse' : ''} ${clickable ? 'project-card__image--clickable' : ''}`}
           onClick={clickable ? handleClick : null}
-        >
-          <Image
-            alt=''
-            src={image}
-            layout='fill'
-            objectFit='cover'
-            quality={100}
-            priority={true}
-            placeholder={placeholder ? 'blur' : 'empty'}
-            blurDataURL={placeholder || null}
-          />
-        </div>)}
+          image={image}
+          placeholder={placeholder}
+        />
+      )}
     </div>
   );
 }
