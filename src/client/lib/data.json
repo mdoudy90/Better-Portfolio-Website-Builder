@@ -58,7 +58,7 @@
   "projectCards": {
     "Work": [
       {
-        "title": "Helbiz Analytics",
+        "title": "Analytics",
         "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
         "tools": ["React", "Redux", "Sass", "GraphQL", "DeckGL"],
         "image": "/images/projectCards/helbizAnalytics/Helbiz-Analytics-Banner.png",
@@ -81,7 +81,7 @@
         ]
       },
       {
-        "title": "Helbiz Move",
+        "title": "Move",
         "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
         "tools": ["React", "Next.js", "deck.gl", "Redux Toolkit", "Sass"],
         "image": "/images/projectCards/helbizMove/Helbiz-Move-Banner.png",
@@ -92,9 +92,11 @@
         }
       },
       {
-        "title": "Helbiz Ads-Hub",
+        "title": "Ads-Hub",
         "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-        "tools": ["TOOL 1", "TOOL 2"]
+        "tools": ["TOOL 1", "TOOL 2"],
+        "image": "/images/projectCards/helbizAdsHub/Helbiz-Adshub-Banner.png",
+        "placeholder": "/images/projectCards/helbizAdsHub/Helbiz-Adshub-Banner-Placeholder.png"
       },
       {
         "title": "Helbiz.com",
