@@ -16,10 +16,10 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href={meta.favIcon} />
           <link rel="apple-touch-icon" href={meta.mobileIcon} />
-          <script>0</script>
-          {/* HACK TO REMOVE FOUC WHEN DEPLOYED */}
         </Head>
         <body>
+          <script>0</script>
+          {/* HACK TO REMOVE FOUC WHEN DEPLOYED */}
           <Main />
           <NextScript />
         </body>
