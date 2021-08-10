@@ -125,26 +125,26 @@
         "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
         "tools": ["React", "Next.js", "Redux Toolkit", "Sass"],
         "links": {
-          "github": "GITHUB URL",
-          "website": "WEBSITE URL"
+          "github": "https://github.com/mdoudy90/website-v2",
+          "website": "https://mdoudy.com"
         }
       },
       {
         "title": "Crypto Paper Trader",
-        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-        "tools": ["TOOL 1", "TOOL 2"],
+        "description": "A cryptocurrency paper trading app that was built during a mini-hackathon over a span of 3 days and eventually migrated from JavaScript to TypeScript. Live price and symbol specific data is pulled using CryptoCompare's API and is fed into an interactive chart display. Users can create accounts and submit buy/sell orders which are persisted in mongoDB. These orders are filled when/if the market price point hits the corresponding open order's value. Users can view and compete against each other's trading strategy results in the leaderboards.",
+        "tools": ["React", "Node.js", "mongoDB", "TypeScript", "Express"],
         "links": {
-          "github": "GITHUB URL",
-          "website": "WEBSITE URL"
+          "github": "https://github.com/mdoudy90/Crypto-Paper-Trader",
+          "website": "https://cryptic-crag-78444.herokuapp.com/"
         }
       },
       {
         "title": "Find My Friends",
-        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-        "tools": ["TOOL 1", "TOOL 2"],
+        "description": "A mobile first app that allows users to share their real-time geographic positions and get nearby place recommendations based on a user's selected mood. User latitude and longitude coordinates are pulled in real-time using the HTML Geolocation API. These coordinates are then overlaid as a pointer on an interactive map component that pulls data from the Google Maps API. Requests are sent to the Google Places API every time 1000ft distance is traveled by the user from their previous location. This minimizes the amount of requests needed, while still displaying place information most relevant to the user's current location.",
+        "tools": ["React", "Node.js", "mongoDB", "Express", "Sass"],
         "links": {
-          "github": "GITHUB URL",
-          "website": "WEBSITE URL"
+          "github": "https://github.com/mdoudy90/find-my-friends",
+          "website": "https://stormy-meadow-54442.herokuapp.com/"
         }
       }
     ]
