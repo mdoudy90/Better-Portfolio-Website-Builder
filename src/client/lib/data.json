@@ -50,7 +50,9 @@
   ],
   "about": {
     "content": [
-      "I am a full stack developer obsessed with bringing ideas to life! My specializations are in JavaScript, React, Node, MongoDB, GraphQL, Sass and am constantly adding new tools to my mental database. I currently work in the micromobility industry with analytics and ad platforms. In a prior life, I’ve had business experience in VR/AR, the indie game dev world, startup ecosystems, and consumer insights."
+      "I am a full stack developer obsessed with bringing ideas to life! I currently work in the micromobility industry with analytics and ad platforms.",
+      "I originally graduated from Georgia Institute of Technology with a BS in Industrial Engineering, completed Hack Reactor's Software Engineering Immersive Program where I then worked with students as resident mentor. In a prior life, I’ve had business experience in VR/AR, the indie game dev world, startup ecosystems, and consumer insights.",
+      "My specializations are in JavaScript, React, Node, MongoDB, GraphQL, Sass and am constantly adding new tools to my mental database."
     ],
     "image": "/images/about/TEMP-ME.png",
     "placeholder": "/images/about/TEMP-ME-PLACEHOLDER.png"
@@ -59,7 +61,7 @@
     "Work": [
       {
         "title": "Analytics",
-        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+        "description": "An analytics platform that visualizes aggregated trip data using modern geospatial tools to make informed conclusions about rider usage and vehicle demand.",
         "tools": ["React", "Redux", "Sass", "GraphQL", "DeckGL"],
         "image": "/images/projectCards/helbizAnalytics/Helbiz-Analytics-Banner.png",
         "placeholder": "/images/projectCards/helbizAnalytics/Helbiz-Analytics-Banner-Placeholder.png",
@@ -145,6 +147,22 @@
         "links": {
           "github": "https://github.com/mdoudy90/find-my-friends",
           "website": "https://stormy-meadow-54442.herokuapp.com/"
+        }
+      },
+      {
+        "title": "Greenfield Reviews API Service",
+        "description": "A project undertaken for educational purposes with the goal to build a scalable RESTful API service for a retail web-portal and optimize to handle web-scale traffic. An ETL process was implemented to migrate legacy datasets of more than 20M+ records into a Postgres database. The service was incrementally optimized through database indexing, connection pooling, and Redis caching to handle a throughput of 60k client requests in 30 sec (2k per sec) with an average response time of 119ms (97.2% increase in avg. response time compared to just indexing). The server and Postgres database was containerized using Docker and deployed on 2 separate AWS EC2 instances.",
+        "tools": ["Node.js", "Express", "Postgres", "Redis", "Docker"],
+        "links": {
+          "github": "https://github.com/HR-SDC-CANOPUS/Reviews-API"
+        }
+      },
+      {
+        "title": "Leetcode Buddy",
+        "description": "A no-fuss random leetcode prompt generator to help with the study grind.",
+        "tools": ["React", "Node.js", "Express", "Sass"],
+        "links": {
+          "github": "https://github.com/mdoudy90/leetcode-buddy"
         }
       }
     ]
@@ -252,7 +270,7 @@
     }
   ],
   "contact": {
-    "text": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+    "text": "If you prefer to contact me directly, send your email to: michael.doudy@gmail.com. Connect with me on LinkedIn or find me on GitHub.",
     "ctaText": "Say Hello",
     "email": "michael.doudy@gmail.com"
   }
