@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react'
-import Head from 'next/head';
 import { useSelector } from 'react-redux';
 
 import Layout from '../src/client/components/Layout';
@@ -14,7 +13,7 @@ import Gallery from '../src/client/components/Gallery';
 import Contact from '../src/client/components/Contact';
 import data from '../src/client/lib/data.json';
 
-const { meta, sections } = data;
+const { sections } = data;
 
 function Index({ stars, forks }) {
   const theme = useSelector((state) => state.settings.theme);
@@ -65,21 +64,6 @@ function Index({ stars, forks }) {
 
   return (
     <div className={`theme--${theme}`}>
-      <Head>
-        <title>{meta.title}</title>
-        <link rel="icon" href={meta.favIcon} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content={meta.description} />
-        <link rel="apple-touch-icon" href={meta.mobileIcon} />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              document.documentElement.lang = '${meta.language}';
-            `,
-          }}
-        />
-      </Head>
       <main className="main" id="main">
         <Layout>
           <Header scrollTo={scrollTo} />
