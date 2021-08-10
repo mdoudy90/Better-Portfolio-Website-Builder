@@ -79,7 +79,7 @@ export const ProjectCard = ({
 }) => {
   return (
     <div className='project-card'>
-      <div className={`project-card__details${showInverse ? '--inverse' : ''}`}>
+      <div className={`project-card__details${showInverse ? '--inverse' : ''} ${!image ? 'project-card__details--full-length': ''}`}>
         <div className='project-card__title'>
           { clickable && <OpenIcon onClick={handleClick} /> }
           <h3>{title}</h3>
