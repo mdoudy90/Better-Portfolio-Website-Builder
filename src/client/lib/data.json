@@ -270,7 +270,7 @@
     }
   ],
   "contact": {
-    "text": "If you prefer to contact me directly, send your email to: michael.doudy@gmail.com. Connect with me on LinkedIn or find me on GitHub.",
+    "textHtml": "I'm always excited to make new connections, hear about new ideas, and explore potential opportunities, so please feel free to reach out to me at <a class='text-link' href='mailto:michael.doudy@gmail.com' target='_blank' rel='noopener noreferrer'>michael.doudy@gmail.com</a> or simply click that nice button below.",
     "ctaText": "Say Hello",
     "email": "michael.doudy@gmail.com"
   }
