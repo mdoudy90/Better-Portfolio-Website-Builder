@@ -31,6 +31,10 @@ $borderRadius: 3px;
     }
   }
 
+  &__details--full-length {
+    grid-column: 1 / span 9;
+  }
+
 
   &__title {
     display: flex;

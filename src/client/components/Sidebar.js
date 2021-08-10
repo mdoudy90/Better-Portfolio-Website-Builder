@@ -110,9 +110,11 @@ export const MobileSidebar = ({ scrollTo, sectionInView }) => {
 const Sidebar = ({ scrollTo, sectionInView }) => {
   const { width } = useWindowDimensions();
 
-  return width <= MOBILE_BREAKPOINT
-    ? <MobileSidebar scrollTo={scrollTo} sectionInView={sectionInView} />
-    : <DefaultSidebar scrollTo={scrollTo} sectionInView={sectionInView} />;
+  return !!width && (
+    width > MOBILE_BREAKPOINT
+    ? <DefaultSidebar scrollTo={scrollTo} sectionInView={sectionInView} />
+    : <MobileSidebar scrollTo={scrollTo} sectionInView={sectionInView} />
+  );
 };
 
 export default Sidebar;
