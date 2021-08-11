@@ -35,7 +35,6 @@ $borderRadius: 3px;
     grid-column: 1 / span 9;
   }
 
-
   &__title {
     display: flex;
     align-items: center;
@@ -123,6 +122,10 @@ $borderRadius: 3px;
   &__image--inverse {
     grid-column: 1 / span 5;
   }
+
+  &--compact {
+    margin: -25px 0;
+  }
 }
 
 @media (max-width: $breakpoint-2) {
@@ -166,6 +169,11 @@ $borderRadius: 3px;
 }
 
 @media (max-width: $breakpoint-1) {
+  .project-card {
+    &--compact {
+      margin: 0 !important;
+    }
+  }
   .project-cards {
     &__toggle-amount {
       margin: 0 !important;

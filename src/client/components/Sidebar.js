@@ -11,7 +11,7 @@ import Portal from './Portal';
 import useWindowDimensions from '../../../src/client/hooks/useWindowDimensions';
 import data from '../../../src/client/lib/data.json';
 
-const { sections, social, document } = data;
+const { sections, social, document, settings } = data;
 const MOBILE_BREAKPOINT = 768;
 const SOCIAL_MAP = {
   'linkedin': <LinkedinIcon />,
@@ -22,9 +22,10 @@ const SOCIAL_MAP = {
 
 export const DefaultSidebar = ({ scrollTo, sectionInView, isMobile, onClickStart }) => {
   const router = useRouter();
+  const sideBarLocation = settings.sideBarLocation || 'right';
 
   return (
-    <div className='sidebar'>
+    <div className={`sidebar sidebar--${sideBarLocation}`}>
       <div className='sidebar__cta'>
         {router.pathname === '/'
         ? isMobile
@@ -78,9 +79,10 @@ export const DefaultSidebar = ({ scrollTo, sectionInView, isMobile, onClickStart
 
 export const MobileSidebar = ({ scrollTo, sectionInView }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const sideBarLocation = settings.sideBarLocation || 'right';
 
   return (
-    <div className="mobile-sidebar">
+    <div className={`mobile-sidebar mobile-sidebar--${sideBarLocation}`}>
       <MenuIcon className="mobile-sidebar__menu-toggle-button" onClick={() => setIsOpen(true)} />
       <div className="mobile-sidebar__social">
         {Object.entries(social).map(([type, link]) => {

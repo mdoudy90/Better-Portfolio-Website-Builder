@@ -10,7 +10,7 @@ import CloseIcon from '../../../assets/icons/close.svg';
 import GithubIcon from '../../../assets/icons/github.svg';
 import data from '../../../src/client/lib/data.json';
 
-const { projectCards } = data;
+const { projectCards, settings } = data;
 
 const ICON_MAP = {
   'website': <WebIcon />,
@@ -75,10 +75,11 @@ export const ProjectCard = ({
   image,
   placeholder,
   showInverse,
+  isCompact,
   clickable
 }) => {
   return (
-    <div className='project-card'>
+    <div className={`project-card ${isCompact ? 'project-card--compact': ''}`}>
       <div className={`project-card__details${showInverse ? '--inverse' : ''} ${!image ? 'project-card__details--full-length': ''}`}>
         <div className='project-card__title'>
           { clickable && <OpenIcon onClick={handleClick} /> }
@@ -116,10 +117,13 @@ export const ProjectCard = ({
   );
 }
 
-export const ProjectCards = ({ showInverse = true, heading }) => {
+export const ProjectCards = ({ heading }) => {
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [amountShown, setAmountShown] = useState(3);
   const _projectCards = projectCards[heading];
+
+  const showAlternatingCards = settings?.projectCards?.showAlternatingCards?.includes(heading);
+  const isCompact = settings?.projectCards?.compactView?.includes(heading);
 
   return (
     <>
@@ -133,7 +137,8 @@ export const ProjectCards = ({ showInverse = true, heading }) => {
           links={data.links}
           image={data.image}
           placeholder={data.placeholder}
-          showInverse={showInverse && !!(i % 2)}
+          showInverse={showAlternatingCards && !!(i % 2)}
+          isCompact={isCompact}
           clickable={data.highlights && !!data.highlights.length}
         />
       ))}

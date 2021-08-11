@@ -1,4 +1,11 @@
 {
+  "settings": {
+    "sideBarLocation": "right",
+    "projectCards": {
+      "showAlternatingCards": ["WORK", "PROJECTS"],
+      "compactView": ["PROJECTS"]
+    }
+  },
   "meta": {
     "title": "META TITLE",
     "description": "META DESC",

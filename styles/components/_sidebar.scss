@@ -1,10 +1,8 @@
 .sidebar {
   position: fixed;
-  right: 0;
   overflow: scroll;
   height: 100vh;
   max-width: 150px;
-  margin-right: 10px;
   display: grid;
   grid-template: auto 1fr 1fr / 1fr;
 
@@ -16,16 +14,9 @@
     gap: 40px;
   }
 
-  &__nav,
-  &__social {
-    margin: 30px 10px 30px 5px;
-  }
-
   &__cta {
     align-self: center;
-    justify-self: end;
     margin: 10px 0 0 0;
-
 
     button {
       @include button-default-style;
@@ -37,7 +28,6 @@
 
   &__nav {
     align-self: start;
-    text-align: end;
 
     h2 {
       transition: $transition-1;
@@ -62,7 +52,6 @@
 
   &__social {
     align-self: end;
-    justify-self: end;
 
     svg {
       transition: $transition-1;
@@ -77,6 +66,55 @@
       }
     }
   }
+
+  &--left {
+    left: 0;
+    margin-left: 10px;
+
+    .sidebar {
+      &__nav,
+      &__social {
+        margin: 30px 5px 30px 10px;
+      }
+
+      &__cta {
+        justify-self: start;
+      }
+
+      &__nav {
+        text-align: start;
+      }
+
+      &__social {
+        justify-self: start;
+      }
+    }
+
+  }
+
+  &--right {
+    right: 0;
+    margin-right: 10px;
+
+    .sidebar {
+      &__nav,
+      &__social {
+        margin: 30px 10px 30px 5px;
+      }
+
+      &__cta {
+        justify-self: end;
+      }
+
+      &__nav {
+        text-align: end;
+      }
+
+      &__social {
+        justify-self: end;
+      }
+    }
+  }
 }
 
 .mobile-sidebar {
@@ -85,7 +123,6 @@
   display: grid;
   grid-template: auto 1fr 1fr / 1fr;
   position: fixed;
-  right: 0;
 
   &__menu-toggle-button,
   &__social svg {
@@ -120,6 +157,14 @@
       width: $font-size-5;
     }
   }
+
+  &--left {
+    left: 0;
+  }
+
+  &--right {
+    right: 0;
+  }
 }
 
 @media (max-width: $breakpoint-2) {
@@ -138,6 +183,22 @@
       h2 {
         font-size: $font-size-7;
         font-weight: 500;
+      }
+    }
+
+    &--left {
+      .sidebar {
+        &__cta {
+          margin: 20px 0 0 10px;
+        }
+      }
+    }
+
+    &--right {
+      .sidebar {
+        &__cta {
+          margin: 20px 10px 0 0;
+        }
       }
     }
   }
