@@ -1,11 +1,18 @@
 .theme-bar {
   position: fixed;
-  left: 0;
   overflow: scroll;
   height: 100vh;
   width: 50px;
   display: grid;
   grid-template: auto 1fr / 1fr;
+
+  &--left {
+    left: 0;
+  }
+
+  &--right {
+    right: 0;
+  }
 
   &__button {
     padding: 15px;
