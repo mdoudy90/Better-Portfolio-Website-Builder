@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 0.9375rem;
   a {
     font-size: $font-size-1;
     letter-spacing: .08em;
@@ -18,14 +18,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5px;
-    gap: 3px;
+    padding-top: 0.3125rem;
+    gap: 0.1875rem;
     svg {
       width: $font-size-1;;
       height: $font-size-1;;
     }
     p:nth-of-type(1) {
-      margin-right: 5px;
+      margin-right: 0.3125rem;
     }
   }
 }

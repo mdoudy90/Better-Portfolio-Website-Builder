@@ -2,7 +2,7 @@
   position: fixed;
   overflow: scroll;
   height: 100vh;
-  max-width: 150px;
+  max-width: 9.375rem;
   display: grid;
   grid-template: auto 1fr 1fr / 1fr;
 
@@ -11,16 +11,16 @@
   &__social {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
   }
 
   &__cta {
     align-self: center;
-    margin: 10px 0 0 0;
+    margin: 0.625rem 0 0 0;
 
     button {
       @include button-default-style;
-      padding: 10px 12px;
+      padding: 0.625rem 0.75rem;
       font-weight: 900;
       font-size: $font-size-3;
     }
@@ -69,12 +69,12 @@
 
   &--left {
     left: 0;
-    margin-left: 10px;
+    margin-left: 0.625rem;
 
     .sidebar {
       &__nav,
       &__social {
-        margin: 30px 5px 30px 10px;
+        margin: 1.875rem 0.3125rem 1.875rem 0.625rem;
       }
 
       &__cta {
@@ -94,12 +94,12 @@
 
   &--right {
     right: 0;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 
     .sidebar {
       &__nav,
       &__social {
-        margin: 30px 10px 30px 5px;
+        margin: 1.875rem 0.625rem 1.875rem 0.3125rem;
       }
 
       &__cta {
@@ -140,7 +140,7 @@
   }
 
   &__menu-toggle-button {
-    margin: 15px;
+    margin: 0.9375rem;
     width: $font-size-6;
     height: $font-size-6;
   }
@@ -150,8 +150,8 @@
     align-self: end;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding: 15px;
+    gap: 2.5rem;
+    padding: 0.9375rem;
 
     svg {
       width: $font-size-5;
@@ -173,7 +173,7 @@
     grid-template: auto 1fr / 1fr;
 
     &__cta {
-      margin: 20px 10px 0 0;
+      margin: 1.25rem 0.625rem 0 0;
       button {
         font-size: $font-size-4;
       }
@@ -189,7 +189,7 @@
     &--left {
       .sidebar {
         &__cta {
-          margin: 20px 0 0 10px;
+          margin: 1.25rem 0 0 0.625rem;
         }
       }
     }
@@ -197,7 +197,7 @@
     &--right {
       .sidebar {
         &__cta {
-          margin: 20px 10px 0 0;
+          margin: 1.25rem 0.625rem 0 0;
         }
       }
     }

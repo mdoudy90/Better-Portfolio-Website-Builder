@@ -5,12 +5,12 @@
   transition: $transition-2;
   text-decoration: initial !important;
   cursor: pointer;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   background-color: rgba(0,0,0,0);
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   @include themed() {
     color: t($color-3);
-    border: 2px solid t($color-3);
+    border: 0.125rem solid t($color-3);
     &:hover {
       background-color: transparentize(t($color-3), 0.85);
     }

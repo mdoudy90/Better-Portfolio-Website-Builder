@@ -41,8 +41,8 @@ const GalleryPopover = ({ selectedIndex, handleClose, onPopoverToggle }) => {
         alt=''
         src={gallery[imageIndex].image}
         layout='responsive'
-        width='300px'
-        height='300px'
+        width='18.75rem'
+        height='18.75rem'
         objectFit='contain'
         quality={100}
         priority={false}

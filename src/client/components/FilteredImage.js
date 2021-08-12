@@ -18,8 +18,8 @@ const FilteredImage = ({
         onClick={hasLoaded ? onClick : null}
         priority={priority}
         layout={layout}
-        width={layout !== 'fill' ? '300px' : null}
-        height={layout !== 'fill' ? '300px' : null}
+        width={layout !== 'fill' ? '18.75rem' : null}
+        height={layout !== 'fill' ? '18.75rem' : null}
         objectFit='cover'
         quality={100}
         placeholder={placeholder ? 'blur' : 'empty'}
