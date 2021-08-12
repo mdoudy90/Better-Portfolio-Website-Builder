@@ -1,10 +1,10 @@
-$borderRadius: 3px;
+$borderRadius: 0.1875rem;
 
 .gallery {
   &__images {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   &__image {
@@ -45,8 +45,8 @@ $borderRadius: 3px;
     position: absolute;
     align-self: center;
     cursor: pointer;
-    padding: 3px;
-    margin: 0 20px;
+    padding: 0.1875rem;
+    margin: 0 1.25rem;
     @include themed() {
       color: t($color-1);
       &:hover {
@@ -65,15 +65,15 @@ $borderRadius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -50px 0;
+    margin: -3.125rem 0;
   }
 
   &__pagination-bubble {
     transition: $transition-1;
     cursor: pointer;
-    margin: 5px;
-    height: 8px;
-    width: 8px;
+    margin: 0.3125rem;
+    height: 0.5rem;
+    width: 0.5rem;
     border-radius: 50%;
     @include themed() {
       background-color: transparentize(t($color-2), 0.5);
@@ -100,7 +100,7 @@ $borderRadius: 3px;
 @media (max-width: $breakpoint-1) {
   .gallery {
     &__images {
-      gap: 10px;
+      gap: 0.625rem;
     }
 
     &__popover {
@@ -116,7 +116,7 @@ $borderRadius: 3px;
     }
 
     &__pagination {
-      margin: -25px 0;
+      margin: -1.5625rem 0;
     }
   }
 }

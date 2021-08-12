@@ -1,8 +1,8 @@
 .header {
-  height: max(102vh, 500px);
+  height: max(102vh, 31.25rem);
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
   justify-content: center;
   font-family: $font-1;
   line-height: 1.4;
@@ -36,8 +36,8 @@
   &__cta {
     button {
       @include button-default-style;
-      padding: 10px 14px;
-      margin: 25px 0;
+      padding: 0.625rem 0.875rem;
+      margin: 1.5625rem 0;
     }
   }
 }

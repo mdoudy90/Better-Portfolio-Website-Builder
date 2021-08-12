@@ -4,7 +4,7 @@
 
   &__page {
     canvas {
-      width: min(100vw - 300px, 750px) !important;
+      width: min(100vw - 18.75rem, 46.875rem) !important;
       height: 100% !important;
     }
   }
@@ -14,7 +14,7 @@
   .pdf-viewer {
     &__page {
       canvas {
-        width: min(100vw - 200px, 750px) !important;
+        width: min(100vw - 12.5rem, 46.875rem) !important;
       }
     }
   }
@@ -24,7 +24,7 @@
  .pdf-viewer {
     &__page {
       canvas {
-        width: min(100vw - 100px, 750px) !important;
+        width: min(100vw - 6.25rem, 46.875rem) !important;
       }
     }
   }

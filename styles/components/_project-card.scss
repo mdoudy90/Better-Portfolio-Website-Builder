@@ -1,4 +1,4 @@
-$borderRadius: 3px;
+$borderRadius: 0.1875rem;
 
 .project-card {
   display: grid;
@@ -9,7 +9,7 @@ $borderRadius: 3px;
     grid-row: 1;
     display: grid;
     grid-template: auto auto auto auto/1fr;
-    gap: 12px;
+    gap: 0.75rem;
     align-content: center;
 
     > * {
@@ -38,9 +38,9 @@ $borderRadius: 3px;
   &__title {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0.9375rem;
     font-size: $font-size-6;
-    padding-bottom: 5px;
+    padding-bottom: 0.3125rem;
     @include themed() {
       color: t($color-1);
     }
@@ -59,7 +59,7 @@ $borderRadius: 3px;
   }
 
   &__description {
-    padding: 10px;
+    padding: 0.625rem;
     border-radius: $borderRadius;
     @include themed() {
       background-color: t($color-5);
@@ -69,7 +69,7 @@ $borderRadius: 3px;
 
   &__tools {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 
     p {
       font-size: $font-size-3;
@@ -81,7 +81,7 @@ $borderRadius: 3px;
 
   &__links {
     display: flex;
-    gap: 15px;
+    gap: 0.9375rem;
     svg {
       transition: $transition-1;
       height: $font-size-4;
@@ -124,7 +124,7 @@ $borderRadius: 3px;
   }
 
   &--compact {
-    margin: -25px 0;
+    margin: -1.5625rem 0;
   }
 }
 
@@ -144,7 +144,7 @@ $borderRadius: 3px;
     }
 
     &__title {
-      padding: 10px 0 0 0;
+      padding: 0.625rem 0 0 0;
     }
   }
 }
@@ -154,16 +154,16 @@ $borderRadius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -50px 0;
+    margin: -3.125rem 0;
 
     button {
       @include button-default-style;
       @include themed() {
-        border: 1px solid t($color-3);
+        border: 0.0625rem solid t($color-3);
       }
       font-weight: normal;
       font-size: $font-size-3;
-      padding: 10px 12px;
+      padding: 0.625rem 0.75rem;
     }
   }
 }
@@ -184,14 +184,14 @@ $borderRadius: 3px;
 .project-popover {
   @include themed() {
     background-color: t($color-4);
-    border: 1px solid t($color-3);
+    border: 0.0625rem solid t($color-3);
     ::selection {
       color: t($color-4);
       background: t($color-3);
     }
   }
-  padding: 50px;
-  border-radius: 2px;
+  padding: 3.125rem;
+  border-radius: 0.125rem;
   display: grid;
   width: 75vw;
   overflow-x: scroll;
@@ -202,7 +202,7 @@ $borderRadius: 3px;
 
   &__close-icon {
     transition: $transition-2;
-    margin: -35px -35px 0 0;
+    margin: -2.1875rem -2.1875rem 0 0;
     cursor: pointer;
     justify-self: end;
     @include themed() {
@@ -216,19 +216,19 @@ $borderRadius: 3px;
   &__overview {
     display: grid;
     grid-template: auto 1fr / 1fr;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
   }
 
   &__heading {
     font-size: $font-size-7;
-    padding-bottom: 5px;
+    padding-bottom: 0.3125rem;
     @include themed() {
       color: t($color-1);
     }
   }
 
   &__description {
-    padding: 10px 0;
+    padding: 0.625rem 0;
     line-height: 1.3;
     @include themed() {
       color: t($color-2);
@@ -237,17 +237,17 @@ $borderRadius: 3px;
 
   &__highlights {
     display: grid;
-    gap: 20px;
-    padding-bottom: 20px;
+    gap: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   &__highlight {
-    padding-left: 15px;
+    padding-left: 0.9375rem;
 
     @include themed() {
-      border-left: 2px solid transparentize(t($color-2), 0.8);
+      border-left: 0.125rem solid transparentize(t($color-2), 0.8);
       &--selected {
-        border-left: 2px solid t($color-3);
+        border-left: 0.125rem solid t($color-3);
 
         .project-popover__title {
           color: t($color-3);
@@ -268,11 +268,11 @@ $borderRadius: 3px;
   &__highlight-details {
     display: grid;
     grid-template: auto / 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 0.625rem;
   }
 
   &__highlight-text {
-    padding-top: 10px;
+    padding-top: 0.625rem;
     border-radius: $borderRadius;
     line-height: 1.3;
     @include themed() {
@@ -309,7 +309,7 @@ $borderRadius: 3px;
 
     &__highlight-media {
       grid-area: inherit !important;
-      padding-top: 10px;
+      padding-top: 0.625rem;
     }
   }
 }

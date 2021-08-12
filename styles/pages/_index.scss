@@ -6,7 +6,7 @@
   right: 0;
   overflow: auto;
   display: grid;
-  grid-template: 1fr / 150px 1fr 150px;
+  grid-template: 1fr / 9.375rem 1fr 9.375rem;
   justify-content: space-between;
 
   // // Cool transition effect for themes
@@ -36,13 +36,13 @@
 
 @media (min-width: $breakpoint-1) and (max-width: $breakpoint-2) {
   .main {
-    grid-template: 1fr / 100px 1fr 100px;
+    grid-template: 1fr / 6.25rem 1fr 6.25rem;
   }
 }
 
 
 @media (max-width: $breakpoint-1) {
   .main {
-    grid-template: 1fr / 50px 1fr 50px;
+    grid-template: 1fr / 3.125rem 1fr 3.125rem;
   }
 }
