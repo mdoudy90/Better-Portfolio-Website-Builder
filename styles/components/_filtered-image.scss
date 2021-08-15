@@ -5,7 +5,13 @@
     transition: $transition-1;
     border-radius: $borderRadius;
     position: relative !important;
-    height: 100% !important;
+    width: 100%;
+    filter: blur(0.1875rem);
+
+    :not(.gallery__image, .about_image) {
+      height: 6.25rem !important;
+    }
+
     z-index: 1;
     @include themed() {
       background-color: t($color-3);
@@ -19,6 +25,11 @@
 
   &--loaded {
     > div {
+      :not(.gallery__image, .about_image) {
+        height: 100% !important;
+      }
+      filter: blur(0);
+      height: 100% !important;
       img {
         filter: grayscale(100%) contrast(.95) brightness(1.05) !important;
         width: 0 !important;

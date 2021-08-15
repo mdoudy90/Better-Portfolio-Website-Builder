@@ -73,7 +73,6 @@ export const ProjectCard = ({
   tools,
   links,
   image,
-  placeholder,
   showInverse,
   isCompact,
   clickable
@@ -110,7 +109,6 @@ export const ProjectCard = ({
           className={`project-card__image${showInverse ? '--inverse' : ''} ${clickable ? 'project-card__image--clickable' : ''}`}
           onClick={clickable ? handleClick : null}
           image={image}
-          placeholder={placeholder}
         />
       )}
     </div>
@@ -136,7 +134,6 @@ export const ProjectCards = ({ heading }) => {
           tools={data.tools}
           links={data.links}
           image={data.image}
-          placeholder={data.placeholder}
           showInverse={showAlternatingCards && !!(i % 2)}
           isCompact={isCompact}
           clickable={data.highlights && !!data.highlights.length}

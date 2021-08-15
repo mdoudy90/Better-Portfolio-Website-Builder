@@ -60,8 +60,7 @@
       "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
       "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
     ],
-    "image": "/images/about/TEMP-ME.png",
-    "placeholder": "/images/about/TEMP-ME-PLACEHOLDER.png"
+    "image": "/images/about/TEMP-ME.png"
   },
   "projectCards": {
     "WORK": [
@@ -74,7 +73,6 @@
           "website": "WEBSITE URL"
         },
         "image": "/images/projectCards/TEMP-WORK-PROJECT-1-BANNER.png",
-        "placeholder": "/images/projectCards/TEMP-WORK-PROJECT-1-BANNER-PLACEHOLDER.png",
         "highlights": [
           {
             "heading": "POINT 1",
@@ -107,8 +105,7 @@
   "gallery": [
     {
       "image": "/images/gallery/TEMP-GALLERY-IMAGE.png",
-      "thumbnail": "/images/gallery/TEMP-GALLERY-IMAGE-THUMBNAIL.png",
-      "placeholder": "/images/gallery/TEMP-GALLERY-IMAGE-PLACEHOLDER.png"
+      "thumbnail": "/images/gallery/TEMP-GALLERY-IMAGE-THUMBNAIL.png"
     }
   ],
   "contact": {

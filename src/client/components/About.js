@@ -3,7 +3,7 @@ import Image from 'next/image';
 import FilteredImage from '../components/FilteredImage';
 import data from '../../../src/client/lib/data.json';
 
-const { content, image, placeholder } = data.about;
+const { content, image } = data.about;
 
 const About = () => (
   <div className='about'>
@@ -17,7 +17,6 @@ const About = () => (
         className='about__image'
         image={image}
         priority={true}
-        placeholder={placeholder}
       />
     )}
   </div>
