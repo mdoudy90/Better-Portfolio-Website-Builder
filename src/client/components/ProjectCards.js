@@ -32,6 +32,8 @@ const ProjectPopover = ({ handleClose, data }) => {
         <div className="project-popover__overview">
           <h3 className="project-popover__heading">{data.title}</h3>
           <p className="project-popover__description">{data.description}</p>
+          {data.description && !data.descriptionHtml && <p className="project-popover__description">{data.description}</p>}
+          {data.descriptionHtml && <p className="project-popover__description" dangerouslySetInnerHTML={{__html:data.descriptionHtml}} />}
         </div>
         <div className="project-popover__highlights">
           { data.highlights.map(({ heading, details, media }, i) => (
@@ -75,6 +77,7 @@ export const ProjectCard = ({
   image,
   showInverse,
   isCompact,
+  isHtml,
   clickable
 }) => {
   return (
@@ -84,7 +87,11 @@ export const ProjectCard = ({
           { clickable && <OpenIcon onClick={handleClick} /> }
           <h3>{title}</h3>
         </div>
-        { description && <p className='project-card__description'>{description}</p>}
+        { description && (
+          isHtml
+          ? <p className='project-card__description' dangerouslySetInnerHTML={{__html:description}} />
+          : <p className='project-card__description'>{description}</p>
+          )}
         { tools && (
           <div className='project-card__tools'>
             {tools.map((tool) => (
@@ -130,12 +137,13 @@ export const ProjectCards = ({ heading }) => {
           key={data.title || i}
           handleClick={() => setSelectedIndex(i)}
           title={data.title}
-          description={data.description}
+          description={data.descriptionHtml || data.description}
           tools={data.tools}
           links={data.links}
           image={data.image}
           showInverse={showAlternatingCards && !!(i % 2)}
           isCompact={isCompact}
+          isHtml={!!data.descriptionHtml}
           clickable={data.highlights && !!data.highlights.length}
         />
       ))}

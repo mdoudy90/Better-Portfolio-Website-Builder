@@ -25,13 +25,6 @@
       background: t($color-3);
     }
   }
-
-  .text-link {
-    text-decoration: none !important;
-    @include themed() {
-      color: t($color-3) !important;
-    }
-  }
 }
 
 @media (min-width: $breakpoint-1) and (max-width: $breakpoint-2) {
