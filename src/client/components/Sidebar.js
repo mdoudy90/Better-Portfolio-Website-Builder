@@ -9,6 +9,7 @@ import InstagramIcon from '../../../assets/icons/instagram.svg';
 import TwitterIcon from '../../../assets/icons/twitter.svg';
 import Portal from './Portal';
 import useWindowDimensions from '../../../src/client/hooks/useWindowDimensions';
+import * as gtag from '../lib/gtag';
 import data from '../../../src/client/lib/data.json';
 
 const { sections, social, document, settings } = data;
@@ -24,19 +25,26 @@ export const DefaultSidebar = ({ scrollTo, sectionInView, isMobile, onClickStart
   const router = useRouter();
   const sideBarLocation = settings.sideBarLocation || 'right';
 
+  const captureEvent = (e) => {
+    if (!!gtag.GA_TRACKING_ID) return;
+
+    const params = { details: e.target.id };
+    gtag.event({ action: 'click', params });
+  }
+
   return (
     <div className={`sidebar sidebar--${sideBarLocation}`}>
       <div className='sidebar__cta'>
         {router.pathname === '/'
         ? isMobile
             ? <a href={document.path} rel='noreferrer' target='_blank'>
-                <button>Resume</button>
+                <button id='view-resume' onClick={captureEvent}>Resume</button>
               </a>
             : <Link href='/doc'>
-                <button>Resume</button>
+                <button id='navigate-to-resume' onClick={captureEvent}>Resume</button>
               </Link>
         : <a download={document.fileName} href={document.path}>
-            <button>Download</button>
+            <button id='download-resume' onClick={captureEvent}>Download</button>
           </a>
         }
       </div>
