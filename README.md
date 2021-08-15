@@ -223,7 +223,7 @@ To ensure images are served properly, place them in `public/images` and referenc
 ```
 </details>
 <details>
-<summary>Gallery</summary>
+<summary>Contact</summary>
 <br>
 
 ```bash
