@@ -10,6 +10,7 @@ $borderRadius: 0.1875rem;
     display: flex;
     flex-direction: column;
     gap: 0.9375rem;
+    line-height: $line-height;
     @include themed() {
       color: t($color-2);
     }

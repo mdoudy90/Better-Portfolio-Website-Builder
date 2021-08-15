@@ -61,6 +61,7 @@ $borderRadius: 0.1875rem;
   &__description {
     padding: 0.625rem;
     border-radius: $borderRadius;
+    line-height: $line-height;
     @include themed() {
       background-color: t($color-5);
       color: t($color-2);
@@ -231,7 +232,7 @@ $borderRadius: 0.1875rem;
 
   &__description {
     padding: 0.625rem 0;
-    line-height: 1.3;
+    line-height: $line-height;
     @include themed() {
       color: t($color-2);
     }
@@ -276,7 +277,7 @@ $borderRadius: 0.1875rem;
   &__highlight-text {
     padding-top: 0.625rem;
     border-radius: $borderRadius;
-    line-height: 1.3;
+    line-height: $line-height;
     @include themed() {
       color: t($color-1);
     }

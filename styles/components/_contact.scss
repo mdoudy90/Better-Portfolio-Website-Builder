@@ -8,6 +8,7 @@
   &__text {
     font-size: $font-size-5;
     text-align: center;
+    line-height: $line-height;
     @include themed() {
       color: t($color-2);
     }
