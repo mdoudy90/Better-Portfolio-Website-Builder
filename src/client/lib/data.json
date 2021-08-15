@@ -56,9 +56,9 @@
     }
   ],
   "about": {
-    "content": [
+    "contentHtml": [
       "I am a full stack developer obsessed with bringing ideas to life! I currently work in the micromobility industry with analytics and ad platforms.",
-      "I originally graduated from Georgia Institute of Technology with a BS in Industrial Engineering, completed Hack Reactor's Software Engineering Immersive Program where I then worked with students as resident mentor. In a prior life, I’ve had business experience in VR/AR, the indie game dev world, startup ecosystems, and consumer insights.",
+      "I originally graduated from <a class='text-link' href='https://www.gatech.edu/' target='_blank' rel='noopener noreferrer'>Georgia Institute of Technology</a> with a BS in Industrial Engineering, completed <a class='text-link' href='https://www.hackreactor.com/coding-bootcamp' target='_blank' rel='noopener noreferrer'>Hack Reactor's</a> Software Engineering Immersive Program where I then worked with students as resident mentor. In a prior life, I’ve had business experience in VR/AR, the indie game dev world, startup ecosystems, and consumer insights.",
       "My specializations are in JavaScript, React, Node, MongoDB, GraphQL, Sass and am constantly adding new tools to my mental database."
     ],
     "image": "/images/about/TEMP-ME.png"
