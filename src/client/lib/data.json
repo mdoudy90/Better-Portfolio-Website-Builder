@@ -61,8 +61,7 @@
       "I originally graduated from Georgia Institute of Technology with a BS in Industrial Engineering, completed Hack Reactor's Software Engineering Immersive Program where I then worked with students as resident mentor. In a prior life, I’ve had business experience in VR/AR, the indie game dev world, startup ecosystems, and consumer insights.",
       "My specializations are in JavaScript, React, Node, MongoDB, GraphQL, Sass and am constantly adding new tools to my mental database."
     ],
-    "image": "/images/about/TEMP-ME.png",
-    "placeholder": "/images/about/TEMP-ME-PLACEHOLDER.png"
+    "image": "/images/about/TEMP-ME.png"
   },
   "projectCards": {
     "Work": [
@@ -71,7 +70,6 @@
         "description": "An analytics platform that visualizes aggregated trip data using modern geospatial tools to make informed conclusions about rider usage and vehicle demand.",
         "tools": ["React", "Redux", "Sass", "GraphQL", "DeckGL"],
         "image": "/images/projectCards/helbizAnalytics/Helbiz-Analytics-Banner.png",
-        "placeholder": "/images/projectCards/helbizAnalytics/Helbiz-Analytics-Banner-Placeholder.png",
         "highlights": [
           {
             "heading": "POINT 1",
@@ -94,7 +92,6 @@
         "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
         "tools": ["React", "Next.js", "deck.gl", "Redux Toolkit", "Sass"],
         "image": "/images/projectCards/helbizMove/Helbiz-Move-Banner.png",
-        "placeholder": "/images/projectCards/helbizMove/Helbiz-Move-Banner-Placeholder.png",
         "links": {
           "github": "GITHUB URL",
           "website": "WEBSITE URL"
@@ -105,7 +102,6 @@
         "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
         "tools": ["React", "Next.js", "Redux Toolkit", "Sass"],
         "image": "/images/projectCards/helbizKitchen/Helbiz-Kitchen-Banner.png",
-        "placeholder": "/images/projectCards/helbizKitchen/Helbiz-Kitchen-Banner-Placeholder.png",
         "links": {
           "website": "https://helbiz.com/analytics"
         }
@@ -114,15 +110,13 @@
         "title": "Ads-Hub",
         "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
         "tools": ["TOOL 1", "TOOL 2"],
-        "image": "/images/projectCards/helbizAdsHub/Helbiz-Adshub-Banner.png",
-        "placeholder": "/images/projectCards/helbizAdsHub/Helbiz-Adshub-Banner-Placeholder.png"
+        "image": "/images/projectCards/helbizAdsHub/Helbiz-Adshub-Banner.png"
       },
       {
         "title": "Helbiz.com",
         "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
         "tools": ["Vue.js", "Nuxt.js", "Tailwind"],
         "image": "/images/projectCards/helbizcom/Helbizcom-Banner.png",
-        "placeholder": "/images/projectCards/helbizcom/Helbizcom-Banner-Placeholder.png",
         "links": {
           "website": "https://helbiz.com/analytics"
         }
@@ -177,103 +171,83 @@
   "gallery": [
     {
       "image": "/images/gallery/stillness.jpeg",
-      "thumbnail": "/images/gallery/stillness-thumbnail.jpeg",
-      "placeholder": "/images/gallery/stillness-placeholder.jpeg"
+      "thumbnail": "/images/gallery/stillness-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/atlanta-bw.jpeg",
-      "thumbnail": "/images/gallery/atlanta-bw-thumbnail.jpeg",
-      "placeholder": "/images/gallery/atlanta-bw-placeholder.jpeg"
+      "thumbnail": "/images/gallery/atlanta-bw-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/aurora-bw.jpeg",
-      "thumbnail": "/images/gallery/aurora-bw-thumbnail.jpeg",
-      "placeholder": "/images/gallery/aurora-bw-placeholder.jpeg"
+      "thumbnail": "/images/gallery/aurora-bw-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/rusty-links.jpeg",
-      "thumbnail": "/images/gallery/rusty-links-thumbnail.jpeg",
-      "placeholder": "/images/gallery/rusty-links-placeholder.jpeg"
+      "thumbnail": "/images/gallery/rusty-links-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/one-hundred-fifty.jpeg",
-      "thumbnail": "/images/gallery/one-hundred-fifty-thumbnail.jpeg",
-      "placeholder": "/images/gallery/one-hundred-fifty-placeholder.jpeg"
+      "thumbnail": "/images/gallery/one-hundred-fifty-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/everlasting-glass.jpeg",
-      "thumbnail": "/images/gallery/everlasting-glass-thumbnail.jpeg",
-      "placeholder": "/images/gallery/everlasting-glass-placeholder.jpeg"
+      "thumbnail": "/images/gallery/everlasting-glass-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/le-sabre.jpeg",
-      "thumbnail": "/images/gallery/le-sabre-thumbnail.jpeg",
-      "placeholder": "/images/gallery/le-sabre-placeholder.jpeg"
+      "thumbnail": "/images/gallery/le-sabre-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/heavy-industry.jpeg",
-      "thumbnail": "/images/gallery/heavy-industry-thumbnail.jpeg",
-      "placeholder": "/images/gallery/heavy-industry-placeholder.jpeg"
+      "thumbnail": "/images/gallery/heavy-industry-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/tsarskiyo-silo.jpeg",
-      "thumbnail": "/images/gallery/tsarskiyo-silo-thumbnail.jpeg",
-      "placeholder": "/images/gallery/tsarskiyo-silo-placeholder.jpeg"
+      "thumbnail": "/images/gallery/tsarskiyo-silo-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/banana-warrior.jpeg",
-      "thumbnail": "/images/gallery/banana-warrior-thumbnail.jpeg",
-      "placeholder": "/images/gallery/banana-warrior-placeholder.jpeg"
+      "thumbnail": "/images/gallery/banana-warrior-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/citrus-warrior.jpeg",
-      "thumbnail": "/images/gallery/citrus-warrior-thumbnail.jpeg",
-      "placeholder": "/images/gallery/citrus-warrior-placeholder.jpeg"
+      "thumbnail": "/images/gallery/citrus-warrior-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/berliner-dom.jpeg",
-      "thumbnail": "/images/gallery/berliner-dom-thumbnail.jpeg",
-      "placeholder": "/images/gallery/berliner-dom-placeholder.jpeg"
+      "thumbnail": "/images/gallery/berliner-dom-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/hallstatt.jpeg",
-      "thumbnail": "/images/gallery/hallstatt-thumbnail.jpeg",
-      "placeholder": "/images/gallery/hallstatt-placeholder.jpeg"
+      "thumbnail": "/images/gallery/hallstatt-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/koln.jpeg",
-      "thumbnail": "/images/gallery/koln-thumbnail.jpeg",
-      "placeholder": "/images/gallery/koln-placeholder.jpeg"
+      "thumbnail": "/images/gallery/koln-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/russian-fall.jpeg",
-      "thumbnail": "/images/gallery/russian-fall-thumbnail.jpeg",
-      "placeholder": "/images/gallery/russian-fall-placeholder.jpeg"
+      "thumbnail": "/images/gallery/russian-fall-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/spb-rocky-sunset.jpeg",
-      "thumbnail": "/images/gallery/spb-rocky-sunset-thumbnail.jpeg",
-      "placeholder": "/images/gallery/spb-rocky-sunset-placeholder.jpeg"
+      "thumbnail": "/images/gallery/spb-rocky-sunset-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/stormy-waters.jpeg",
-      "thumbnail": "/images/gallery/stormy-waters-thumbnail.jpeg",
-      "placeholder": "/images/gallery/stormy-waters-placeholder.jpeg"
+      "thumbnail": "/images/gallery/stormy-waters-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/sunset-silhouette.jpeg",
-      "thumbnail": "/images/gallery/sunset-silhouette-thumbnail.jpeg",
-      "placeholder": "/images/gallery/sunset-silhouette-placeholder.jpeg"
+      "thumbnail": "/images/gallery/sunset-silhouette-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/vk-office.jpeg",
-      "thumbnail": "/images/gallery/vk-office-thumbnail.jpeg",
-      "placeholder": "/images/gallery/vk-office-placeholder.jpeg"
+      "thumbnail": "/images/gallery/vk-office-thumbnail.jpeg"
     },
     {
       "image": "/images/gallery/wien.jpeg",
-      "thumbnail": "/images/gallery/wien-thumbnail.jpeg",
-      "placeholder": "/images/gallery/wien-placeholder.jpeg"
+      "thumbnail": "/images/gallery/wien-thumbnail.jpeg"
     }
   ],
   "contact": {
