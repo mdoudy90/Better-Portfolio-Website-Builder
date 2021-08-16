@@ -1,4 +1,4 @@
-# Quick Portfolio Website Builder
+# Better Portfolio Website Builder
 
 ## Live version - [mdoudy.com](https://www.mdoudy.com/)
 
