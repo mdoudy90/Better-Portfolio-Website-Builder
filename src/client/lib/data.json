@@ -124,11 +124,11 @@
     ],
     "Projects": [
       {
-        "title": "Website V2",
-        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-        "tools": ["React", "Next.js", "Redux Toolkit", "Sass"],
+        "title": "Better Portfolio Website Builder",
+        "description": "A portfolio website template that was built targeting non-Frontend savvy developers or business professionals who want to display their work in a clean and visually appealing way. It requires only one json file to setup, provides a perfect score on Google lighthouse audit, SEO friendly, optimized for mobile, easily plugs in to Google Analytics, and theming capabilities.",
+        "tools": ["Next.js", "Redux Toolkit", "Sass", "Vercel"],
         "links": {
-          "github": "https://github.com/mdoudy90/website-v2",
+          "github": "https://github.com/mdoudy90/Better-Portfolio-Website-Builder",
           "website": "https://mdoudy.com"
         }
       },
