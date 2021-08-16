@@ -14,10 +14,12 @@
 ### 🎨 Customizable color themes
 
 <br>
-<div style="display: flex; height: 300px; gap: 10px">
-  <img alt="Logo" src="public/images/readmeImages/demo-web-image.png" />
-  <img alt="Logo" src="public/images/readmeImages/demo-mobile-image.png"/>
-  <img alt="Logo" src="public/images/readmeImages/demo-lighthouse-score.png" />
+<div align="center">
+  <div style="display: flex; align-items: flex-start;">
+    <img src="public/images/readmeImages/demo-web-image.png" height="320px" />
+    <img src="public/images/readmeImages/demo-mobile-image.png" height="320px" />
+    <img src="public/images/readmeImages/demo-lighthouse-score.png" height="320px" />
+  </div>
 </div>
 <br>
 
