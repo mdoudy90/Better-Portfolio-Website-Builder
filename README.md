@@ -50,11 +50,17 @@ To populate the website with your data, navigate to `src/client/lib/data.json` a
 
 To ensure images are served properly, place them in `public/images` and reference them like this: `/images/EXAMPLE.png`
 
-#### *data.json schema overview:*
+#### data.json schema overview:
 
 <details>
 <summary>Settings</summary>
 <br>
+
+sideBarLocation available options: "left" or "right"
+
+projectCards
+- for projectCards alternating style, add projectCards section heading to showAlternatingCards array
+- for less space between cards, add projectCards section heading to compactView array
 
 ```bash
 "settings": {
@@ -69,6 +75,8 @@ To ensure images are served properly, place them in `public/images` and referenc
 <details>
 <summary>Meta</summary>
 <br>
+
+Data used for SEO purposes
 
 ```bash
 "meta": {
@@ -87,6 +95,8 @@ To ensure images are served properly, place them in `public/images` and referenc
 <summary>Social</summary>
 <br>
 
+Used to show clickable social media icons in the sidebar. These are optional, so for the ones that are not needed, delete the corresponding lines.
+
 ```bash
 "social": {
   "linkedin": "LINKEDIN URL",
@@ -100,6 +110,8 @@ To ensure images are served properly, place them in `public/images` and referenc
 <summary>Document</summary>
 <br>
 
+Add a PDF version of your resume or other document to `public/docs` and add the corresponding path and desired file-name here.
+
 ```bash
 "document": {
   "fileName": "MY-RESUME.pdf",
@@ -110,6 +122,7 @@ To ensure images are served properly, place them in `public/images` and referenc
 <details>
 <summary>Header</summary>
 <br>
+This displays the main header portion of the page. These are optional, so for the ones that are not needed, delete the corresponding lines. The ctaText is displayed in the button.
 
 ```bash
 "header": {
@@ -124,6 +137,14 @@ To ensure images are served properly, place them in `public/images` and referenc
 <details>
 <summary>Sections</summary>
 <br>
+
+Add the desired sections here using the format below.
+
+The available types are `about`, `projectCards`, `gallery`, and `contact`. The headings of each will be used as the keys throughout the site, so these are required aand need to be unique.
+
+Multiple instances of `projectCards` can be used, as long as the headings are unique.
+
+These are all optional, so if a certain section is not needed, delete the corresponding lines.
 
 ```bash
 "sections": [
@@ -154,6 +175,12 @@ To ensure images are served properly, place them in `public/images` and referenc
 <summary>About</summary>
 <br>
 
+Fills the about section.
+
+If html is needed rather than text for the content, replace the `content` key with `contentHtml`.
+
+`image` is optional, so if not needed, delete the line.
+
 ```bash
 "about": {
   "content": [
@@ -167,6 +194,14 @@ To ensure images are served properly, place them in `public/images` and referenc
 <details>
 <summary>Project Cards</summary>
 <br>
+
+Fills each projectCards sections. Each projectCards section heading needs to be specified here with the desired corresponding data. In this example, the `WORK` and `PROJECTS` headings are used.
+
+`title`, `description`, `tools`, `links`, `image`, and `highlights` are all optional, so if not needed, delete the corresponding lines.
+
+`highlights` fills out the data used in the specified project's onClick popover.
+
+If html is needed rather than text for the description, replace the `description` key with `descriptionHtml`.
 
 ```bash
 "projectCards": {
@@ -215,8 +250,16 @@ To ensure images are served properly, place them in `public/images` and referenc
 <summary>Gallery</summary>
 <br>
 
+Fills out the gallery section of the site.
+
+`thumbnail` is optional, but advised to reduce load time if images are too large.
+
 ```bash
 "gallery": [
+  {
+    "image": "/images/gallery/TEMP-GALLERY-IMAGE.png",
+    "thumbnail": "/images/gallery/TEMP-GALLERY-IMAGE-THUMBNAIL.png"
+  },
   {
     "image": "/images/gallery/TEMP-GALLERY-IMAGE.png",
     "thumbnail": "/images/gallery/TEMP-GALLERY-IMAGE-THUMBNAIL.png"
@@ -228,6 +271,12 @@ To ensure images are served properly, place them in `public/images` and referenc
 <summary>Contact</summary>
 <br>
 
+Fills out the contact section.
+
+If html is needed rather than text, replace the `text` key with `textHtml`.
+
+`ctaText` corresponds to the button text.
+
 ```bash
 "contact": {
   "text": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
@@ -236,15 +285,6 @@ To ensure images are served properly, place them in `public/images` and referenc
 }
 ```
 </details>
-
-
-<!-- Explain how to fill out data.json
-- required fields
-- html possibilities
-
-For Google Analytics, environment variable
-
-Sections -->
 
 ---
 
