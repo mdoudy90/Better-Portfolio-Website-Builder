@@ -72,12 +72,12 @@
         "image": "/images/projectCards/helbizAnalytics/Helbiz-Analytics-Banner.png",
         "highlights": [
           {
-            "heading": "POINT 1",
+            "heading": "Dark/Light Mode",
             "details": [
               "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
               "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
             ],
-            "media": "/images/projectCards/TEMP-WORK-PROJECT-1-POINT-1.gif"
+            "media": "/images/projectCards/helbizAnalytics/analytics-theme.gif"
           },
           {
             "heading": "POINT 2",
