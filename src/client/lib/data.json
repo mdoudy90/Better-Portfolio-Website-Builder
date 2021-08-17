@@ -67,29 +67,59 @@
     "Work": [
       {
         "title": "Analytics",
-        "description": "An analytics platform that visualizes aggregated trip data using modern geospatial tools to make informed conclusions about rider usage and vehicle demand.",
+        "description": "An internal analytics platform used by Helbiz stakeholders, government municipalities, and city managers to visualize aggregated trip data using modern geospatial tools to make informed conclusions about rider usage and vehicle demand.",
         "tools": ["React", "Redux", "Sass", "GraphQL", "DeckGL"],
         "image": "/images/projectCards/helbizAnalytics/Helbiz-Analytics-Banner.png",
         "highlights": [
           {
-            "heading": "Dark/Light Mode",
+            "heading": "Data Visualizaton",
+            "details": [
+              "Developed interactive components and features used to visualize trip and vehicle data leveraging d3, deck.gl, mapbox"
+            ]
+          },
+          {
+            "heading": "Component Library",
+            "details": [
+              "Created a custom React component library, allowing the team to reuse components with consistent styling and functionality"
+            ]
+          },
+          {
+            "heading": "Mobile Optimization",
+            "details": [
+              "Took ownership of optimizing the mobility analytics platform for mobile and tablet users, improving UX for 45% of all users"
+            ]
+          },
+          {
+            "heading": "Sass Implementation",
+            "details": [
+              "Advocated and led the refactor from CSS and inline styling to Sass using the 7-1 architecture pattern and BEM methodology"
+            ]
+          },
+          {
+            "heading": "Maintenance",
+            "details": [
+              "Performed daily application maintenance and bug diagnosis/fixes by utilizing the Sentry monitoring platform"
+            ]
+          },
+          {
+            "heading": "Audit",
+            "details": [
+              "Audited applications’ codebases and proposed solutions to reduce inefficiencies, enable modularity, and promote best practices"
+            ]
+          },
+          {
+            "heading": "temp",
             "details": [
               "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
               "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
             ],
             "media": "/images/projectCards/helbizAnalytics/analytics-theme.gif"
-          },
-          {
-            "heading": "POINT 2",
-            "details": [
-              "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
-            ]
           }
         ]
       },
       {
         "title": "Move",
-        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+        "description": "A publicly available analytics platform which provides city planners and officials insights from micromobility usage in a city by visualizing aggregated trip data",
         "tools": ["React", "Next.js", "deck.gl", "Redux Toolkit", "Sass"],
         "image": "/images/projectCards/helbizMove/Helbiz-Move-Banner.png",
         "links": {
