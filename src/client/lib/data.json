@@ -29,8 +29,8 @@
   "header": {
     "preHeading": "Hello, my name is",
     "heading": "Michael Doudy",
-    "subHeading": "Software Engineer",
-    "text": "I'm an NYC-based software engineer that works at Helbiz.",
+    "subHeading": "Software Engineer, Creative, Autodidact",
+    "text": "I'm an NYC-based software engineer currently working with all sorts of micromobility platforms at Helbiz.",
     "ctaText": "Get In Touch"
   },
   "sections": [
@@ -57,8 +57,8 @@
   ],
   "about": {
     "contentHtml": [
-      "I am a full stack developer obsessed with bringing ideas to life! I currently work in the micromobility industry with analytics and ad platforms.",
-      "I originally graduated from <a class='text-link' href='https://www.gatech.edu/' target='_blank' rel='noopener noreferrer'>Georgia Institute of Technology</a> with a BS in Industrial Engineering, completed <a class='text-link' href='https://www.hackreactor.com/coding-bootcamp' target='_blank' rel='noopener noreferrer'>Hack Reactor's</a> Software Engineering Immersive Program where I then worked with students as resident mentor. In a prior life, I’ve had business experience in VR/AR, the indie game dev world, startup ecosystems, and consumer insights.",
+      "I am a full stack developer obsessed with bringing ideas to life! I currently work in the micromobility industry with analytics and ad platforms. In a prior ventures, I’ve had experience in VR/AR, the indie game dev world, startup ecosystems, and consumer insights, working out of the US, Europe, and Russia",
+      "I originally graduated from <a class='text-link' href='https://www.gatech.edu/' target='_blank' rel='noopener noreferrer'>Georgia Institute of Technology</a> with a BS in Industrial Engineering, completed <a class='text-link' href='https://www.hackreactor.com/coding-bootcamp' target='_blank' rel='noopener noreferrer'>Hack Reactor's</a> Software Engineering Immersive Program where I then worked with students as resident mentor.",
       "My specializations are in JavaScript, React, Node, MongoDB, GraphQL, Sass and am constantly adding new tools to my mental database."
     ],
     "image": "/images/about/TEMP-ME.png"
@@ -123,13 +123,12 @@
         "tools": ["React", "Next.js", "deck.gl", "Redux Toolkit", "Sass"],
         "image": "/images/projectCards/helbizMove/Helbiz-Move-Banner.png",
         "links": {
-          "github": "GITHUB URL",
           "website": "WEBSITE URL"
         }
       },
       {
         "title": "Kitchen",
-        "description": "An online food ordering and delivery platform.",
+        "description": "An online food ordering and delivery platform that connects customers to Italy's largest ghost kitchen.",
         "tools": ["React", "Next.js", "Redux Toolkit", "Sass"],
         "image": "/images/projectCards/helbizKitchen/Helbiz-Kitchen-Banner.png",
         "links": {
@@ -138,13 +137,13 @@
       },
       {
         "title": "Ads-Hub",
-        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-        "tools": ["TOOL 1", "TOOL 2"],
+        "description": "A platform used for advertising to geo-targeted audiences while they are on-the-go or close to areas of interest",
+        "tools": ["React", "Redux", "GraphQL", "Sass"],
         "image": "/images/projectCards/helbizAdsHub/Helbiz-Adshub-Banner.png"
       },
       {
         "title": "Helbiz.com",
-        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+        "description": "Helbiz's main site.",
         "tools": ["Vue.js", "Nuxt.js", "Tailwind"],
         "image": "/images/projectCards/helbizcom/Helbizcom-Banner.png",
         "links": {
