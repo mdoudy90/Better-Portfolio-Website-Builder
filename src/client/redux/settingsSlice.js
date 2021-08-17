@@ -9,7 +9,7 @@ export const settingsSlice = createSlice({
   initialState,
   reducers: {
     toggleTheme: (state) => {
-      state.theme = (state.theme % 2) + 1 // range 1 - 2, could be more ;)
+      state.theme = (state.theme % 6) + 1
     }
   },
 });
