@@ -119,7 +119,7 @@
       },
       {
         "title": "Move",
-        "description": "A publicly available analytics platform which provides city planners and officials insights from micromobility usage in a city by visualizing aggregated trip data",
+        "description": "A publicly available analytics platform that provides city planners and officials insights from micromobility usage in a city by visualizing aggregated trip data.",
         "tools": ["React", "Next.js", "deck.gl", "Redux Toolkit", "Sass"],
         "image": "/images/projectCards/helbizMove/Helbiz-Move-Banner.png",
         "links": {
@@ -129,11 +129,11 @@
       },
       {
         "title": "Kitchen",
-        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
+        "description": "An online food ordering and delivery platform.",
         "tools": ["React", "Next.js", "Redux Toolkit", "Sass"],
         "image": "/images/projectCards/helbizKitchen/Helbiz-Kitchen-Banner.png",
         "links": {
-          "website": "https://helbiz.com/analytics"
+          "website": "https://helbiz.com/kitchen"
         }
       },
       {
