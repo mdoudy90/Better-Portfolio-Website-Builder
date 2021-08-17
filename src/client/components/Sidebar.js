@@ -26,7 +26,7 @@ export const DefaultSidebar = ({ scrollTo, sectionInView, isMobile, onClickStart
   const sideBarLocation = settings.sideBarLocation || 'right';
 
   const captureEvent = (e) => {
-    if (!!gtag.GA_TRACKING_ID) return;
+    if (!gtag.GA_TRACKING_ID) return;
 
     const params = { details: e.target.id };
     gtag.event({ action: 'click', params });
