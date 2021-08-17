@@ -31,7 +31,6 @@ const ProjectPopover = ({ handleClose, data }) => {
         <CloseIcon className="project-popover__close-icon" onClick={handleClose} />
         <div className="project-popover__overview">
           <h3 className="project-popover__heading">{data.title}</h3>
-          <p className="project-popover__description">{data.description}</p>
           {data.description && !data.descriptionHtml && <p className="project-popover__description">{data.description}</p>}
           {data.descriptionHtml && <p className="project-popover__description" dangerouslySetInnerHTML={{__html:data.descriptionHtml}} />}
         </div>
