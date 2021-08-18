@@ -75,7 +75,8 @@
             "heading": "Data Visualizaton",
             "details": [
               "Developed interactive components and features used to visualize trip and vehicle data leveraging d3, deck.gl, mapbox"
-            ]
+            ],
+            "media": "/images/projectCards/helbizAnalytics/analytics-deckgl.gif"
           },
           {
             "heading": "Component Library",
@@ -87,7 +88,8 @@
             "heading": "Mobile Optimization",
             "details": [
               "Took ownership of optimizing the mobility analytics platform for mobile and tablet users, improving UX for 45% of all users"
-            ]
+            ],
+            "media": "/images/projectCards/helbizAnalytics/analytics-mobile.gif"
           },
           {
             "heading": "Sass Implementation",
@@ -106,14 +108,6 @@
             "details": [
               "Audited applications’ codebases and proposed solutions to reduce inefficiencies, enable modularity, and promote best practices"
             ]
-          },
-          {
-            "heading": "temp",
-            "details": [
-              "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.",
-              "LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT."
-            ],
-            "media": "/images/projectCards/helbizAnalytics/analytics-theme.gif"
           }
         ]
       },

@@ -291,9 +291,11 @@ $borderRadius: 0.1875rem;
     > div {
       position: relative !important;
       height: 100% !important;
+      max-height: 18.75rem !important;
       img {
-        height: inherit !important;
+        height: 100% !important;
         position: relative !important;
+        object-fit: contain !important;
       }
     }
   }
