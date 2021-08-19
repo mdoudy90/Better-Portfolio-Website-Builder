@@ -1,0 +1,12 @@
+.custom-404 {
+  .layout__content {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1.5625rem;
+  }
+
+  button {
+    @include button-default-style;
+  }
+}
