@@ -11,7 +11,10 @@
   &__social {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    // gap: 2.5rem;
+    > * + * {
+      margin: 2.5rem 0 0 0; // safari
+    }
   }
 
   &__cta {
@@ -34,7 +37,6 @@
       cursor: pointer;
       font-size: $font-size-3;
       font-weight: 300;
-      margin: 0;
       @include themed() {
         color: t($color-1);
         &:hover {
@@ -150,8 +152,11 @@
     align-self: end;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
     padding: 0.9375rem;
+    // gap: 2.5rem;
+    > * + * {
+      margin: 2.5rem 0 0 0; // safari
+    }
 
     svg {
       width: $font-size-5;

@@ -9,8 +9,11 @@ $borderRadius: 0.1875rem;
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 0.9375rem;
     line-height: $line-height;
+    // gap: 0.9375rem;
+    > * + * {
+      margin: 0.9375rem 0 0 0; // safari
+    }
     @include themed() {
       color: t($color-2);
     }
@@ -36,6 +39,9 @@ $borderRadius: 0.1875rem;
   .about {
     display: flex;
     flex-direction: column-reverse;
+    > * + * {
+      margin: 0 0 3.125rem 0; // safari
+    }
   }
 }
 

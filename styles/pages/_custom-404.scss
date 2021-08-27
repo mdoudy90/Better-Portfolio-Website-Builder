@@ -2,8 +2,11 @@
   .layout__content {
     justify-content: center;
     align-items: center;
-    height: 100%;
-    gap: 1.5625rem;
+    height: 100vh;
+    // gap: 1.5625rem;
+    > * + * {
+      margin: 1.5625rem 0 0 0; // safari
+    }
   }
 
   button {

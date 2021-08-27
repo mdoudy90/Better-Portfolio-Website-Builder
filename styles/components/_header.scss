@@ -2,10 +2,13 @@
   height: max(102vh, 31.25rem);
   display: flex;
   flex-direction: column;
-  gap: 1.875rem;
   justify-content: center;
   font-family: $font-1;
   line-height: 1.4;
+  // gap: 1.875rem;
+  > * + * {
+    margin: 1.875rem 0 0 0; // safari
+  }
 
   &__preheading {
     @include themed() {
