@@ -24,7 +24,10 @@
     padding: 6.25rem 0;
     display: flex;
     flex-direction: column;
-    gap: 6.25rem;
+    // gap: 6.25rem;
+    > * + * {
+      margin: 6.25rem 0 0 0; // safari
+    }
   }
 }
 
@@ -32,7 +35,10 @@
   .section {
     &__contents {
       padding: 3.125rem 0;
-      gap: 3.125rem;
+      // gap: 3.125rem;
+      > * + * {
+        margin: 3.125rem 0 0 0; // safari
+      }
     }
   }
 }

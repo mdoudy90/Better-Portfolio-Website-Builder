@@ -11,6 +11,7 @@
 ### 📊 Google Analytics ready
 ### 🔎 SEO friendly
 ### 📱 Optimized for mobile and tablet
+### 📋 Cross browser tested
 ### 🎨 Customizable color themes
 
 <br>

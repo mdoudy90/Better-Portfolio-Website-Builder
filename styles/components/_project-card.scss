@@ -2,7 +2,8 @@ $borderRadius: 0.1875rem;
 
 .project-card {
   display: grid;
-  grid-template: 1fr / repeat(9, 1fr);
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: min-content;
 
   &__details,
   &__details--inverse {
@@ -38,9 +39,12 @@ $borderRadius: 0.1875rem;
   &__title {
     display: flex;
     align-items: center;
-    gap: 0.9375rem;
     font-size: $font-size-6;
     padding-bottom: 0.3125rem;
+    // gap: 0.9375rem;
+    > * + * {
+      margin: 0 0 0 0.9375rem; // safari
+    }
     @include themed() {
       color: t($color-1);
     }
@@ -70,7 +74,10 @@ $borderRadius: 0.1875rem;
 
   &__tools {
     display: flex;
-    gap: 0.625rem;
+    // gap: 0.625rem;
+    > * + * {
+      margin: 0 0 0 0.625rem; // safari
+    }
 
     p {
       font-size: $font-size-3;
@@ -82,7 +89,10 @@ $borderRadius: 0.1875rem;
 
   &__links {
     display: flex;
-    gap: 0.9375rem;
+    // gap: 0.9375rem;
+    > * + * {
+      margin: 0 0 0 0.9375rem; // safari
+    }
     svg {
       transition: $transition-1;
       height: $font-size-4;
@@ -294,6 +304,7 @@ $borderRadius: 0.1875rem;
       max-height: 18.75rem !important;
       img {
         height: 100% !important;
+        max-height: 18.75rem !important;
         position: relative !important;
         object-fit: contain !important;
       }
