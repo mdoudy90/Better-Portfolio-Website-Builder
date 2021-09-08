@@ -48,8 +48,13 @@ $borderRadius: 0.1875rem;
 @media (max-width: $breakpoint-1) {
   .about {
     &__image {
-      height: 12.5rem;
       width: 100%;
+      img {
+        object-position: top;
+      }
+    }
+    > * + * {
+      margin: 0 0 0 0;
     }
   }
 }
