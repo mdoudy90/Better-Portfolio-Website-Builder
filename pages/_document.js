@@ -25,7 +25,7 @@ class MyDocument extends Document {
                     window.OneSignal = window.OneSignal || [];
                     OneSignal.push(function() {
                       OneSignal.init({
-                        appId: "${NEXT_PUBLIC_ONESIGNAL_APP_ID}",
+                        appId: "${process.env.NEXT_PUBLIC_ONESIGNAL_APP_ID}",
                         safari_web_id: "",
                         notifyButton: {
                           enable: true,
