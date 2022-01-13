@@ -3048,6 +3048,11 @@ react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-onesignal@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-onesignal/-/react-onesignal-2.0.2.tgz#b6f5ecf4ef64589b77289678df629a2ac712168c"
+  integrity sha512-jirsWxaKkfoHN3OWNO1462jcWb+8GkIw1zpll7ErYhaYTsLaE789bsx2ZRfmS9bqabi6Of5U0xKdKlIwEfuzzg==
+
 react-pdf@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/react-pdf/-/react-pdf-5.3.2.tgz#517109d2a32ea7450dea49f7e5cc8e10bd2cfc4b"

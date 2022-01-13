@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import { Provider } from 'react-redux';
 import { DefaultSeo } from 'next-seo';
 import Head from 'next/head';
+import OneSignal from 'react-onesignal';
 
 import { store } from '../src/client/redux/store';
 import SEO from '../src/client/lib/next-seo.config';
@@ -10,6 +12,13 @@ import '../styles/main.scss';
 const { meta } = data;
 
 export default function App({ Component, pageProps }) {
+  
+  useEffect(() => {
+    OneSignal.init({
+      appId: `8f43a2de-b36f-49e4-874e-70046fded812`
+    });
+  }, []);
+
   return (
     <>
       <Head>
