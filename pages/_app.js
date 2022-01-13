@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
   
   useEffect(() => {
     OneSignal.init({
-      appId: `8f43a2de-b36f-49e4-874e-70046fded812`
+      appId: `${process.env.NEXT_PUBLIC_ONESIGNAL_APP_ID}`
     });
   }, []);
 
